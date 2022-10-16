@@ -11,5 +11,13 @@
   "license": "ISC",
   "devDependencies": {
     "prettier": "2.7.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korolilya01/if-html.git"
+  },
+  "bugs": {
+    "url": "https://github.com/korolilya01/if-html/issues"
+  },
+  "homepage": "https://github.com/korolilya01/if-html#readme"
 }
