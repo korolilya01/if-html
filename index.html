@@ -45,65 +45,75 @@
       </li>
     </ol>
     <table border="1" width="50%">
-      <tr>
-        <th>Tag</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>&#10094;table&#10095;</td>
-        <td>Defines a table</td>
-      </tr>
-      <tr>
-        <td>&#10094;tr&#10095;</td>
-        <td>Defines a row in a table</td>
-      </tr>
-      <tr>
-        <td>&#10094;th&#10095;</td>
-        <td rowspan="2">Defines a "header cell" / "cell" in a table</td>
-      </tr>
-      <tr>
-        <td>&#10094;td&#10095;</td>
-      </tr>
-      <tr>
-        <td colspan="2">Rarely used</td>
-      </tr>
-      <tr>
-        <td>&#10094;caption&#10095;</td>
-        <td>Defines a table caption</td>
-      </tr>
-      <tr>
-        <td>&#10094;thead&#10095;</td>
-        <td>Groups the header content in a table</td>
-      </tr>
-      <tr>
-        <td>&#10094;tbody&#10095;</td>
-        <td>Groups the body content in a table</td>
-      </tr>
-      <tr>
-        <td>&#10094;tfood&#10095;</td>
-        <td>Groups the footer content in a table</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Tag</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&#10094;table&#10095;</td>
+          <td>Defines a table</td>
+        </tr>
+        <tr>
+          <td>&#10094;tr&#10095;</td>
+          <td>Defines a row in a table</td>
+        </tr>
+        <tr>
+          <td>&#10094;th&#10095;</td>
+          <td rowspan="2">Defines a "header cell" / "cell" in a table</td>
+        </tr>
+        <tr>
+          <td>&#10094;td&#10095;</td>
+        </tr>
+        <tr>
+          <td colspan="2">Rarely used</td>
+        </tr>
+        <tr>
+          <td>&#10094;caption&#10095;</td>
+          <td>Defines a table caption</td>
+        </tr>
+        <tr>
+          <td>&#10094;thead&#10095;</td>
+          <td>Groups the header content in a table</td>
+        </tr>
+        <tr>
+          <td>&#10094;tbody&#10095;</td>
+          <td>Groups the body content in a table</td>
+        </tr>
+        <tr>
+          <td>&#10094;tfood&#10095;</td>
+          <td>Groups the footer content in a table</td>
+        </tr>
+      </tbody>
     </table>
     <form action="/" method="get">
       <fieldset>
         <legend>My first form</legend>
-        <p>
+        <div>
           <label for="name">Name</label><br />
-          <input id="name" name="name" type="text" placeholder="Name" />
-        </p>
-        <p>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div>
           <label for="email">Email</label><br />
-          <input id="email" name="email" type="email" />
-        </p>
-        <p>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div>
           <label for="password">Password</label><br />
-          <input id="password" name="password" type="password" />
-        </p>
-        <p>
+          <input id="password" name="password" type="password" required />
+        </div>
+        <div>
           <label for="range">Your programming level</label><br />
-          <input id="range" name="level" type="range" max="10" />
-        </p>
-        <p>
+          <input id="range" name="level" type="range" min="0" max="10" />
+        </div>
+        <div>
           What does HTML stand for?<br />
           <input id="check-1" name="html" type="checkbox" value="off" />
           <label for="check-1">Hyperlinks and Text Markup Language</label><br />
@@ -111,8 +121,8 @@
           <label for="check-2">Home Tool Markup Language</label><br />
           <input id="check-3" name="html" type="checkbox" value="on" />
           <label for="check-3">Hyper Text Markup Language</label>
-        </p>
-        <p>
+        </div>
+        <div>
           What does HTTP stand for?<br />
           <input id="rad-1" name="http" type="radio" value="off" />
           <label for="rad-1">Hyper Text Translate Protocol</label><br />
@@ -120,12 +130,12 @@
           <label for="rad-2">Hyper Text Transmission Protocol</label><br />
           <input id="rad-3" name="http" type="radio" value="on" />
           <label for="rad-3">Hyper Text Transfer Protocol</label>
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="comment">Comment</label><br />
           <textarea id="comment" maxlength="500">Comment</textarea>
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="123">What does HTTP stand for?</label><br />
           <select id="123" name="select_html">
             <option disabled selected>Your answer</option>
@@ -133,10 +143,10 @@
             <option value="2">Home Tool Markup Language</option>
             <option value="3">Hyper Text Markup Language</option>
           </select>
-        </p>
-        <p>
-          <button>Send</button>
-        </p>
+        </div>
+        <div>
+          <button type="submit">Send</button>
+        </div>
       </fieldset>
     </form>
     <hr />
