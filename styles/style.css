@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.woff) format("woff"), local("Roboto"),
+    url(../fonts/AnyConv.com__Roboto-Medium.woff2) format("woff2");
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 120px auto 104px;
+  width: fit-content;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.line {
+  background-color: #f5bd41;
+  width: 100px;
+  height: 4px;
+  margin: 0 auto 80px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 12px;
+  padding-bottom: 120px;
+}
+
+.offers__item {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offers_description {
+  font-size: 24px;
+  font-weight: 400;
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+
+/*footer*/
+.container-2 {
+  color: #fff;
+  background-color: #10367c;
+  padding-top: 120px;
+  padding-left: 104px;
+  line-height: 27px;
+}
+
+.container-2__list {
+  display: flex;
+}
+
+.container-2__item {
+  width: fit-content;
+}
+
+.block2 {
+  margin-left: 223px;
+}
+
+.block3 {
+  margin-left: 283px;
+}
+
+.container-2__item-bot {
+  margin-top: 36px;
+}
+
+/*текста*/
+.container-2__title {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 0;
+}
+.container-2__text {
+  font-weight: 400;
+  font-size: 20px;
+}
+.container-2__bot-text {
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 120px;
+}
