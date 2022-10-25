@@ -5,7 +5,52 @@ body {
   max-width: 1440px;
   background: rgba(18, 18, 18, 0.25);
 }
+
 .container {
+  font-family: "Roboto", sans-serif;
+  color: #383838;
+  margin: 0 auto;
+  padding: 120px 100px;
+}
+
+.offers__title {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.offers__line {
+  background-color: #f5bd41;
+  width: 100px;
+  height: 4px;
+  margin: 0 auto 80px;
+}
+
+.offers__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.offers__item {
+  border: 1px solid red;
+  width: 300px;
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offers_description {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.container-header {
   height: 100vh;
   background-image: url("../img/castelmezzano.png");
   background-size: cover;
