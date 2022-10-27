@@ -12,8 +12,7 @@
     <title>title</title>
   </head>
   <body>
-  <div class="container">
-    <div class="header">
+    <div class="container">
       <div class="header__content">
         <div class="header__logo"></div>
         <div class="header__offers">
@@ -30,28 +29,56 @@
           </div>
         </div>
       </div>
+      <div class="page">
+        <h1 class="page__title">
+          Discover stays <br />
+          to live, work or just relax
+        </h1>
+        <div class="page__text">
+          <div>Your destination or hotel name</div>
+          <div>Check-in — Check-out</div>
+        </div>
+        <div class="page__search">
+          <input
+            class="page__search-city"
+            type="text"
+            name="choose-city"
+            placeholder="Your destination or hotel name"
+          />
+          <div class="page__search-date">
+            <input class="page__search-date-in" type="date" name="check-in" />
+            <input class="page__search-date-out" type="date" name="check-out" />
+          </div>
+          <div class="page__search-info">
+            <input
+              id="adults"
+              class="page__search-info1"
+              type="text"
+              name="choose-adult"
+            />
+            <label for="adults">Adults</label>
+            <input
+              id="children"
+              class="page__search-info1"
+              type="text"
+              name="choose-children"
+            />
+            <label for="adults">Children</label>
+            <input
+              id="room"
+              class="page__search-info1"
+              type="text"
+              name="choose-room"
+            />
+            <label for="room">Room</label>
+          </div>
+          <button class="page__search-button" type="submit">Search</button>
+        </div>
+        <div class="page__apps">
+          <div class="page__apps-1"></div>
+          <div class="page__apps-2"></div>
+        </div>
+      </div>
     </div>
-    <div class="page">
-      <h2 class="page__title">
-        Discover stays <br />
-        to live, work or just relax
-      </h2>
-      <div class="page__text">
-        <div>Your destination or hotel name</div>
-        <div>Check-in — Check-out</div>
-      </div>
-      <div class="page__search">
-        <div class="page__search-city">New York</div>
-        <div class="page__search-date">Tue 15 Sept — Sat 19 Sept</div>
-        <div class="page__search-info">2 Adults — 0 Children — 1 Room</div>
-        <div class="page__search-button">Search</div>
-      </div>
-      <div class="page__apps">
-        <div class="page__apps-1"></div>
-        <div class="page__apps-2"></div>
-      </div>
-    </div>
-  </div>
-  
   </body>
 </html>

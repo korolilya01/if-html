@@ -1,32 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
 body {
-    background-image: url("../img/castelmezzano.png");
+  background-image: url("../img/castelmezzano.png");
+  background-size: cover;
+  background-position: 0 25%;
 }
 .container {
   margin: 0 auto;
-  box-sizing: border-box;
-  max-width: 1440px;
-  background: rgba(18, 18, 18, 0.25);
-    font-family: "Roboto", sans-serif;
-    color: #383838;
-    padding: 120px 100px;
-    height: 100vh;
-
-    background-size: cover;
-}
-
-.container-header {
-
+  padding-top: 50px;
+  width: 1230px;
+  color: #383838;
+  height: 100vh;
 }
 
 /*Header*/
-.header {
-  padding: 32px 104px 0;
-}
 .header__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 185px;
 }
 .header__logo {
   width: 205px;
@@ -40,7 +35,7 @@ body {
   display: flex;
 }
 .header__offers-links {
-  color: #FFF;
+  color: #fff;
   display: flex;
   gap: 24px;
   font-weight: 400;
@@ -48,7 +43,7 @@ body {
 }
 .line {
   width: 50px;
-  height: 2px;
+  height: 4px;
   background-color: #f5bd41;
   margin-top: -16px;
 }
@@ -75,20 +70,19 @@ body {
   background-repeat: no-repeat;
   background-position: -274px;
 }
+
 /*Page*/
 .page {
   color: #fff;
-  margin: 184px 104px 0;
 }
 .page__title {
   max-width: 542px;
   font-weight: 500;
   font-size: 50px;
   line-height: 59px;
-  margin-top: 0;
+  margin-bottom: 100px;
 }
 .page__text {
-  margin-top: 100px;
   padding-left: 26px;
   display: flex;
   gap: 221px;
@@ -98,52 +92,67 @@ body {
 
 /*Search*/
 .page__search {
-  background: #fff;
-  border: 3px solid #f3f3f4;
-  border-radius: 8px;
   display: flex;
-  align-items: center;
-  height: 58px;
   margin-top: 24px;
-  width: fit-content;
+  height: 64px;
+  background-color: white;
+  border-radius: 8px;
 }
 .page__search-city {
   font-weight: 400;
   font-size: 18px;
   color: #383838;
-  margin-left: 24px;
+  width: 470px;
+  border: 3px solid #f3f3f4;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
 }
 .page__search-date {
-  width: 255px;
+  display: flex;
   font-weight: 400;
   font-size: 18px;
   color: #383838;
   border: 3px solid #f5bd41;
   border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 58px;
-  margin-left: 362px;
+}
+.page__search-date-in {
+  width: 130px;
+  border: white;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.page__search-date-out {
+  width: 130px;
+  border: white;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
 }
 .page__search-info {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #FFF;
   font-weight: 400;
   font-size: 18px;
   color: #383838;
-  margin-left: 28px;
+  border: 3px solid #f3f3f4;
+}
+.page__search-info1 {
+  width: 20px;
 }
 .page__search-button {
   font-weight: 500;
   font-size: 24px;
+  color: #FFF;
   background: #3077c6;
   border-radius: 8px;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 64px;
-  width: 192px;
-  margin-left: 30px;
-  margin-right: -3px;
+  width: 195px;
 }
 
 /*Apps*/
