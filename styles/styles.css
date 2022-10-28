@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -7,13 +6,13 @@ body {
   background-image: url("../img/castelmezzano.png");
   background-size: cover;
   background-position: 0 25%;
+  height: 100vh;
 }
 .container {
   margin: 0 auto;
-  padding-top: 50px;
-  width: 1230px;
+  padding: 120px 100px;
+  max-width: 1440px;
   color: #383838;
-  height: 100vh;
 }
 
 /*Header*/
@@ -128,24 +127,24 @@ body {
   border-top-right-radius: 4px;
 }
 .page__search-info {
-  width: 300px;
+  width: 310px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color: #FFF;
+  background-color: #fff;
   font-weight: 400;
   font-size: 18px;
   color: #383838;
   border: 3px solid #f3f3f4;
 }
-.page__search-info1 {
+.page__search-info-num {
   width: 20px;
 }
 .page__search-button {
   font-weight: 500;
   font-size: 24px;
-  color: #FFF;
+  color: #fff;
   background: #3077c6;
   border-radius: 8px;
   border: none;
