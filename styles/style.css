@@ -1,34 +1,40 @@
-.container {
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.woff) format("woff"), local("Roboto"),
+    url(../fonts/AnyConv.com__Roboto-Medium.woff2) format("woff2");
+}
+
+* {
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+.container {
   color: #383838;
   margin: 0 auto;
   padding: 120px 100px;
+  max-width: 1440px;
 }
-
 .offers__title {
   font-size: 40px;
   font-weight: bold;
   margin: 0 auto 20px;
   text-align: center;
 }
-
 .offers__line {
   background-color: #f5bd41;
   width: 100px;
   height: 4px;
   margin: 0 auto 80px;
 }
-
 .offers__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 12px;
+  margin-bottom: 122px;
 }
-
 .offers__item {
-  border: 1px solid red;
   width: 300px;
   height: 176px;
   display: flex;
@@ -36,8 +42,47 @@
   justify-content: space-between;
   align-items: center;
 }
-
-.offers_description {
+.offers__description {
   font-size: 24px;
   font-weight: 400;
+}
+
+/*footer*/
+.footer {
+  background-color: #10367c;
+}
+.footer__list {
+  display: flex;
+  gap: 223px;
+}
+.footer__item {
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.block3 {
+  margin-left: 60px;
+}
+.footer__item-bot {
+  margin-top: 36px;
+}
+
+/*text setting*/
+.footer__text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+.footer__text:hover {
+  color: #3077c6;
+}
+.footer__text-title {
+  font-weight: 500;
+  margin-top: 0;
+}
+.footer__text-bottom {
+  font-size: 14px;
 }
