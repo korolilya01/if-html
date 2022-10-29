@@ -2,11 +2,11 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-body {
+.main {
   background-image: url("../img/castelmezzano.png");
   background-size: cover;
   background-position: 0 25%;
-  height: 100vh;
+  height: 100%;
 }
 .container {
   margin: 0 auto;
@@ -20,54 +20,39 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 185px;
+  margin-bottom: 200px;
 }
 .header__logo {
   width: 205px;
   height: 40px;
-  background-image: url("../img/group_2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0;
 }
 .header__offers {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
 }
-.header__offers-links {
-  color: #fff;
+.header__links {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
   font-weight: 400;
   font-size: 24px;
 }
-.line {
-  width: 50px;
-  height: 4px;
-  background-color: #f5bd41;
-  margin-top: -16px;
+.links {
+  text-decoration: none;
+  color: #fff;
 }
-.header__offers-items {
+.links:hover {
+  color: #3077c6;
+}
+.header__items {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
   margin-left: 48px;
-}
-.header__offers-items-1 {
-  width: 30px;
-  height: 30px;
-  background-image: url("../img/group_2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -167px;
-}
-.header__offers-items-2 {
-  width: 40px;
-  height: 40px;
-  background-image: url("../img/group_2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -274px;
 }
 
 /*Page*/
@@ -79,22 +64,26 @@ body {
   font-weight: 500;
   font-size: 50px;
   line-height: 59px;
-  margin-bottom: 100px;
+  margin-bottom: 145px;
 }
 .page__text {
-  padding-left: 26px;
-  display: flex;
-  gap: 221px;
+  position: absolute;
+  top: 585px;
   font-weight: 400;
   font-size: 18px;
+}
+.text-city {
+  left: 358px;
+}
+.text-date {
+  left: 825px;
 }
 
 /*Search*/
 .page__search {
   display: flex;
-  margin-top: 24px;
   height: 64px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 8px;
 }
 .page__search-city {
@@ -114,13 +103,13 @@ body {
   border: 3px solid #f5bd41;
   border-radius: 8px;
 }
-.page__search-date-in {
+.date-in {
   width: 130px;
   border: white;
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
 }
-.page__search-date-out {
+.date-out {
   width: 130px;
   border: white;
   border-bottom-right-radius: 4px;
@@ -138,7 +127,7 @@ body {
   color: #383838;
   border: 3px solid #f3f3f4;
 }
-.page__search-info-num {
+.info-num {
   width: 20px;
 }
 .page__search-button {
@@ -160,20 +149,4 @@ body {
   justify-content: center;
   gap: 17px;
   margin-top: 120px;
-}
-.page__apps-1 {
-  width: 135px;
-  height: 40px;
-  background-image: url("../img/group_2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -324px;
-}
-.page__apps-2 {
-  width: 120px;
-  height: 40px;
-  background-image: url("../img/group_2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -470px;
 }

@@ -12,71 +12,96 @@
     <title>title</title>
   </head>
   <body>
-    <div class="container">
-      <div class="header__content">
-        <div class="header__logo"></div>
-        <div class="header__offers">
-          <div class="header__offers-links">
-            <div>
-              <p>Stays</p>
-              <hr class="line" />
+    <div class="main">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__logo">
+            <img src="./img/img-svg/trip_house.svg" alt="TripHouse" />
+          </div>
+          <div class="header__offers">
+            <div class="header__links">
+              <a class="links" href="#">Stays</a>
+              <a class="links" href="#">Attractions</a>
             </div>
-            <p>Attractions</p>
-          </div>
-          <div class="header__offers-items">
-            <div class="header__offers-items-1"></div>
-            <div class="header__offers-items-2"></div>
+            <div class="header__items">
+              <img
+                src="./img/img-svg/night.svg"
+                alt="Themes"
+                width="30"
+                height="30"
+              />
+              <img
+                src="./img/img-svg/account.svg"
+                alt="Account"
+                width="40"
+                height="40"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="page">
-        <h1 class="page__title">
-          Discover stays <br />
-          to live, work or just relax
-        </h1>
-        <div class="page__text">
-          <div>Your destination or hotel name</div>
-          <div>Check-in — Check-out</div>
-        </div>
-        <div class="page__search">
-          <input
-            class="page__search-city"
-            type="text"
-            name="choose-city"
-            placeholder="Your destination or hotel name"
-          />
-          <div class="page__search-date">
-            <input class="page__search-date-in" type="date" name="check-in" />
-            <input class="page__search-date-out" type="date" name="check-out" />
+        <div class="page">
+          <h1 class="page__title">
+            Discover stays <br />
+            to live, work or just relax
+          </h1>
+          <form action="#" method="get">
+            <div class="page__search">
+              <label for="city" class="page__text text-city"
+                >Your destination or hotel name</label
+              >
+              <input
+                id="city"
+                class="page__search-city"
+                type="text"
+                name="choose-city"
+                placeholder="Your destination or hotel name"
+              />
+              <label for="date" class="page__text text-date"
+                >Check-in — Check-out</label
+              >
+              <div class="page__search-date">
+                <input
+                  id="date"
+                  class="page__search-date date-in"
+                  type="date"
+                  name="check-in"
+                />
+                <input
+                  class="page__search-date date-out"
+                  type="date"
+                  name="check-out"
+                />
+              </div>
+              <div class="page__search-info">
+                <input
+                  id="adults"
+                  class="info-num"
+                  type="text"
+                  name="choose-adult"
+                />
+                <label for="adults">Adults</label>
+                <input
+                  id="children"
+                  class="info-num"
+                  type="text"
+                  name="choose-children"
+                />
+                <label for="adults">Children</label>
+                <input
+                  id="room"
+                  class="info-num"
+                  type="text"
+                  name="choose-room"
+                />
+                <label for="room">Room</label>
+              </div>
+              <button class="page__search-button" type="submit">Search</button>
+            </div>
+          </form>
+          <div class="page__apps">
+            <img src="./img/img-svg/google_play.svg" alt="GooglePlay" />
+            <img src="./img/img-svg/app_store.svg" alt="AppStore" />
           </div>
-          <div class="page__search-info">
-            <input
-              id="adults"
-              class="page__search-info-num"
-              type="text"
-              name="choose-adult"
-            />
-            <label for="adults">Adults</label>
-            <input
-              id="children"
-              class="page__search-info-num"
-              type="text"
-              name="choose-children"
-            />
-            <label for="adults">Children</label>
-            <input
-              id="room"
-              class="page__search-info-num"
-              type="text"
-              name="choose-room"
-            />
-            <label for="room">Room</label>
-          </div>
-          <button class="page__search-button" type="submit">Search</button>
-        </div>
-        <div class="page__apps">
-          <div class="page__apps-1"></div>
-          <div class="page__apps-2"></div>
         </div>
       </div>
     </div>
