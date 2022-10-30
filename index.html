@@ -12,96 +12,153 @@
     <title>title</title>
   </head>
   <body>
-    <div class="main">
-      <div class="container">
-        <div class="header__content">
-          <div class="header__logo">
-            <img src="./img/img-svg/trip_house.svg" alt="TripHouse" />
+  <div class="main">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__logo">
+          <img src="./img/img-svg/trip_house.svg" alt="TripHouse" />
+        </div>
+        <div class="header__offers">
+          <div class="header__links">
+            <a class="links" href="#">Stays</a>
+            <a class="links" href="#">Attractions</a>
           </div>
-          <div class="header__offers">
-            <div class="header__links">
-              <a class="links" href="#">Stays</a>
-              <a class="links" href="#">Attractions</a>
-            </div>
-            <div class="header__items">
-              <img
-                src="./img/img-svg/night.svg"
-                alt="Themes"
-                width="30"
-                height="30"
-              />
-              <img
-                src="./img/img-svg/account.svg"
-                alt="Account"
-                width="40"
-                height="40"
-              />
-            </div>
+          <div class="header__items">
+            <img
+                    src="./img/img-svg/night.svg"
+                    alt="Themes"
+                    width="30"
+                    height="30"
+            />
+            <img
+                    src="./img/img-svg/account.svg"
+                    alt="Account"
+                    width="40"
+                    height="40"
+            />
           </div>
         </div>
-        <div class="page">
-          <h1 class="page__title">
-            Discover stays <br />
-            to live, work or just relax
-          </h1>
-          <form action="#" method="get">
-            <div class="page__search">
-              <label for="city" class="page__text text-city"
-                >Your destination or hotel name</label
-              >
+      </div>
+      <div class="page">
+        <h1 class="page__title">
+          Discover stays <br />
+          to live, work or just relax
+        </h1>
+        <form action="#" method="get">
+          <div class="page__search">
+            <label for="city" class="page__text text-city"
+            >Your destination or hotel name</label
+            >
+            <input
+                    id="city"
+                    class="page__search-city"
+                    type="text"
+                    name="choose-city"
+                    placeholder="Your destination or hotel name"
+            />
+            <label for="date" class="page__text text-date"
+            >Check-in — Check-out</label
+            >
+            <div class="page__search-date">
               <input
-                id="city"
-                class="page__search-city"
-                type="text"
-                name="choose-city"
-                placeholder="Your destination or hotel name"
+                      id="date"
+                      class="page__search-date date-in"
+                      type="date"
+                      name="check-in"
               />
-              <label for="date" class="page__text text-date"
-                >Check-in — Check-out</label
-              >
-              <div class="page__search-date">
-                <input
-                  id="date"
-                  class="page__search-date date-in"
-                  type="date"
-                  name="check-in"
-                />
-                <input
-                  class="page__search-date date-out"
-                  type="date"
-                  name="check-out"
-                />
-              </div>
-              <div class="page__search-info">
-                <input
-                  id="adults"
-                  class="info-num"
-                  type="text"
-                  name="choose-adult"
-                />
-                <label for="adults">Adults</label>
-                <input
-                  id="children"
-                  class="info-num"
-                  type="text"
-                  name="choose-children"
-                />
-                <label for="adults">Children</label>
-                <input
-                  id="room"
-                  class="info-num"
-                  type="text"
-                  name="choose-room"
-                />
-                <label for="room">Room</label>
-              </div>
-              <button class="page__search-button" type="submit">Search</button>
+              <input
+                      class="page__search-date date-out"
+                      type="date"
+                      name="check-out"
+              />
             </div>
-          </form>
-          <div class="page__apps">
-            <img src="./img/img-svg/google_play.svg" alt="GooglePlay" />
-            <img src="./img/img-svg/app_store.svg" alt="AppStore" />
+            <div class="page__search-info">
+              <input
+                      id="adults"
+                      class="info-num"
+                      type="text"
+                      name="choose-adult"
+              />
+              <label for="adults">Adults</label>
+              <input
+                      id="children"
+                      class="info-num"
+                      type="text"
+                      name="choose-children"
+              />
+              <label for="adults">Children</label>
+              <input
+                      id="room"
+                      class="info-num"
+                      type="text"
+                      name="choose-room"
+              />
+              <label for="room">Room</label>
+            </div>
+            <button class="page__search-button" type="submit">Search</button>
           </div>
+        </form>
+        <div class="page__apps">
+          <img src="./img/img-svg/google_play.svg" alt="GooglePlay" />
+          <img src="./img/img-svg/app_store.svg" alt="AppStore" />
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="offers">
+      <div class="container">
+        <h2 class="offers__title">What do we offer</h2>
+        <hr class="offers__line" />
+        <div class="offers__list">
+          <div class="offers__item">
+            <img src="./img/img-svg/headphones.svg" alt="Headphones" />
+            <div class="offers__description">Support 24/7</div>
+          </div>
+          <div class="offers__item">
+            <img src="./img/img-svg/dialog.svg" alt="Dialog" />
+            <div class="offers__description">Communicate directly</div>
+          </div>
+          <div class="offers__item">
+            <img src="./img/img-svg/devices.svg" alt="Devices" />
+            <div class="offers__description">Book online</div>
+          </div>
+          <div class="offers__item">
+            <img src="./img/img-svg/like.svg" alt="Like" />
+            <div class="offers__description">Real guest reviews</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__list">
+          <div class="footer__item">
+            <a class="footer__text footer__text-title" href="#">About</a>
+            <a class="footer__text" href="#">How Triphouse works</a>
+            <a class="footer__text" href="#">Careers</a>
+            <a class="footer__text" href="#">Privacy</a>
+            <a class="footer__text" href="#">Terms</a>
+          </div>
+          <div class="footer__item block2">
+            <a class="footer__text footer__text-title" href="#"
+              >Property types</a>
+            <a class="footer__text" href="#">Guest houses</a>
+            <a class="footer__text" href="#">Hotels</a>
+            <a class="footer__text" href="#">Apartments</a>
+            <a class="footer__text" href="#">Villas</a>
+            <a class="footer__text" href="#">Holiday homes</a>
+            <a class="footer__text" href="#">Hostels</a>
+          </div>
+          <div class="footer__item block3">
+            <a class="footer__text footer__text-title" href="#">Support</a>
+            <a class="footer__text" href="#">Contact Customer Service</a>
+            <a class="footer__text" href="#">FAQ</a>
+          </div>
+        </div>
+        <div class="footer__item-bot">
+          <p class="footer__text footer__text-bottom">
+            © 2022Triphouse, Inc. All rights reserved
+          </p>
         </div>
       </div>
     </div>
