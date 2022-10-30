@@ -2,16 +2,109 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <title>lesson_5</title>
+    <title>title</title>
   </head>
   <body>
+  <div class="main">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__logo">
+          <img src="./img/img-svg/trip_house.svg" alt="TripHouse" />
+        </div>
+        <div class="header__offers">
+          <div class="header__links">
+            <a class="links" href="#">Stays</a>
+            <a class="links" href="#">Attractions</a>
+          </div>
+          <div class="header__items">
+            <img
+                    src="./img/img-svg/night.svg"
+                    alt="Themes"
+                    width="30"
+                    height="30"
+            />
+            <img
+                    src="./img/img-svg/account.svg"
+                    alt="Account"
+                    width="40"
+                    height="40"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="page">
+        <h1 class="page__title">
+          Discover stays <br />
+          to live, work or just relax
+        </h1>
+        <form action="#" method="get">
+          <div class="page__search">
+            <label for="city" class="page__text text-city"
+            >Your destination or hotel name</label
+            >
+            <input
+                    id="city"
+                    class="page__search-city"
+                    type="text"
+                    name="choose-city"
+                    placeholder="Your destination or hotel name"
+            />
+            <label for="date" class="page__text text-date"
+            >Check-in — Check-out</label
+            >
+            <div class="page__search-date">
+              <input
+                      id="date"
+                      class="page__search-date date-in"
+                      type="date"
+                      name="check-in"
+              />
+              <input
+                      class="page__search-date date-out"
+                      type="date"
+                      name="check-out"
+              />
+            </div>
+            <div class="page__search-info">
+              <input
+                      id="adults"
+                      class="info-num"
+                      type="text"
+                      name="choose-adult"
+              />
+              <label for="adults">Adults</label>
+              <input
+                      id="children"
+                      class="info-num"
+                      type="text"
+                      name="choose-children"
+              />
+              <label for="adults">Children</label>
+              <input
+                      id="room"
+                      class="info-num"
+                      type="text"
+                      name="choose-room"
+              />
+              <label for="room">Room</label>
+            </div>
+            <button class="page__search-button" type="submit">Search</button>
+          </div>
+        </form>
+        <div class="page__apps">
+          <img src="./img/img-svg/google_play.svg" alt="GooglePlay" />
+          <img src="./img/img-svg/app_store.svg" alt="AppStore" />
+        </div>
+      </div>
+    </div>
+  </div>
     <div class="offers">
       <div class="container">
         <h2 class="offers__title">What do we offer</h2>

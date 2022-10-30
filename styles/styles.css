@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.woff) format("woff"), local("Roboto"),
+  url(../fonts/AnyConv.com__Roboto-Medium.woff2) format("woff2");
+}
+
+.container {
+  color: #383838;
+  margin: 0 auto;
+  padding: 120px 100px;
+  max-width: 1440px;
+}
+
+.main {
+  background-image: url("../img/castelmezzano.png");
+  background-size: cover;
+  background-position: 0 25%;
+  height: 100%;
+}
+
+/*Header*/
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+.header__logo {
+  width: 205px;
+  height: 40px;
+}
+.header__offers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.header__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  font-weight: 400;
+  font-size: 24px;
+}
+.links {
+  text-decoration: none;
+  color: #fff;
+}
+.links:hover {
+  color: #3077c6;
+}
+.header__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-left: 48px;
+}
+
+/*Page*/
+.page {
+  color: #fff;
+}
+.page__title {
+  max-width: 542px;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  margin-bottom: 145px;
+}
+.page__text {
+  position: absolute;
+  top: 585px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.text-city {
+  left: 358px;
+}
+.text-date {
+  left: 825px;
+}
+
+/*Search*/
+.page__search {
+  display: flex;
+  height: 64px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.page__search-city {
+  font-weight: 400;
+  font-size: 18px;
+  color: #383838;
+  width: 470px;
+  border: 3px solid #f3f3f4;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.page__search-date {
+  display: flex;
+  font-weight: 400;
+  font-size: 18px;
+  color: #383838;
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+}
+.date-in {
+  width: 130px;
+  border: white;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.date-out {
+  width: 130px;
+  border: white;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.page__search-info {
+  width: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  color: #383838;
+  border: 3px solid #f3f3f4;
+}
+.info-num {
+  width: 20px;
+}
+.page__search-button {
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  background: #3077c6;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+}
+
+/*Apps*/
+.page__apps {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  margin-top: 120px;
+}
+
+
+.offers__title {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.offers__line {
+  background-color: #f5bd41;
+  width: 100px;
+  height: 4px;
+  margin: 0 auto 80px;
+}
+.offers__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 122px;
+}
+.offers__item {
+  width: 300px;
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.offers__description {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/*footer*/
+.footer {
+  background-color: #10367c;
+}
+.footer__list {
+  display: flex;
+  gap: 223px;
+}
+.footer__item {
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.block3 {
+  margin-left: 60px;
+}
+.footer__item-bot {
+  margin-top: 36px;
+}
+
+/*text setting*/
+.footer__text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+.footer__text:hover {
+  color: #3077c6;
+}
+.footer__text-title {
+  font-weight: 500;
+  margin-top: 0;
+}
+.footer__text-bottom {
+  font-size: 14px;
+}
