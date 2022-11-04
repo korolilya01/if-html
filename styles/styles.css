@@ -7,14 +7,19 @@
   src: url(../fonts/Roboto-Regular.woff) format("woff"), local("Roboto"),
   url(../fonts/AnyConv.com__Roboto-Medium.woff2) format("woff2");
 }
-
+.svg-sprite {
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
 .container {
   color: #383838;
   margin: 0 auto;
   padding: 120px 100px;
   max-width: 1440px;
 }
-
+/* main */
 .main {
   background-image: url("../img/castelmezzano.png");
   background-size: cover;
@@ -22,14 +27,14 @@
   height: 100%;
 }
 
-/*Header*/
-.header__content {
+/*main__header*/
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 200px;
 }
-.header__logo {
+.icon-logo {
   width: 205px;
   height: 40px;
 }
@@ -38,6 +43,7 @@
   justify-content: center;
   align-items: center;
   margin-right: 10px;
+
 }
 .header__links {
   display: flex;
@@ -46,6 +52,7 @@
   gap: 24px;
   font-weight: 400;
   font-size: 24px;
+
 }
 .links {
   text-decoration: none;
@@ -61,8 +68,15 @@
   gap: 24px;
   margin-left: 48px;
 }
-
-/*Page*/
+.icon-night {
+    width: 30px;
+    height: 30px;
+}
+.icon-account {
+    width: 40px;
+    height: 40px;
+}
+/*main__page*/
 .page {
   color: #fff;
 }
@@ -86,7 +100,7 @@
   left: 825px;
 }
 
-/*Search*/
+/*main__search*/
 .page__search {
   display: flex;
   height: 64px;
@@ -150,15 +164,22 @@
   width: 195px;
 }
 
-/*Apps*/
+/*main__apps*/
 .page__apps {
   display: flex;
   justify-content: center;
   gap: 17px;
   margin-top: 120px;
 }
-
-
+.icon-google_play {
+    width: 135px;
+    height: 40px;
+}
+.icon-app_store {
+    width: 120px;
+    height: 40px;
+}
+ /*offers*/
 .offers__title {
   font-size: 40px;
   font-weight: bold;
@@ -191,7 +212,22 @@
   font-size: 24px;
   font-weight: 400;
 }
-
+.icon-support {
+    width: 76px;
+    height: 92px;
+}
+.icon-communicate {
+    width: 84px;
+    height: 84px;
+}
+.icon-devices {
+    width: 100px;
+    height: 68px;
+}
+.icon-like {
+    width: 92px;
+    height: 84px;
+}
 /*footer*/
 .footer {
   background-color: #10367c;
@@ -200,19 +236,19 @@
   display: flex;
   gap: 223px;
 }
-.footer__item {
+.footer__links {
   max-width: fit-content;
   display: flex;
   flex-direction: column;
 }
-.block3 {
+.third-column {
   margin-left: 60px;
 }
 .footer__item-bot {
   margin-top: 36px;
 }
 
-/*text setting*/
+/*footer__text-setting*/
 .footer__text {
   color: #fff;
   font-weight: 400;
