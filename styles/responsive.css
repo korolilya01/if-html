@@ -43,7 +43,7 @@
 }
 
 /*for tablets*/
-@media (max-width: 1248px) {
+@media (max-width: 1024px) {
   :root {
     --col-width: calc(100% / 8);
   }
