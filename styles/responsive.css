@@ -38,6 +38,7 @@
 .col-lg-12 {
   width: calc(var(--col-width) * 12);
 }
+
 .offers__item {
   height: 176px;
 }
@@ -71,9 +72,7 @@
   .col-md-8 {
     width: calc(var(--col-width) * 8);
   }
-  [class*="col-md-"] {
-    margin-bottom: 35px;
-  }
+
   .offers__line {
     display: none;
   }
@@ -87,6 +86,9 @@
   .offers__description {
     font-size: 20px;
   }
+    .offers__list {
+        margin-bottom:0;
+    }
   .offers__item {
     height: 150px;
   }
@@ -114,9 +116,6 @@
   }
   .col-sm-6 {
     width: calc(var(--col-width) * 6);
-  }
-  [class*="col-sm-"] {
-    margin-bottom: 35px;
   }
   .container {
     padding: 40px 0;
@@ -160,7 +159,7 @@
   .footer__text-bottom {
     display: flex;
     font-size: 12px;
-    margin-top: -20px;
+      margin-bottom: 0;
   }
 }
 
@@ -187,9 +186,7 @@
   .col-xs-6 {
     width: calc(var(--col-width) * 6);
   }
-  [class*="col-xs-"] {
-    margin-bottom: 30px;
-  }
+
   .offers__title {
     font-size: 28px;
     margin-bottom: 32px;

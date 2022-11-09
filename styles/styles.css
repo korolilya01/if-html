@@ -16,10 +16,168 @@
 .container {
   color: #383838;
   margin: 0 auto;
-  padding: 120px 0;
-  max-width: 1248px;
+  padding: 120px 100px;
+  max-width: 1440px;
+}
+/* main */
+.main {
+  display: none;
+  background-image: url("../img/castelmezzano.png");
+  background-size: cover;
+  background-position: 0 25%;
+  height: 100%;
 }
 
+/*main__header*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+.icon-logo {
+  width: 205px;
+  height: 40px;
+}
+.header__offers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.header__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  font-weight: 400;
+  font-size: 24px;
+}
+.links {
+  text-decoration: none;
+  color: #fff;
+}
+.links:hover {
+  color: #3077c6;
+}
+.header__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-left: 48px;
+}
+.icon-night {
+  width: 30px;
+  height: 30px;
+}
+.icon-account {
+  width: 40px;
+  height: 40px;
+}
+/*main__page*/
+.page {
+  color: #fff;
+}
+.page__title {
+  max-width: 542px;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  margin-bottom: 145px;
+}
+.page__text {
+  position: absolute;
+  top: 585px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.text-city {
+  left: 358px;
+}
+.text-date {
+  left: 825px;
+}
+
+/*main__search*/
+.page__search {
+  display: flex;
+  height: 64px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.page__search-city {
+  font-weight: 400;
+  font-size: 18px;
+  color: #383838;
+  width: 470px;
+  border: 3px solid #f3f3f4;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.page__search-date {
+  display: flex;
+  font-weight: 400;
+  font-size: 18px;
+  color: #383838;
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+}
+.date-in {
+  width: 130px;
+  border: white;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.date-out {
+  width: 130px;
+  border: white;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.page__search-info {
+  width: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  color: #383838;
+  border: 3px solid #f3f3f4;
+}
+.info-num {
+  width: 20px;
+}
+.page__search-button {
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  background: #3077c6;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+}
+
+/*main__apps*/
+.page__apps {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  margin-top: 120px;
+}
+.icon-google_play {
+  width: 135px;
+  height: 40px;
+}
+.icon-app_store {
+  width: 120px;
+  height: 40px;
+}
 /*offers*/
 .offers__title {
   font-size: 40px;
@@ -46,6 +204,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 .offers__icon {
   aspect-ratio: 1/1;
