@@ -5,13 +5,13 @@
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/Roboto-Regular.woff) format("woff"), local("Roboto"),
-  url(../fonts/AnyConv.com__Roboto-Medium.woff2) format("woff2");
+    url(../fonts/AnyConv.com__Roboto-Medium.woff2) format("woff2");
 }
 .svg-sprite {
-    position: absolute;
-    visibility: hidden;
-    width: 0;
-    height: 0;
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 .container {
   color: #383838;
@@ -21,6 +21,7 @@
 }
 /* main */
 .main {
+  display: none;
   background-image: url("../img/castelmezzano.png");
   background-size: cover;
   background-position: 0 25%;
@@ -43,7 +44,6 @@
   justify-content: center;
   align-items: center;
   margin-right: 10px;
-
 }
 .header__links {
   display: flex;
@@ -52,7 +52,6 @@
   gap: 24px;
   font-weight: 400;
   font-size: 24px;
-
 }
 .links {
   text-decoration: none;
@@ -69,12 +68,12 @@
   margin-left: 48px;
 }
 .icon-night {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 .icon-account {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 /*main__page*/
 .page {
@@ -172,19 +171,20 @@
   margin-top: 120px;
 }
 .icon-google_play {
-    width: 135px;
-    height: 40px;
+  width: 135px;
+  height: 40px;
 }
 .icon-app_store {
-    width: 120px;
-    height: 40px;
+  width: 120px;
+  height: 40px;
 }
- /*offers*/
+/*offers*/
 .offers__title {
   font-size: 40px;
   font-weight: bold;
   margin: 0 auto 20px;
   text-align: center;
+  width: fit-content;
 }
 .offers__line {
   background-color: #f5bd41;
@@ -197,55 +197,56 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 12px;
   margin-bottom: 122px;
 }
 .offers__item {
-  width: 300px;
-  height: 176px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+}
+.offers__icon {
+  aspect-ratio: 1/1;
 }
 .offers__description {
   font-size: 24px;
   font-weight: 400;
 }
+/*offers__icon*/
 .icon-support {
-    width: 76px;
-    height: 92px;
+  width: 76px;
+  height: 92px;
 }
 .icon-communicate {
-    width: 84px;
-    height: 84px;
+  width: 84px;
+  height: 84px;
 }
 .icon-devices {
-    width: 100px;
-    height: 68px;
+  width: 100px;
+  height: 68px;
 }
 .icon-like {
-    width: 92px;
-    height: 84px;
+  width: 92px;
+  height: 84px;
 }
+
 /*footer*/
 .footer {
   background-color: #10367c;
 }
+.icon-trip_house_mobile {
+  width: 98px;
+  height: 19px;
+  display: none;
+}
 .footer__list {
   display: flex;
-  gap: 223px;
 }
 .footer__links {
   max-width: fit-content;
   display: flex;
   flex-direction: column;
-}
-.third-column {
-  margin-left: 60px;
-}
-.footer__item-bot {
-  margin-top: 36px;
 }
 
 /*footer__text-setting*/
