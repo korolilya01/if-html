@@ -185,18 +185,26 @@
   margin: 0 auto 20px;
   text-align: center;
   width: fit-content;
+    position: relative;
 }
-.offers__line {
-  background-color: #f5bd41;
-  width: 100px;
-  height: 4px;
-  margin: 0 auto 80px;
+:root {
+    --line-width: 100px;
+}
+.offers__title::after {
+    content: '';
+    width: var(--line-width);
+    height: 4px;
+    background-color: #f5bd41;
+    position: absolute;
+    top: 67px;
+    left: calc(50% - var(--line-width) / 2);
 }
 .offers__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+    margin-top: 100px;
   margin-bottom: 122px;
 }
 .offers__item {
@@ -233,6 +241,7 @@
 
 /*footer*/
 .footer {
+    display: none;
   background-color: #10367c;
 }
 .icon-trip_house_mobile {
