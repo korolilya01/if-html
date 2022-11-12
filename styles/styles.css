@@ -7,6 +7,11 @@
   src: url(../fonts/Roboto-Regular.woff) format("woff"), local("Roboto"),
     url(../fonts/AnyConv.com__Roboto-Medium.woff2) format("woff2");
 }
+:root {
+  --line-width: 100px;
+  --circle-width: 11px;
+  --circle-height: 11px;
+}
 .svg-sprite {
   position: absolute;
   visibility: hidden;
@@ -18,6 +23,9 @@
   margin: 0 auto;
   padding: 120px 100px;
   max-width: 1440px;
+}
+p {
+  margin: 0;
 }
 /* main */
 .main {
@@ -56,9 +64,21 @@
 .links {
   text-decoration: none;
   color: #fff;
+  position: relative;
 }
-.links:hover {
-  color: #3077c6;
+.links:after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  width: 80%;
+  height: 4px;
+  background-color: #f5bd41;
+  margin-top: 8px;
+}
+.links:hover:after {
+  display: block;
 }
 .header__items {
   display: flex;
@@ -179,40 +199,44 @@
   height: 40px;
 }
 /*offers*/
-.offers__title {
+.offers {
+  /*display: none;*/
+}
+
+.title {
   font-size: 40px;
   font-weight: bold;
-  margin: 0 auto 20px;
-  text-align: center;
+  margin: 0 auto;
+  /*text-align: center;*/
   width: fit-content;
-    position: relative;
 }
-:root {
-    --line-width: 100px;
+.offers__title {
+  position: relative;
 }
-.offers__title::after {
-    content: '';
-    width: var(--line-width);
-    height: 4px;
-    background-color: #f5bd41;
-    position: absolute;
-    top: 67px;
-    left: calc(50% - var(--line-width) / 2);
+
+.offers__title:after {
+  content: "";
+  width: var(--line-width);
+  height: 4px;
+  background-color: #f5bd41;
+  position: absolute;
+  top: 67px;
+  left: calc(50% - var(--line-width) / 2);
 }
-.offers__list {
+.list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-    margin-top: 100px;
-  margin-bottom: 122px;
+  margin-top: 104px;
+  position: relative;
 }
 .offers__item {
+  height: 176px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
 }
 .offers__icon {
   aspect-ratio: 1/1;
@@ -220,6 +244,8 @@
 .offers__description {
   font-size: 24px;
   font-weight: 400;
+  display: block;
+  justify-content: space-between;
 }
 /*offers__icon*/
 .icon-support {
@@ -239,9 +265,63 @@
   height: 84px;
 }
 
+/*homes*/
+.homes {
+  background-color: #eaf0f9;
+}
+.homes__item {
+  height: 435px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+img {
+  margin-bottom: 24px;
+}
+.homes__text {
+  padding-left: 8px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: start;
+}
+.hostel-name {
+  color: #3077c6;
+  margin-bottom: 24px;
+  text-decoration: none;
+}
+.hostel-name:hover {
+  color: #7fb3f9;
+}
+.hostel-location {
+  color: #bfbfbf;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f3f3f4;
+  position: absolute;
+  right: -15px;
+  top: 128px;
+}
+.arrows {
+  width: var(--circle-width);
+  height: var(--circle-height);
+  border: 2px solid #383838;
+  border-left: 0;
+  border-top: 0;
+  position: absolute;
+  transform: rotate(-50deg) skewX(-15deg);
+  top: calc(50% - var(--circle-width) / 2);
+  left: calc(50% - var(--circle-height) / 2);
+}
+
 /*footer*/
 .footer {
-    display: none;
+  display: none;
   background-color: #10367c;
 }
 .icon-trip_house_mobile {
