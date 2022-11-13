@@ -222,7 +222,7 @@ p {
   background-color: #f5bd41;
   position: absolute;
   top: 67px;
-  left: calc(50% - var(--line-width) / 2);
+  left: calc(68%/2 - var(--line-width) / 2);
 }
 .list {
   display: flex;
