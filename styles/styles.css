@@ -9,8 +9,10 @@
 }
 :root {
   --line-width: 100px;
-  --circle-width: 11px;
-  --circle-height: 11px;
+  --arrow-width: 11px;
+  --arrow-height: 11px;
+  --circle-width: 40px;
+  --circle-height: 40px;
 }
 .svg-sprite {
   position: absolute;
@@ -27,6 +29,7 @@
 p {
   margin: 0;
 }
+
 /* main */
 .main {
   display: none;
@@ -95,6 +98,7 @@ p {
   width: 40px;
   height: 40px;
 }
+
 /*main__page*/
 .page {
   color: #fff;
@@ -202,18 +206,15 @@ p {
 .offers {
   /*display: none;*/
 }
-
 .title {
   font-size: 40px;
   font-weight: bold;
   margin: 0 auto;
-  /*text-align: center;*/
   width: fit-content;
 }
 .offers__title {
   position: relative;
 }
-
 .offers__title:after {
   content: "";
   width: var(--line-width);
@@ -229,7 +230,6 @@ p {
   justify-content: center;
   align-items: center;
   margin-top: 104px;
-  position: relative;
 }
 .offers__item {
   height: 176px;
@@ -237,6 +237,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 .offers__icon {
   aspect-ratio: 1/1;
@@ -269,6 +270,9 @@ p {
 .homes {
   background-color: #eaf0f9;
 }
+.homes__list {
+  position: relative;
+}
 .homes__item {
   height: 435px;
   display: flex;
@@ -278,6 +282,7 @@ p {
 }
 img {
   margin-bottom: 24px;
+  width: 95%;
 }
 .homes__text {
   padding-left: 8px;
@@ -303,25 +308,26 @@ img {
   height: 40px;
   border-radius: 50%;
   background: #f3f3f4;
-  position: absolute;
   right: -15px;
-  top: 128px;
+  top: calc(30% - var(--circle-height) / 2);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  position: absolute;
 }
 .arrows {
-  width: var(--circle-width);
-  height: var(--circle-height);
+  width: var(--arrow-width);
+  height: var(--arrow-height);
   border: 2px solid #383838;
   border-left: 0;
   border-top: 0;
   position: absolute;
   transform: rotate(-50deg) skewX(-15deg);
-  top: calc(50% - var(--circle-width) / 2);
-  left: calc(50% - var(--circle-height) / 2);
+  top: calc(50% - var(--arrow-width) / 2);
+  left: calc(50% - var(--arrow-height) / 2);
 }
 
 /*footer*/
 .footer {
-  display: none;
+  /*display: none;*/
   background-color: #10367c;
 }
 .icon-trip_house_mobile {
@@ -337,7 +343,6 @@ img {
   display: flex;
   flex-direction: column;
 }
-
 /*footer__text-setting*/
 .footer__text {
   color: #fff;

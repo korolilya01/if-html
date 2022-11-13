@@ -68,13 +68,18 @@
   .col-md-8 {
     width: calc(var(--col-width) * 8);
   }
-
+  .offers__title:after {
+    display: none;
+  }
   .offers__line {
     display: none;
   }
-  .offers__title {
+  .title {
     font-size: 36px;
     margin-bottom: 70px;
+  }
+  .offers__list {
+    gap: 10px;
   }
   .offers__icon {
     width: 65px;
@@ -82,11 +87,29 @@
   .offers__description {
     font-size: 20px;
   }
-    .offers__list {
-        margin-bottom:0;
-    }
+  .list {
+    margin: 0;
+  }
   .offers__item {
     height: 150px;
+  }
+  .homes__item {
+    height: 280px;
+  }
+  .homes__item:nth-child(4) {
+    display: none;
+  }
+  img {
+    margin-bottom: 10px;
+  }
+  .homes__text {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .circle {
+    width: 36px;
+    height: 36px;
+    right: 85px;
   }
 }
 
@@ -116,14 +139,19 @@
   .container {
     padding: 40px 0;
   }
-  .offers__title {
+  .title {
     font-size: 32px;
+    margin-bottom: 32px;
+  }
+  .offers__title {
+    margin-top: -8px;
   }
   .offers__icon {
     width: 60px;
   }
   .offers__description {
     font-size: 18px;
+    line-height: 18px;
   }
   .offers__item {
     height: 130px;
@@ -131,6 +159,22 @@
   .icon-trip_house_mobile {
     display: flex;
     margin: 0 auto 40px;
+  }
+  img {
+    margin-bottom: 8px;
+  }
+  .homes__item:nth-child(3) {
+    display: none;
+  }
+  .homes__text {
+    font-size: 16px;
+    line-height: 14px;
+    margin-bottom: 8px;
+  }
+  .circle {
+    width: 32px;
+    height: 32px;
+    right: 110px;
   }
   .footer__list {
     display: flex;
@@ -155,7 +199,7 @@
   .footer__text-bottom {
     display: flex;
     font-size: 12px;
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -182,8 +226,7 @@
   .col-xs-6 {
     width: calc(var(--col-width) * 6);
   }
-
-  .offers__title {
+  .title {
     font-size: 28px;
     margin-bottom: 32px;
   }
@@ -195,5 +238,15 @@
   }
   .offers__item {
     height: 104px;
+    margin-bottom: 40px;
+  }
+  .homes__item {
+    height: 209px;
+    width: 156px;
+    margin-bottom: 40px;
+  }
+  .homes__text {
+    font-size: 15px;
+    margin-bottom: 4px;
   }
 }
