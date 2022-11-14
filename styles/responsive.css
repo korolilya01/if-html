@@ -106,10 +106,12 @@
     font-size: 18px;
     margin-bottom: 8px;
   }
+  .item-third {
+    position: relative;
+  }
   .circle {
     width: 36px;
     height: 36px;
-    right: 85px;
     position: absolute;
   }
 }
@@ -172,10 +174,13 @@
     line-height: 14px;
     margin-bottom: 8px;
   }
+  .item-second {
+    position: relative;
+  }
   .circle {
     width: 32px;
     height: 32px;
-    right: 110px;
+    position: absolute;
   }
   .footer__list {
     display: flex;
@@ -248,14 +253,5 @@
   .homes__text {
     font-size: 12px;
     margin-bottom: 4px;
-  }
-  .circle {
-    right: 60px;
-  }
-}
-
-@media (max-width: 360px) {
-  .circle {
-    right: 5px;
   }
 }

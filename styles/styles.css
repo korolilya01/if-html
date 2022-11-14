@@ -26,6 +26,7 @@
   padding: 120px 100px;
   max-width: 1440px;
 }
+
 p {
   margin: 0;
 }
@@ -270,8 +271,11 @@ p {
   background-color: #eaf0f9;
 }
 .homes__list {
-    position: relative;
+    display: flex;
+    margin-right: 0;
+    z-index: 0.5;
 }
+
 .homes__item {
   height: 435px;
   display: flex;
@@ -279,10 +283,15 @@ p {
   justify-content: start;
   align-items: center;
 }
+
+.item-fourth {
+    position: relative;
+}
 img {
   margin-bottom: 24px;
   width: 95%;
 }
+
 .homes__text {
   padding-left: 8px;
   width: 100%;
@@ -307,10 +316,11 @@ img {
   height: 40px;
   border-radius: 50%;
   background: #f3f3f4;
-  right: -15px;
-  top: calc(30% - var(--circle-height) / 2);
+  right: -5px;
+    z-index: 1;
+  top: calc(50% - var(--circle-height) / 2);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  position: absolute;
+  position:absolute;
 }
 .arrows {
   width: var(--arrow-width);
