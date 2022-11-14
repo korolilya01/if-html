@@ -32,7 +32,6 @@ p {
 
 /* main */
 .main {
-  display: none;
   background-image: url("../img/castelmezzano.png");
   background-size: cover;
   background-position: 0 25%;
@@ -222,7 +221,7 @@ p {
   background-color: #f5bd41;
   position: absolute;
   top: 67px;
-  left: calc(68%/2 - var(--line-width) / 2);
+  right: calc(50% - var(--line-width) / 2);
 }
 .list {
   display: flex;
@@ -271,7 +270,7 @@ p {
   background-color: #eaf0f9;
 }
 .homes__list {
-  position: relative;
+    position: relative;
 }
 .homes__item {
   height: 435px;
@@ -310,7 +309,7 @@ img {
   background: #f3f3f4;
   right: -15px;
   top: calc(30% - var(--circle-height) / 2);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   position: absolute;
 }
 .arrows {

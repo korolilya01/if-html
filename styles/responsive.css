@@ -110,6 +110,7 @@
     width: 36px;
     height: 36px;
     right: 85px;
+    position: absolute;
   }
 }
 
@@ -245,7 +246,16 @@
     margin-bottom: 40px;
   }
   .homes__text {
-    font-size: 15px;
+    font-size: 12px;
     margin-bottom: 4px;
+  }
+  .circle {
+    right: 60px;
+  }
+}
+
+@media (max-width: 360px) {
+  .circle {
+    right: 5px;
   }
 }
