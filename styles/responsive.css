@@ -247,10 +247,9 @@
     height: 36px;
     position: absolute;
   }
-    .footer__text {
-        font-size: 18px;
-    }
-
+  .footer__text {
+    font-size: 18px;
+  }
 }
 
 /*for mobile*/
@@ -446,13 +445,11 @@
   .col-xs-6 {
     width: calc(var(--col-width) * 6);
   }
-  .title {
- .main-wrap {
-     padding: 0;
- }
+  .main-wrap {
+    padding: 0;
+  }
   .container {
     width: 95%;
-    /*padding: 0;*/
   }
   .header {
     width: 100%;
@@ -528,16 +525,16 @@
   .offers__item {
     height: 104px;
   }
-    .homes__item {
-        height: 209px;
-        width: 156px;
-        margin-bottom: 40px;
-    }
-    .homes__text {
-        font-size: 12px;
-        margin-bottom: 4px;
-    }
+  .homes__item {
+    height: 209px;
+    width: 156px;
+    margin-bottom: 40px;
+  }
+  .homes__text {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
   .footer__list {
-      gap: 8px;
+    gap: 8px;
   }
 }
