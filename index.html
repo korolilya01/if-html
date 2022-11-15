@@ -65,6 +65,18 @@
           fill="white"
         />
       </symbol>
+      <symbol id="menu" viewBox="0 0 24 16">
+        <path
+          d="M0 16H24V13.3333H0V16ZM0 9.33333H24V6.66667H0V9.33333ZM0 0V2.66667H24V0H0Z"
+          fill="white"
+        />
+      </symbol>
+      <symbol id="search" viewBox="0 0 16 16">
+        <path
+          d="M11.4351 10.0629H10.7124L10.4563 9.81589C11.3528 8.77301 11.8925 7.4191 11.8925 5.94625C11.8925 2.66209 9.23042 0 5.94625 0C2.66209 0 0 2.66209 0 5.94625C0 9.23042 2.66209 11.8925 5.94625 11.8925C7.4191 11.8925 8.77301 11.3528 9.81589 10.4563L10.0629 10.7124V11.4351L14.6369 16L16 14.6369L11.4351 10.0629ZM5.94625 10.0629C3.66838 10.0629 1.82962 8.22413 1.82962 5.94625C1.82962 3.66838 3.66838 1.82962 5.94625 1.82962C8.22413 1.82962 10.0629 3.66838 10.0629 5.94625C10.0629 8.22413 8.22413 10.0629 5.94625 10.0629Z"
+          fill="#BFBFBF"
+        />
+      </symbol>
       <symbol id="google_play" viewBox="0 0 135 40">
         <path
           d="M130 39.9999H5C2.25 39.9999 0 37.75 0 35V4.99999C0 2.25 2.25 0 5 0H130C132.75 0 135 2.25 135 4.99999V35C135 37.75 132.75 39.9999 130 39.9999Z"
@@ -402,6 +414,9 @@
               <svg class="icon-account">
                 <use href="#account" />
               </svg>
+              <svg class="icon-menu">
+                <use href="#menu" />
+              </svg>
             </div>
           </div>
         </div>
@@ -412,54 +427,73 @@
           </h1>
           <form action="#" method="get">
             <div class="page__search">
-              <label for="city" class="page__text text-city"
-              >Your destination or hotel name</label
+              <svg class="icon-search">
+                <use href="#search" />
+              </svg>
+              <label for="city" class="text-city page-text"
+                >Your destination or hotel name</label
               >
               <input
                 id="city"
-                class="page__search-city"
+                class="page__search-city page-text"
                 type="text"
                 name="choose-city"
-                placeholder="Your destination or hotel name"
+                placeholder=" Your destination or hotel name"
               />
-              <label for="date" class="page__text text-date"
-              >Check-in — Check-out</label
+              <label for="date-in" class="text-date page-text"
+                >Check-in - Check-out</label
               >
               <div class="page__search-date">
+                <label for="date-in" class="date-in-mob page-text"
+                  >Check-in date</label
+                >
                 <input
-                  id="date"
-                  class="page__search-date date-in"
+                  id="date-in"
+                  class="date-in page-text"
                   type="date"
-                  name="check-in"
+                  name="choose-date-in"
                 />
+                <label for="date-out" class="date-out-mob page-text"
+                  >Check-out date</label
+                >
                 <input
-                  class="page__search-date date-out"
+                  id="date-out"
                   type="date"
-                  name="check-out"
+                  class="date-out page-text"
+                  name="choose-date-out"
                 />
               </div>
-              <div class="page__search-info">
-                <input
-                  id="adults"
-                  class="info-num"
-                  type="text"
-                  name="choose-adult"
-                />
-                <label for="adults">Adults</label>
-                <input
-                  id="children"
-                  class="info-num"
-                  type="text"
-                  name="choose-children"
-                />
-                <label for="adults">Children</label>
-                <input
-                  id="room"
-                  class="info-num"
-                  type="text"
-                  name="choose-room"
-                />
-                <label for="room">Room</label>
+              <div class="page__search-info page-text">
+                <div class="info-column column-adults">
+                  <p>Adults</p>
+                  <input
+                    id="adults"
+                    class="info-num"
+                    type="text"
+                    name="choose-adult"
+                    required
+                  />
+                </div>
+                <div class="info-column column-children">
+                  <p>Children</p>
+                  <input
+                    id="children"
+                    class="info-num"
+                    type="text"
+                    name="choose-children"
+                    required
+                  />
+                </div>
+                <div class="info-column column-room">
+                  <p>Room</p>
+                  <input
+                    id="room"
+                    class="info-num"
+                    type="text"
+                    name="choose-room"
+                    required
+                  />
+                </div>
               </div>
               <button class="page__search-button" type="submit">Search</button>
             </div>
