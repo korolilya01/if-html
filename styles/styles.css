@@ -30,7 +30,6 @@ input {
   outline: none;
   border: none;
 }
-
 p {
   margin: 0;
 }
@@ -123,7 +122,7 @@ p {
 .page__search {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(2, 64px);
   border-radius: 8px;
   margin-bottom: 120px;
 }
@@ -142,6 +141,7 @@ p {
 .text-city {
   grid-column: 1 / span 5;
   grid-row: 1;
+  align-self: end;
   padding-left: 24px;
   padding-bottom: 24px;
 }
@@ -161,6 +161,7 @@ p {
 .text-date {
   grid-column: 6 / span 3;
   grid-row: 1;
+  align-self: end;
   padding-left: 24px;
   padding-bottom: 24px;
 }
@@ -279,6 +280,7 @@ p {
   display: block;
   justify-content: space-between;
 }
+
 /*offers__icon*/
 .icon-support {
   width: 76px;
@@ -297,6 +299,79 @@ p {
   height: 84px;
 }
 
+/*homes*/
+.homes {
+  background-color: #eaf0f9;
+}
+.homes__list {
+  display: flex;
+  margin-right: 0;
+  z-index: 0.5;
+}
+.homes__item {
+  height: 435px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.item-hostel,
+.item-villa,
+.item-appart {
+  position: relative;
+}
+img {
+  margin-bottom: 24px;
+  width: 95%;
+}
+.homes__text {
+  padding-left: 8px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: start;
+}
+.hostel-name {
+  color: #3077c6;
+  margin-bottom: 24px;
+  text-decoration: none;
+}
+.hostel-name:hover {
+  color: #7fb3f9;
+}
+.hostel-location {
+  color: #bfbfbf;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f3f3f4;
+  right: -5px;
+  z-index: 1;
+  top: calc(50% - var(--circle-height) / 2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.circle-hostel {
+  position: absolute;
+}
+.circle-villa,
+.circle-appart {
+  display: none;
+}
+.arrows {
+  width: var(--arrow-width);
+  height: var(--arrow-height);
+  border: 2px solid #383838;
+  border-left: 0;
+  border-top: 0;
+  position: absolute;
+  transform: rotate(-50deg) skewX(-15deg);
+  top: calc(50% - var(--arrow-width) / 2);
+  left: calc(50% - var(--arrow-height) / 2);
+}
+
 /*footer*/
 .footer {
   background-color: #10367c;
@@ -308,6 +383,8 @@ p {
 }
 .footer__list {
   display: flex;
+  gap: 110px;
+  margin-bottom: 40px;
 }
 .footer__links {
   max-width: fit-content;

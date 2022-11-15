@@ -72,6 +72,9 @@
   .page-text {
     font-size: 14px;
   }
+  .footer__text {
+    font-size: 18px;
+  }
 }
 
 /*for tablets*/
@@ -222,6 +225,10 @@
   }
   .offers__list {
     margin-bottom: 0;
+    font-size: 20px;
+  }
+  .offers__list {
+    margin-bottom: 0;
   }
   .offers__item {
     height: 150px;
@@ -245,6 +252,9 @@
   .circle {
     width: 36px;
     height: 36px;
+  }
+  .circle-villa {
+    display: inline-block;
     position: absolute;
   }
   .footer__text {
@@ -275,9 +285,6 @@
   .col-sm-6 {
     width: calc(var(--col-width) * 6);
   }
-  /*.container {*/
-  /*  padding: 40px 0;*/
-  /*}*/
   .container {
     padding: 60px 50px;
   }
@@ -393,11 +400,15 @@
   .circle {
     width: 32px;
     height: 32px;
+  }
+  .circle-appart {
     position: absolute;
+    display: inline-block;
   }
   .footer__list {
     display: flex;
     justify-content: center;
+    gap: 20px;
   }
   .footer__text {
     display: none;
@@ -450,6 +461,7 @@
   }
   .container {
     width: 95%;
+    padding: 60px 0;
   }
   .header {
     width: 100%;
