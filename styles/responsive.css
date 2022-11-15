@@ -39,6 +39,41 @@
   width: calc(var(--col-width) * 12);
 }
 
+.offers__item {
+  height: 176px;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    margin-bottom: 120px;
+  }
+  .text-city,
+  .text-date {
+    padding-bottom: 10px;
+  }
+  .page__search-button {
+    font-size: 20px;
+  }
+  .icon-logo {
+    width: 160px;
+    height: 32px;
+  }
+  .icon-night {
+    width: 24px;
+    height: 24px;
+  }
+  .icon-account {
+    width: 32px;
+    height: 32px;
+  }
+  .links {
+    font-size: 20px;
+  }
+  .page-text {
+    font-size: 14px;
+  }
+}
+
 /*for tablets*/
 @media (max-width: 1024px) {
   :root {
@@ -71,6 +106,101 @@
   .offers__title:after {
     display: none;
   }
+  .container {
+    padding: 60px 100px;
+  }
+  p {
+    margin: 0;
+  }
+  .page__title {
+    font-size: 44px;
+    margin-bottom: 90px;
+    line-height: 50px;
+  }
+  .page__search {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 48px);
+    height: 115px;
+    background: #f5bd41;
+    border: 5px solid #f5bd41;
+    margin-bottom: 80px;
+  }
+  .icon-search {
+    display: flex;
+    position: relative;
+    top: -95px;
+    left: 12px;
+  }
+  .page__search-city {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+    padding-left: 36px;
+    border-radius: 4px;
+    border: 0;
+  }
+  .page__search-date {
+    grid-column: 7 / span 4;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+    color: #383838;
+    border: none;
+    border-radius: 8px;
+    position: relative;
+    z-index: 0.5;
+  }
+  .date-in,
+  .date-out {
+    width: 49%;
+    border-radius: 4px;
+    position: relative;
+    padding-left: 8px;
+    padding-top: 20px;
+    z-index: 0;
+  }
+  .page-text {
+    font-size: 12px;
+  }
+  .text-city,
+  .text-date {
+    display: none;
+  }
+  .date-in-mob,
+  .date-out-mob {
+    width: 49%;
+    display: flex;
+    color: #383838;
+    padding-left: 8px;
+    padding-top: 6px;
+    position: absolute;
+    z-index: 1;
+  }
+  .date-out-mob {
+    right: 0;
+  }
+  .page__search-info {
+    grid-column: 1 / span 6;
+    grid-row: 2;
+    border-radius: 4px;
+    border: 0;
+  }
+  .page__search-button {
+    grid-column: 7 / span 4;
+    grid-row: 2;
+    border-radius: 4px;
+  }
+  .header__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-left: 48px;
+  }
+  .page__apps {
+    padding-bottom: 40px;
+  }
   .offers__line {
     display: none;
   }
@@ -85,10 +215,13 @@
     width: 65px;
   }
   .offers__description {
-    font-size: 20px;
+    font-size: 18px;
   }
   .list {
     margin: 0;
+  }
+  .offers__list {
+    margin-bottom: 0;
   }
   .offers__item {
     height: 150px;
@@ -114,6 +247,10 @@
     height: 36px;
     position: absolute;
   }
+    .footer__text {
+        font-size: 18px;
+    }
+
 }
 
 /*for mobile*/
@@ -139,8 +276,85 @@
   .col-sm-6 {
     width: calc(var(--col-width) * 6);
   }
+  /*.container {*/
+  /*  padding: 40px 0;*/
+  /*}*/
   .container {
-    padding: 40px 0;
+    padding: 60px 50px;
+  }
+  .header {
+    margin-bottom: 80px;
+  }
+  .page__search {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 48px);
+    height: 225px;
+  }
+  .page__title {
+    font-size: 32px;
+    margin-bottom: 60px;
+    line-height: 42px;
+  }
+  .links {
+    display: none;
+  }
+  .icon-logo {
+    width: 120px;
+    height: 30px;
+  }
+  .icon-night {
+    width: 20px;
+    height: 20px;
+  }
+  .icon-account {
+    width: 24px;
+    height: 24px;
+  }
+  .icon-menu {
+    display: flex;
+    width: 28px;
+    height: 20px;
+  }
+  .icon-search {
+    top: -207px;
+  }
+  .page__search-city {
+    grid-column: 1 / span 8;
+    grid-row: 1;
+  }
+  .page__search-date {
+    grid-column: 1 / span 8;
+    grid-row: 2;
+  }
+  .page__search-info {
+    grid-column: 1 / span 8;
+    grid-row: 3;
+    font-size: 12px;
+    line-height: 14px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .column-adults {
+    grid-column: 1 / span 3;
+    border-right: 1px solid #bfbfbf;
+  }
+  .column-children {
+    grid-column: 4 / span 3;
+    border-right: 1px solid #bfbfbf;
+  }
+  .column-room {
+    grid-column: 7 / span 3;
+  }
+  .info-column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 8px;
+  }
+  .page__search-button {
+    grid-column: 1 / span 8;
+    grid-row: 4;
   }
   .title {
     font-size: 32px;
@@ -233,6 +447,75 @@
     width: calc(var(--col-width) * 6);
   }
   .title {
+ .main-wrap {
+     padding: 0;
+ }
+  .container {
+    width: 95%;
+    /*padding: 0;*/
+  }
+  .header {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .icon-logo {
+    width: 122px;
+    height: 24px;
+  }
+  .icon-night {
+    width: 16px;
+    height: 16px;
+  }
+  .icon-account {
+    width: 24px;
+    height: 24px;
+  }
+  .icon-menu {
+    width: 24px;
+    height: 16px;
+  }
+  .page__title {
+    font-size: 30px;
+    margin-bottom: 31px;
+    line-height: 35px;
+  }
+  .page__search {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 32px;
+  }
+  .page__search-city {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+  }
+  .page__search-date {
+    grid-column: 1 / span 6;
+  }
+  .page__search-info {
+    grid-column: 1 / span 6;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .column-adults {
+    grid-column: 1 / span 2;
+    border-right: 1px solid #bfbfbf;
+  }
+  .column-children {
+    grid-column: 3 / span 2;
+    border-right: 1px solid #bfbfbf;
+  }
+  .column-room {
+    grid-column: 5 / span 2;
+  }
+  .page__search-button {
+    grid-column: 1 / span 6;
+    grid-row: 4;
+  }
+  .offers__title {
     font-size: 28px;
     margin-bottom: 32px;
   }
@@ -245,13 +528,16 @@
   .offers__item {
     height: 104px;
   }
-  .homes__item {
-    height: 209px;
-    width: 156px;
-    margin-bottom: 40px;
-  }
-  .homes__text {
-    font-size: 12px;
-    margin-bottom: 4px;
+    .homes__item {
+        height: 209px;
+        width: 156px;
+        margin-bottom: 40px;
+    }
+    .homes__text {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+  .footer__list {
+      gap: 8px;
   }
 }
