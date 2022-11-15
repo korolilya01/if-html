@@ -277,6 +277,8 @@ input {
 }
 .footer__list {
   display: flex;
+  gap: 110px;
+  margin-bottom: 40px;
 }
 .footer__links {
   max-width: fit-content;
