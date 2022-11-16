@@ -38,9 +38,6 @@
 .col-lg-12 {
   width: calc(var(--col-width) * 12);
 }
-.offers__item {
-  height: 176px;
-}
 
 @media (max-width: 1200px) {
   .header {
@@ -70,6 +67,9 @@
   }
   .page-text {
     font-size: 14px;
+  }
+  .footer__text {
+    font-size: 18px;
   }
 }
 
@@ -101,6 +101,9 @@
   }
   .col-md-8 {
     width: calc(var(--col-width) * 8);
+  }
+  .offers__title:after {
+    display: none;
   }
   .container {
     padding: 60px 100px;
@@ -200,9 +203,12 @@
   .offers__line {
     display: none;
   }
-  .offers__title {
+  .title {
     font-size: 36px;
     margin-bottom: 70px;
+  }
+  .offers__list {
+    gap: 10px;
   }
   .offers__icon {
     width: 65px;
@@ -210,16 +216,46 @@
   .offers__description {
     font-size: 18px;
   }
+  .list {
+    margin: 0;
+  }
+  .offers__list {
+    margin-bottom: 0;
+    font-size: 20px;
+  }
   .offers__list {
     margin-bottom: 0;
   }
   .offers__item {
     height: 150px;
   }
-    .footer__text {
-        font-size: 18px;
-    }
-
+  .homes__item {
+    height: 280px;
+  }
+  .homes__item:nth-child(4) {
+    display: none;
+  }
+  img {
+    margin-bottom: 10px;
+  }
+  .homes__text {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .item-third {
+    position: relative;
+  }
+  .circle {
+    width: 36px;
+    height: 36px;
+  }
+  .circle-villa {
+    display: inline-block;
+    position: absolute;
+  }
+  .footer__text {
+    font-size: 18px;
+  }
 }
 
 /*for mobile*/
@@ -245,9 +281,6 @@
   .col-sm-6 {
     width: calc(var(--col-width) * 6);
   }
-  /*.container {*/
-  /*  padding: 40px 0;*/
-  /*}*/
   .container {
     padding: 60px 50px;
   }
@@ -325,25 +358,53 @@
     grid-column: 1 / span 8;
     grid-row: 4;
   }
-  .offers__title {
+  .title {
     font-size: 32px;
+    margin-bottom: 32px;
+  }
+  .offers__title {
+    margin-top: -8px;
   }
   .offers__icon {
     width: 60px;
   }
   .offers__description {
     font-size: 18px;
+    line-height: 18px;
   }
   .offers__item {
     height: 130px;
   }
   .icon-trip_house_mobile {
     display: flex;
-    margin: 0 auto 40px;
+    margin: 0 auto 32px;
+  }
+  img {
+    margin-bottom: 8px;
+  }
+  .homes__item:nth-child(3) {
+    display: none;
+  }
+  .homes__text {
+    font-size: 16px;
+    line-height: 14px;
+    margin-bottom: 8px;
+  }
+  .item-second {
+    position: relative;
+  }
+  .circle {
+    width: 32px;
+    height: 32px;
+  }
+  .circle-appart {
+    position: absolute;
+    display: inline-block;
   }
   .footer__list {
     display: flex;
     justify-content: center;
+    gap: 20px;
   }
   .footer__text {
     display: none;
@@ -391,12 +452,12 @@
   .col-xs-6 {
     width: calc(var(--col-width) * 6);
   }
- .main-wrap {
-     padding: 0;
- }
+  .main-wrap {
+    padding: 0;
+  }
   .container {
     width: 95%;
-    /*padding: 0;*/
+    padding: 60px 0;
   }
   .header {
     width: 100%;
@@ -472,7 +533,16 @@
   .offers__item {
     height: 104px;
   }
+  .homes__item {
+    height: 209px;
+    width: 156px;
+    margin-bottom: 40px;
+  }
+  .homes__text {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
   .footer__list {
-      gap: 8px;
+    gap: 8px;
   }
 }
