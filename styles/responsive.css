@@ -39,10 +39,6 @@
   width: calc(var(--col-width) * 12);
 }
 
-.offers__item {
-  height: 176px;
-}
-
 @media (max-width: 1200px) {
   .header {
     margin-bottom: 120px;
