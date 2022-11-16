@@ -218,6 +218,7 @@
   }
   .list {
     margin: 0;
+    flex-wrap: wrap;
   }
   .offers__list {
     margin-bottom: 0;

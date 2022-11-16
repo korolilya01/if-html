@@ -13,6 +13,7 @@
   --arrow-height: 11px;
   --circle-width: 40px;
   --circle-height: 40px;
+  --white: #fff;
 }
 .svg-sprite {
   position: absolute;
@@ -32,6 +33,10 @@ input {
 }
 p {
   margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 /* main */
@@ -69,12 +74,12 @@ p {
 }
 .links {
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
   position: relative;
 }
 .links:after {
   content: "";
-  display: none;
+  visibility: hidden;
   position: absolute;
   top: 100%;
   left: 10%;
@@ -84,7 +89,18 @@ p {
   margin-top: 8px;
 }
 .links:hover:after {
-  display: block;
+  visibility: visible;
+  animation: under-line 0.5s ease-out;
+}
+@keyframes under-line {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 80%;
+  }
 }
 .header__items {
   display: flex;
@@ -109,7 +125,7 @@ p {
 
 /*main__page*/
 .page {
-  color: #fff;
+  color: var(--white);
 }
 .page__title {
   font-weight: 500;
@@ -166,12 +182,12 @@ p {
   padding-bottom: 24px;
 }
 .date-in {
-  border: white;
+  border: var(--white);
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
 }
 .date-out {
-  border: white;
+  border: var(--white);
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
 }
@@ -188,7 +204,7 @@ p {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color: #fff;
+  background-color: var(--white);
   color: #383838;
   border-radius: 8px;
   border: 3px solid #f3f3f4;
@@ -213,7 +229,7 @@ p {
   grid-row: 2;
   font-weight: 500;
   font-size: 24px;
-  color: #fff;
+  color: var(--white);
   background: #3077c6;
   border-radius: 8px;
   border: none;
@@ -256,12 +272,13 @@ p {
   top: 67px;
   right: calc(50% - var(--line-width) / 2);
 }
+
 .list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 104px;
+  gap: 16px;
 }
 .offers__item {
   height: 176px;
@@ -305,7 +322,7 @@ p {
 }
 .homes__list {
   display: flex;
-  margin-right: 0;
+  /*margin-right: 0;*/
   z-index: 0.5;
 }
 .homes__item {
@@ -322,7 +339,7 @@ p {
 }
 img {
   margin-bottom: 24px;
-  width: 95%;
+  width: 100%;
 }
 .homes__text {
   padding-left: 8px;
@@ -348,7 +365,7 @@ img {
   height: 40px;
   border-radius: 50%;
   background: #f3f3f4;
-  right: -5px;
+  right: -20px;
   z-index: 1;
   top: calc(50% - var(--circle-height) / 2);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -394,7 +411,7 @@ img {
 
 /*footer__text-setting*/
 .footer__text {
-  color: #fff;
+  color: var(--white);
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
