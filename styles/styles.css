@@ -26,6 +26,7 @@
   margin: 0 auto;
   padding: 120px 100px;
   max-width: 1440px;
+    height: fit-content;
 }
 input {
   outline: none;
@@ -260,11 +261,13 @@ ul {
 .title {
   font-size: 40px;
   font-weight: bold;
-  margin: 0 auto;
+  margin: 0 auto 104px;
   width: fit-content;
+
 }
 .offers__title {
   position: relative;
+    margin-bottom: 0;
 }
 .offers__title:after {
   content: "";
@@ -402,6 +405,7 @@ img {
   /*position: relative;*/
 }
 .dest__list {
+    /*display: none;*/
   position: relative;
 }
 
@@ -438,45 +442,9 @@ img {
   transition: 0.5s ease-in 0.3s;
 }
 
-/*destinations--additional*/
-.destinations-add {
-  background: #e5e5e5;
-}
-.container {
-  position: relative;
-}
-.circle-dest {
-  position: absolute;
-  top: 0;
-  right: calc(50% - var(--circle-width) / 2);
-  transform: rotate(90deg);
-  box-shadow: 4px 0 4px rgba(0, 0, 0, 0.25);
-}
-.circle-dest-add {
-  display: none;
-  transform: rotate(-90deg);
-  top: calc(100% - 100px);
-  right: calc(50% - var(--circle-width) / 2);
-  position: absolute;
-  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.25);
-}
-.wrapper {
-  position: relative;
-}
-.wrapper:hover .dest__list-add {
-  display: flex;
-  margin-top: -120px;
-  padding-bottom: 102px;
-}
-.wrapper:hover .circle-dest {
-  display: none;
-}
-.wrapper:hover .circle-dest-add {
-  display: block;
-}
-.dest__list-add {
-  display: none;
-}
+
+
+
 
 /*footer*/
 .footer {
