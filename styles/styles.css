@@ -368,6 +368,7 @@ img {
   background: #f3f3f4;
   right: -20px;
   z-index: 1;
+  /*position: absolute;*/
   top: calc(50% - var(--circle-height) / 2);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -375,7 +376,9 @@ img {
   position: absolute;
 }
 .circle-villa,
-.circle-appart, .circle-spain, .circle-norway{
+.circle-appart,
+.circle-spain,
+.circle-norway {
   display: none;
 }
 .arrows {
@@ -396,8 +399,12 @@ img {
 }
 .dest__item {
   height: 296px;
+  /*position: relative;*/
+}
+.dest__list {
   position: relative;
 }
+
 .but__dest {
   position: absolute;
   width: 128px;
@@ -414,24 +421,64 @@ img {
   color: #3077c6;
   visibility: hidden;
 }
-.dest__item:hover .but__dest{
+.dest__item:hover .but__dest {
   visibility: visible;
   animation: but 0.5s ease-in 0.3s both;
 }
 @keyframes but {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-.dest__item:hover img{
-    filter: brightness(80%);
-    transition: 0.5s ease-in 0.3s;
+.dest__item:hover img {
+  filter: brightness(80%);
+  transition: 0.5s ease-in 0.3s;
 }
 
-    /*footer*/
+/*destinations--additional*/
+.destinations-add {
+  background: #e5e5e5;
+}
+.container {
+  position: relative;
+}
+.circle-dest {
+  position: absolute;
+  top: 0;
+  right: calc(50% - var(--circle-width) / 2);
+  transform: rotate(90deg);
+  box-shadow: 4px 0 4px rgba(0, 0, 0, 0.25);
+}
+.circle-dest-add {
+  display: none;
+  transform: rotate(-90deg);
+  top: calc(100% - 100px);
+  right: calc(50% - var(--circle-width) / 2);
+  position: absolute;
+  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.25);
+}
+.wrapper {
+  position: relative;
+}
+.wrapper:hover .dest__list-add {
+  display: flex;
+  margin-top: -120px;
+  padding-bottom: 102px;
+}
+.wrapper:hover .circle-dest {
+  display: none;
+}
+.wrapper:hover .circle-dest-add {
+  display: block;
+}
+.dest__list-add {
+  display: none;
+}
+
+/*footer*/
 .footer {
   background-color: #10367c;
 }
