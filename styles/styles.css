@@ -34,6 +34,9 @@ input {
 p {
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
 ul {
   list-style-type: none;
   padding: 0;
@@ -73,7 +76,7 @@ ul {
   font-size: 24px;
 }
 .links {
-  text-decoration: none;
+  /*text-decoration: none;*/
   color: var(--white);
   position: relative;
 }
@@ -90,7 +93,7 @@ ul {
 }
 .links:hover:after {
   visibility: visible;
-  animation: under-line 0.5s ease-out;
+  animation: under-line 0.5s ease-out 0.3s both;
 }
 @keyframes under-line {
   from {
@@ -131,7 +134,7 @@ ul {
   font-weight: 500;
   font-size: 50px;
   line-height: 59px;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
 }
 
 /*main__search*/
@@ -325,7 +328,8 @@ ul {
   /*margin-right: 0;*/
   z-index: 0.5;
 }
-.homes__item {
+.homes__item,
+.dest__item {
   height: 435px;
   display: flex;
   flex-direction: column;
@@ -333,33 +337,30 @@ ul {
   align-items: center;
 }
 .item-hostel,
-.item-villa,
-.item-appart {
+.item-link {
   position: relative;
 }
 img {
   margin-bottom: 24px;
   width: 100%;
 }
-.homes__text {
-  padding-left: 8px;
+.item__text {
+  /*padding-left: 8px;*/
   width: 100%;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   text-align: start;
-}
-.hostel-name {
   color: #3077c6;
   margin-bottom: 24px;
-  text-decoration: none;
 }
-.hostel-name:hover {
+.item__text:hover {
   color: #7fb3f9;
 }
 .hostel-location {
   color: #bfbfbf;
 }
+
 .circle {
   width: 40px;
   height: 40px;
@@ -374,7 +375,7 @@ img {
   position: absolute;
 }
 .circle-villa,
-.circle-appart {
+.circle-appart, .circle-spain, .circle-norway{
   display: none;
 }
 .arrows {
@@ -389,7 +390,48 @@ img {
   left: calc(50% - var(--arrow-height) / 2);
 }
 
-/*footer*/
+/*destinations*/
+.destinations {
+  background: #e5e5e5;
+}
+.dest__item {
+  height: 296px;
+  position: relative;
+}
+.but__dest {
+  position: absolute;
+  width: 128px;
+  height: 48px;
+  top: calc(50% - 48px / 2);
+  left: calc(50% - 128px / 2);
+  background: var(--white);
+  border: 1px solid #3077c6;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #3077c6;
+  visibility: hidden;
+}
+.dest__item:hover .but__dest{
+  visibility: visible;
+  animation: but 0.5s ease-in 0.3s both;
+}
+@keyframes but {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.dest__item:hover img{
+    filter: brightness(80%);
+    transition: 0.5s ease-in 0.3s;
+}
+
+    /*footer*/
 .footer {
   background-color: #10367c;
 }
@@ -414,7 +456,7 @@ img {
   color: var(--white);
   font-weight: 400;
   font-size: 20px;
-  text-decoration: none;
+  /*text-decoration: none;*/
   line-height: 27px;
   margin-bottom: 20px;
 }
