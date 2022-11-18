@@ -144,7 +144,7 @@
     grid-row: 1;
     display: flex;
     justify-content: space-between;
-    color: #383838;
+    color: var(--black);
     border: none;
     border-radius: 8px;
     position: relative;
@@ -170,7 +170,7 @@
   .date-out-mob {
     width: 49%;
     display: flex;
-    color: #383838;
+    color: var(--black);
     padding-left: 8px;
     padding-top: 6px;
     position: absolute;
@@ -267,6 +267,23 @@
   }
   .destinations-add {
     display: none;
+  }
+  .sing-up__block {
+    padding: 0;
+    margin: 0 50px;
+  }
+  .sing-up__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .sing-up__button {
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .sing-up-cross {
+    width: 20px;
+    height: 20px;
   }
   .footer__text {
     font-size: 18px;
@@ -426,6 +443,54 @@
   .dest__item:nth-child(3) {
     display: none;
   }
+  .icon-sing-up, .sing-up__button {
+      display: none;
+  }
+  .sing-up__block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      height: 106px;
+      padding: 0 10px;
+      margin: 0 auto;
+      background: var(--white);
+  }
+  .sing-up__text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 14px;
+      display: flex;
+      position: static;
+  }
+  .sing-up-cross {
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      position: static;
+  }
+    .sing-up__link {
+        display: flex;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        color: var(--blue);
+    }
+    .sing-up__block-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 64px;
+        height: 64px;
+        background: #3077C6;
+        border-radius: 4px;
+    }
+    .sing-up-logo {
+        width: 53px;
+        height: 11px;
+
+    }
+
   .footer__list {
     display: flex;
     justify-content: center;
@@ -573,6 +638,23 @@
     height: 178px;
     width: 156px;
   }
+    .sing-up__text {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .sing-up-cross {
+        width: 16px;
+        height: 16px;
+    }
+    .sing-up__link {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .sing-up__block-logo {
+        width: 58px;
+        height: 58px;
+    }
   .footer__list {
     gap: 8px;
   }

@@ -11,14 +11,14 @@ input[type="radio"] {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
-  color: #383838;
+  color:var(--black);
 }
 .radio__places {
   padding: 17px 25px;
 }
 input[type="radio"]:checked + .radio-but {
   color: #fff;
-  background: #3077c6;
+  background: var(--blue);
 }
 .dest__button-regions:checked ~ .block__regions {
   display: block;
@@ -46,7 +46,6 @@ input[type="radio"]:checked + .radio-but {
     padding: 10px 20px;
     font-size: 16px;
     margin-bottom: 50px;
-    /*position: absolute;*/
   }
   .radio__places {
     padding: 10px 15px;
@@ -66,6 +65,7 @@ input[type="radio"]:checked + .radio-but {
     display: none;
   }
 }
+
 @media (max-width: 480px) {
   .radio-but {
     padding: 5px 15px;
