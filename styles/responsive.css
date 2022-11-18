@@ -264,6 +264,9 @@
     .dest__item:hover img{
         filter: none;
     }
+    .destinations-add {
+        display: none;
+    }
   .footer__text {
     font-size: 18px;
   }

@@ -25,8 +25,8 @@
   color: #383838;
   margin: 0 auto;
   padding: 120px 100px;
-  max-width: 1440px;
-    height: fit-content;
+  max-width: 1440px;position: relative;
+    /*height: fit-content;*/
 }
 input {
   outline: none;
@@ -407,6 +407,7 @@ img {
 .dest__list {
     /*display: none;*/
   position: relative;
+    padding-bottom: 60px;
 }
 
 .but__dest {
@@ -443,7 +444,55 @@ img {
 }
 
 
+/*destinations--additional*/
+.destinations-add {
+    background: #e5e5e5;
+}
+.container {
+    position: relative;
+}
+.block__regions-add, .block__cities-add, .block__places-add {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.dest__item:hover img{
+    filter: brightness(80%);
+    transition: 0.5s ease-in 0.3s;
+}
+.circle-dest {
+    position: absolute;
+    top: -40%;
+    right: calc(50% - var(--circle-width) / 2);
+    transform: rotate(90deg);
+    box-shadow: 4px 0 4px rgba(0, 0, 0, 0.25);
+}
+.circle-dest-add {
+    display: none;
+    transform: rotate(-90deg);
+    top: 80%;
+    right: calc(50% - var(--circle-width) / 2);
+    position: absolute;
+    box-shadow: -4px 0 4px rgba(0, 0, 0, 0.25);
+}
+.wrapper {
+    position: relative;
+    margin-top: 150px;
+}
+.wrapper:hover .dest__list-add {
+    display: flex;
+    margin-top: -120px;
+    padding-bottom: 102px;
 
+}
+.wrapper:hover .circle-dest {
+    display: none;
+}
+.wrapper:hover .circle-dest-add {
+    display: block;
+}
+.dest__list-add {
+    display: none;
+}
 
 
 /*footer*/
