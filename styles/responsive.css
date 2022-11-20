@@ -71,6 +71,9 @@
   .footer__text {
     font-size: 18px;
   }
+  .footer__text-bottom {
+    font-size: 14px;
+  }
 }
 
 /*for tablets*/
@@ -289,8 +292,8 @@
     width: 20px;
     height: 20px;
   }
-  .footer__text {
-    font-size: 18px;
+  .footer__text-bottom {
+    font-size: 14px;
   }
 }
 
@@ -509,12 +512,16 @@
   }
   .footer__links {
     margin: 0 auto;
+    display: block;
   }
   .footer__text-title {
     display: flex;
     font-size: 15px;
     line-height: 18px;
     text-decoration-line: underline;
+  }
+  .footer__list {
+    margin-bottom: 0;
   }
   .footer__item-bot {
     display: flex;
@@ -524,6 +531,7 @@
     display: flex;
     font-size: 12px;
     margin-bottom: 0;
+    margin-top: 32px;
   }
 }
 
