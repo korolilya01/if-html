@@ -396,25 +396,25 @@
           fill="white"
         />
       </symbol>
-      <symbol id="sing-up-person" viewBox="0 0 33 45">
+      <symbol id="sign-up-person" viewBox="0 0 33 45">
         <path
           d="M28.6518 34.7484C28.6518 32.6923 29.1633 30.7181 30.1248 28.9587C28.7643 28.1915 27.7619 27.6903 27.3425 27.4857C27.2095 27.4243 27.1379 27.2913 27.1379 27.1481V19.0671C28.1506 18.392 28.8257 17.2361 28.8257 15.9268V7.5491C28.8257 3.38584 25.4501 0 21.2766 0H20.3764H19.4763C15.313 0 11.9272 3.37561 11.9272 7.5491V15.9268C11.9272 17.2361 12.6023 18.392 13.615 19.0671V27.1481C13.615 27.2913 13.5331 27.4243 13.4104 27.4857C12.2545 28.0483 6.65917 30.8715 1.473 35.1371C0.531915 35.9043 0 37.0602 0 38.2774V44.016H20.3662H32.9787C32.7025 43.7909 32.4468 43.5454 32.1911 43.2897C29.91 41.0086 28.6518 37.9705 28.6518 34.7484Z"
           fill="#3077C6"
         />
       </symbol>
-      <symbol id="sing-up-plus" viewBox="0 0 19 20">
+      <symbol id="sign-up-plus" viewBox="0 0 19 20">
         <path
           d="M9.73244 0.480652C4.61787 0.480652 0.464844 4.63368 0.464844 9.74825C0.464844 14.8628 4.61787 19.0158 9.73244 19.0158C14.847 19.0158 19 14.8628 19 9.74825C19 4.63368 14.8572 0.480652 9.73244 0.480652ZM15.1539 11.0985H11.0827V15.1697H8.38219V11.0985H4.311V8.398H8.38219V4.32681H11.0827V8.398H15.1539V11.0985Z"
           fill="#3077C6"
         />
       </symbol>
-      <symbol id="sing-up-cross" viewBox="0 0 26 26">
+      <symbol id="sign-up-cross" viewBox="0 0 26 26">
         <path
           d="M26 1.4857L24.5144 0L13 11.5143L1.4857 0L0 1.4857L11.5143 13L0 24.5144L1.4857 26L13 14.4857L24.5144 26L26 24.5144L14.4857 13L26 1.4857Z"
           fill="#BFBFBF"
         />
       </symbol>
-      <symbol id="sing-up-logo" viewBox="0 0 54 12">
+      <symbol id="sign-up-logo" viewBox="0 0 54 12">
         <path
           d="M0.585805 3.60941C0.53214 3.52153 0.482307 3.4017 0.436308 3.24991C0.390309 3.09812 0.36731 2.93835 0.36731 2.77058C0.36731 2.45902 0.432475 2.23533 0.562806 2.09952C0.700803 1.96371 0.877133 1.89581 1.09179 1.89581H6.10569C6.15936 1.98369 6.20919 2.10352 6.25519 2.2553C6.30119 2.40709 6.32419 2.56687 6.32419 2.73463C6.32419 3.0462 6.25519 3.26988 6.11719 3.40569C5.98686 3.5415 5.81437 3.60941 5.5997 3.60941H4.32323V9.14564C4.2389 9.16961 4.10473 9.19357 3.92074 9.21754C3.74441 9.24151 3.56808 9.25349 3.39175 9.25349C3.21542 9.25349 3.05825 9.23751 2.92026 9.20556C2.78993 9.18159 2.67876 9.13366 2.58676 9.06176C2.49477 8.98986 2.42577 8.89 2.37977 8.76218C2.33377 8.63436 2.31077 8.46659 2.31077 8.25889V3.60941H0.585805Z"
           fill="white"
@@ -455,30 +455,35 @@
     </svg>
     <section class="main">
       <div class="container main-wrap">
-        <header class="header">
-          <a href="#">
-            <svg class="icon-logo">
-              <use href="#trip_house" />
-            </svg>
-          </a>
-          <nav class="header__offers">
-            <div class="header__links">
-              <a class="links" href="#">Stays</a>
-              <a class="links" href="#">Attractions</a>
-            </div>
-            <div class="header__items">
-              <svg class="icon-night">
-                <use href="#night" />
+        <input id="radio-but__acc" type="radio" class="radio-but__acc" />
+        <form>
+          <header class="header">
+            <a href="./">
+              <svg class="icon-logo">
+                <use href="#trip_house" />
               </svg>
-              <svg class="icon-account">
-                <use href="#account" />
-              </svg>
-              <svg class="icon-menu">
-                <use href="#menu" />
-              </svg>
-            </div>
-          </nav>
-        </header>
+            </a>
+            <nav class="header__offers">
+              <div class="header__links">
+                <a class="links" href="#">Stays</a>
+                <a class="links" href="#">Attractions</a>
+              </div>
+              <div class="header__items">
+                <svg class="icon-night">
+                  <use href="#night" />
+                </svg>
+                <label for="radio-but__acc">
+                  <svg class="icon-account">
+                    <use href="#account" />
+                  </svg>
+                </label>
+                <svg class="icon-menu">
+                  <use href="#menu" />
+                </svg>
+              </div>
+            </nav>
+          </header>
+        </form>
         <main class="page">
           <h1 class="page__title">
             Discover stays <br />
@@ -554,7 +559,13 @@
                   />
                 </div>
               </div>
-              <button class="page__search-button" type="submit">Search</button>
+              <button
+                class="page__search-button"
+                type="submit"
+                name="page__search-button"
+              >
+                Search
+              </button>
             </div>
           </form>
           <div class="page__apps">
@@ -570,6 +581,20 @@
             </a>
           </div>
         </main>
+        <form action="#" class="account account-block">
+          <p class="account__title">Sign in</p>
+          <label for="email" class="account__email-text">Email address</label>
+          <input id="email" type="email" class="account__email-field" />
+          <label for="password" class="account__password-text">Password</label>
+          <input
+            id="password"
+            type="password"
+            class="account__password-field"
+          />
+          <button type="submit" class="account__button" name="account__button">
+            Sign in
+          </button>
+        </form>
       </div>
     </section>
     <section class="offers">
@@ -1113,30 +1138,31 @@
         </form>
       </div>
     </section>
-    <section class="sing-up">
-      <div class="container sing-up__block">
-        <div class="icon-sing-up">
-          <svg class="sing-up-person">
-            <use href="#sing-up-person" />
+    <section class=sign-up">
+      <div class="container sign-up__block">
+        <div class="icon-sign-up">
+          <svg class="sign-up-person">
+            <use href="#sign-up-person" />
           </svg>
-          <svg class="sing-up-plus">
-            <use href="#sing-up-plus" />
+          <svg class="sign-up-plus">
+            <use href="#sign-up-plus" />
           </svg>
         </div>
-        <svg class="sing-up-cross">
-          <use href="#sing-up-cross" />
+        <svg class="sign-up-cross">
+          <use href="#sign-up-cross" />
         </svg>
-        <div class="sing-up__block-logo">
+        <div class="sign-up__block-logo">
           <a href="#">
-            <svg class="sing-up-logo">
-              <use href="#sing-up-logo" />
+            <svg class="sign-up-logo">
+              <use href="#sign-up-logo" />
             </svg>
           </a>
         </div>
-        <p class="sing-up__text">Sign up and get 20% off your first booking</p>
-        <button type="submit" class="sing-up__button">Sing up</button>
-
-        <a href="#" class="sing-up__link">Install</a>
+        <p class="sign-up__text">Sign up and get 20% off your first booking</p>
+        <button type="submit" class="sign-up__button" name="sign-up__button">
+          Sign up
+        </button>
+        <a href="#" class="sign-up__link">Install</a>
       </div>
     </section>
     <footer class="footer">

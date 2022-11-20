@@ -16,7 +16,7 @@ input[type="radio"] {
   padding: 16px 24px;
 }
 input[type="radio"]:checked + .radio-but {
-  color: #fff;
+  color: var(--white);
   background: var(--blue);
 }
 .dest__button-regions:checked ~ .block__regions {

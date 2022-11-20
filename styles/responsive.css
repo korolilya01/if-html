@@ -68,6 +68,16 @@
   .page-text {
     font-size: 14px;
   }
+  .account {
+    font-size: 20px;
+  }
+  .account__email-text,
+  .account__password-text {
+    font-size: 14px;
+  }
+  .account__button {
+    font-size: 18px;
+  }
   .footer__text {
     font-size: 18px;
   }
@@ -275,20 +285,20 @@
   .destinations-add {
     display: none;
   }
-  .sing-up__block {
+  .sign-up__block {
     padding: 0;
     margin: 0 50px;
   }
-  .sing-up__text {
+  .sign-up__text {
     font-size: 20px;
     line-height: 24px;
   }
-  .sing-up__button {
+  .sign-up__button {
     width: 120px;
     height: 40px;
     font-size: 18px;
   }
-  .sing-up-cross {
+  .sign-up-cross {
     width: 20px;
     height: 20px;
   }
@@ -339,6 +349,23 @@
   }
   .links {
     display: none;
+  }
+  .account {
+    width: 320px;
+    margin: 50px auto;
+  }
+  .account__email-field,
+  .account__password-field {
+    width: 240px;
+  }
+  .account__button {
+    width: 240px;
+  }
+  .footer__text {
+    font-size: 18px;
+  }
+  .footer__text-bottom {
+    font-size: 14px;
   }
   .icon-logo {
     width: 120px;
@@ -454,11 +481,11 @@
   .dest__item:nth-child(3) {
     display: none;
   }
-  .icon-sing-up,
-  .sing-up__button {
+  .icon-sign-up,
+  .sign-up__button {
     display: none;
   }
-  .sing-up__block {
+  .sign-up__block {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -468,40 +495,39 @@
     margin: 0 auto;
     background: var(--white);
   }
-  .sing-up__text {
+  .sign-up__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 14px;
     display: flex;
     position: static;
   }
-  .sing-up-cross {
+  .sign-up-cross {
     width: 18px;
     height: 18px;
     display: inline-block;
     position: static;
   }
-  .sing-up__link {
+  .sign-up__link {
     display: flex;
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
     color: var(--blue);
   }
-  .sing-up__block-logo {
+  .sign-up__block-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 64px;
     height: 64px;
-    background: #3077c6;
+    background: var(--blue);
     border-radius: 4px;
   }
-  .sing-up-logo {
+  .sign-up-logo {
     width: 53px;
     height: 11px;
   }
-
   .footer__list {
     display: flex;
     justify-content: center;
@@ -571,6 +597,23 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+  }
+  .account {
+    font-size: 16px;
+    width: 240px;
+  }
+  .account__email-text,
+  .account__password-text {
+    font-size: 12px;
+  }
+  .account__email-field,
+  .account__password-field {
+    width: 160px;
+  }
+  .account__button {
+    font-size: 16px;
+    width: 160px;
+    margin-bottom: 12px;
   }
   .icon-logo {
     width: 122px;
@@ -654,20 +697,20 @@
     height: 178px;
     width: 156px;
   }
-  .sing-up__text {
+  .sign-up__text {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
   }
-  .sing-up-cross {
+  .sign-up-cross {
     width: 16px;
     height: 16px;
   }
-  .sing-up__link {
+  .sign-up__link {
     font-size: 14px;
     line-height: 16px;
   }
-  .sing-up__block-logo {
+  .sign-up__block-logo {
     width: 58px;
     height: 58px;
   }

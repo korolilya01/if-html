@@ -47,12 +47,14 @@ ul {
   padding: 0;
   margin: 0;
 }
+
 /* main */
 .main {
   background-image: url("../img/castelmezzano.png");
   background-size: cover;
   background-position: 0 25%;
   height: 100%;
+  position: relative;
 }
 
 /*main__header*/
@@ -60,7 +62,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 200px;
 }
 .icon-logo {
   width: 205px;
@@ -114,6 +115,79 @@ ul {
   align-items: center;
   gap: 24px;
   margin-left: 48px;
+  position: relative;
+}
+.radio-but__acc {
+  position: absolute;
+  right: 120px;
+}
+.account__button:active {
+  background: #f5bd41;
+}
+
+/*account*/
+.account {
+  width: 400px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  margin: 177px auto;
+  border: 1px solid #cecece;
+}
+.account-block {
+  display: none;
+}
+.account__title {
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+  color: #000;
+  margin-top: 36px;
+}
+.account__email-text,
+.account__password-text {
+  display: flex;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 8px;
+  margin-left: 40px;
+}
+.account__email-text {
+  margin-top: 40px;
+}
+.account__password-text {
+  margin-top: 16px;
+}
+.account__email-field,
+.account__password-field {
+  width: 320px;
+  height: 41px;
+  background: var(--white);
+  border: 2px solid #cecece;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+.account__button {
+  width: 320px;
+  height: 48px;
+  background: var(--blue);
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--white);
+  margin: 24px auto 36px;
+}
+.radio-but__acc:checked ~ main {
+  display: none;
+}
+.radio-but__acc:checked ~ .account-block {
+  display: flex;
 }
 .icon-night {
   width: 30px;
@@ -122,6 +196,10 @@ ul {
 .icon-account {
   width: 40px;
   height: 40px;
+}
+.icon-account:hover + .abc {
+  fill: #f5bd41;
+  display: flex;
 }
 .icon-menu {
   width: 24px;
@@ -138,6 +216,7 @@ ul {
   font-size: 50px;
   line-height: 59px;
   margin-bottom: 145px;
+  margin-top: 200px;
 }
 
 /*main__search*/
@@ -145,7 +224,7 @@ ul {
   display: flex;
   height: 64px;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: var(--white);
   margin-bottom: 120px;
   position: relative;
 }
@@ -241,6 +320,9 @@ input[type="text"] {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.page__search-button:active {
+  background: #f5bd41;
 }
 
 /*main__apps*/
@@ -482,14 +564,15 @@ img {
   display: none;
 }
 
-/*sing-up*/
-.sing-up__block {
+/*sign -up*/
+
+.sign-up__block {
   background: #eaf0f9;
   padding: 0;
   margin: 0 auto;
   position: relative;
 }
-.icon-sing-up {
+.icon-sign-up {
   width: 86px;
   height: 86px;
   border-radius: 50%;
@@ -498,7 +581,7 @@ img {
   margin: 57px 24px;
   position: relative;
 }
-.sing-up__text {
+.sign-up__text {
   top: 51px;
   left: 134px;
   position: absolute;
@@ -507,7 +590,7 @@ img {
   text-align: center;
   color: var(--black);
 }
-.sing-up__button {
+.sign-up__button {
   width: 128px;
   height: 48px;
   background: var(--white);
@@ -521,34 +604,34 @@ img {
   bottom: 51px;
   left: 134px;
 }
-.sing-up__button:hover {
+.sign-up__button:hover {
   background: var(--blue);
   color: var(--white);
   transition: 0.5s ease 0.1s;
 }
-.sing-up-person {
+.sign-up-person {
   width: 33px;
   height: 45px;
   position: absolute;
   left: 18px;
   top: 21px;
 }
-.sing-up-plus {
+.sign-up-plus {
   width: 20px;
   height: 20px;
   position: absolute;
   left: 50px;
   top: 46px;
 }
-.sing-up-cross {
+.sign-up-cross {
   width: 26px;
   height: 26px;
   position: absolute;
   top: 24px;
   right: 24px;
 }
-.sing-up__link,
-.sing-up__block-logo {
+.sign-up__link,
+.sign-up__block-logo {
   display: none;
 }
 
