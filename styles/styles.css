@@ -201,6 +201,7 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+    outline-color: var(--white);
 }
 .page__search-info {
   grid-column: 9 / span 4;
