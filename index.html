@@ -448,7 +448,7 @@
           fill="white"
         />
         <path
-          d="M51.2177 .g38531C50.7653 9.38531 50.3437 9.3214 49.9527 9.19357C49.5694 9.05777 49.232 8.85805 48.9407 8.59442C48.657 8.33078 48.4309 7.99925 48.2622 7.59981C48.1012 7.20037 48.0207 6.73303 48.0207 6.19778C48.0207 5.67052 48.1012 5.21915 48.2622 4.84368C48.4309 4.46021 48.6494 4.14865 48.9177 3.90899C49.186 3.66133 49.4927 3.48159 49.8377 3.36974C50.1827 3.24991 50.5353 3.18999 50.8957 3.18999C51.302 3.18999 51.67 3.2539 51.9996 3.38173C52.337 3.50955 52.6245 3.6853 52.8621 3.90899C53.1075 4.13267 53.2953 4.4003 53.4256 4.71186C53.5636 5.02342 53.6326 5.36295 53.6326 5.73043C53.6326 6.00205 53.5598 6.20976 53.4141 6.35356C53.2684 6.49736 53.0653 6.58923 52.8046 6.62917L49.9642 7.07255C50.0485 7.33618 50.221 7.5359 50.4817 7.67171C50.7423 7.79953 51.0413 7.86344 51.3787 7.86344C51.693 7.86344 51.9881 7.8235 52.2641 7.74361C52.5478 7.65573 52.7778 7.55587 52.9541 7.44403C53.0768 7.52392 53.1803 7.63576 53.2646 7.77956C53.3489 7.92336 53.3911 8.07514 53.3911 8.23492C53.3911 8.59442 53.2301 8.86204 52.9081 9.03779C52.6628 9.1736 52.3868 9.26547 52.0801 9.31341C51.7735 9.36134 51.486 9.38531 51.2177 9.38531ZM50.8957 4.67591C50.7117 4.67591 50.5507 4.70787 50.4127 4.77178C50.2823 4.83569 50.175 4.91957 50.0907 5.02342C50.0064 5.11929 49.9412 5.23113 49.8952 5.35895C49.8568 5.47878 49.8339 5.60261 49.8262 5.73043L51.7926 5.3949C51.7696 5.23513 51.6853 5.07535 51.5396 4.91557C51.394 4.7558 51.1793 4.67591 50.8957 4.67591Z"
+          d="M51.2177 9.38531C50.7653 9.38531 50.3437 9.3214 49.9527 9.19357C49.5694 9.05777 49.232 8.85805 48.9407 8.59442C48.657 8.33078 48.4309 7.99925 48.2622 7.59981C48.1012 7.20037 48.0207 6.73303 48.0207 6.19778C48.0207 5.67052 48.1012 5.21915 48.2622 4.84368C48.4309 4.46021 48.6494 4.14865 48.9177 3.90899C49.186 3.66133 49.4927 3.48159 49.8377 3.36974C50.1827 3.24991 50.5353 3.18999 50.8957 3.18999C51.302 3.18999 51.67 3.2539 51.9996 3.38173C52.337 3.50955 52.6245 3.6853 52.8621 3.90899C53.1075 4.13267 53.2953 4.4003 53.4256 4.71186C53.5636 5.02342 53.6326 5.36295 53.6326 5.73043C53.6326 6.00205 53.5598 6.20976 53.4141 6.35356C53.2684 6.49736 53.0653 6.58923 52.8046 6.62917L49.9642 7.07255C50.0485 7.33618 50.221 7.5359 50.4817 7.67171C50.7423 7.79953 51.0413 7.86344 51.3787 7.86344C51.693 7.86344 51.9881 7.8235 52.2641 7.74361C52.5478 7.65573 52.7778 7.55587 52.9541 7.44403C53.0768 7.52392 53.1803 7.63576 53.2646 7.77956C53.3489 7.92336 53.3911 8.07514 53.3911 8.23492C53.3911 8.59442 53.2301 8.86204 52.9081 9.03779C52.6628 9.1736 52.3868 9.26547 52.0801 9.31341C51.7735 9.36134 51.486 9.38531 51.2177 9.38531ZM50.8957 4.67591C50.7117 4.67591 50.5507 4.70787 50.4127 4.77178C50.2823 4.83569 50.175 4.91957 50.0907 5.02342C50.0064 5.11929 49.9412 5.23113 49.8952 5.35895C49.8568 5.47878 49.8339 5.60261 49.8262 5.73043L51.7926 5.3949C51.7696 5.23513 51.6853 5.07535 51.5396 4.91557C51.394 4.7558 51.1793 4.67591 50.8957 4.67591Z"
           fill="white"
         />
       </symbol>
@@ -456,9 +456,11 @@
     <section class="main">
       <div class="container main-wrap">
         <header class="header">
-          <svg class="icon-logo">
-            <use href="#trip_house" />
-          </svg>
+          <a href="#">
+            <svg class="icon-logo">
+              <use href="#trip_house" />
+            </svg>
+          </a>
           <nav class="header__offers">
             <div class="header__links">
               <a class="links" href="#">Stays</a>
@@ -556,12 +558,16 @@
             </div>
           </form>
           <div class="page__apps">
-            <svg class="icon-google_play">
-              <use href="#google_play" />
-            </svg>
-            <svg class="icon-app_store">
-              <use href="#app_store" />
-            </svg>
+            <a href="#">
+              <svg class="icon-google_play">
+                <use href="#google_play" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="icon-app_store">
+                <use href="#app_store" />
+              </svg>
+            </a>
           </div>
         </main>
       </div>
@@ -569,54 +575,54 @@
     <section class="offers">
       <div class="container">
         <h2 class="title offers__title">What do we offer</h2>
-        <ul class="list offers__list">
-          <li class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+        <div class="list offers__list">
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
             <div class="offers__item">
               <svg class="offers__icon icon-support">
                 <use href="#support" />
               </svg>
               <p class="offers__description">Support 24/7</p>
             </div>
-          </li>
-          <li class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
             <div class="offers__item">
               <svg class="offers__icon icon-communicate">
                 <use href="#communicate" />
               </svg>
               <p class="offers__description">Communicate directly</p>
             </div>
-          </li>
-          <li class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
             <div class="offers__item">
               <svg class="offers__icon icon-devices">
                 <use href="#devices" />
               </svg>
               <p class="offers__description">Book online</p>
             </div>
-          </li>
-          <li class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
             <div class="offers__item">
               <svg class="offers__icon icon-like">
                 <use href="#like" />
               </svg>
               <p class="offers__description">Real guest reviews</p>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
     <section class="homes">
       <div class="container">
         <h2 class="title">Homes guests loves</h2>
-        <ul class="list homes__list">
-          <li class="homes__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+        <div class="list homes__list">
+          <div class="homes__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
             <div>
               <img src="./img/hotel_leopold.png" alt="Hotel Leopold" />
             </div>
             <a class="item__text" href="#">Hotel Leopold</a>
             <p class="item__text hostel-location">Saint Petersburg, Russia</p>
-          </li>
-          <li class="homes__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+          </div>
+          <div class="homes__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
             <div class="item-hostel">
               <img
                 src="./img/apartment_sunshine.png"
@@ -630,8 +636,8 @@
             <p class="item__text hostel-location">
               Santa Cruz de Tenerife, Spain
             </p>
-          </li>
-          <li class="homes__item col-lg-3 col-md-2">
+          </div>
+          <div class="homes__item col-lg-3 col-md-2">
             <div class="item-hostel">
               <img src="./img/villa_kunerad.png" alt="Villa Kunerad" />
               <div class="circle circle-villa">
@@ -640,8 +646,8 @@
             </div>
             <a class="item__text" href="#">Villa Kunerad</a>
             <p class="item__text hostel-location">Vysokie Tatry, Slowakia</p>
-          </li>
-          <li class="homes__item col-lg-3">
+          </div>
+          <div class="homes__item col-lg-3">
             <div class="item-hostel">
               <img src="./img/hostel_friendship.png" alt="Hostel Friendship" />
               <div class="circle circle-hostel">
@@ -650,8 +656,8 @@
             </div>
             <a class="item__text" href="#">Hostel Friendship</a>
             <p class="item__text hostel-location">Berlin, Germany</p>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
     <section class="destinations">
@@ -685,8 +691,8 @@
 
           <!-- block regions -->
           <div class="block__regions">
-            <ul class="list dest__list">
-              <li class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+            <div class="list dest__list">
+              <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
                 <div class="item-link">
                   <a href="#"
                     ><img src="./img/maldives.png" alt="Maldives" /><button
@@ -698,8 +704,8 @@
                   >
                 </div>
                 <a class="item__text" href="#">Maldives</a>
-              </li>
-              <li class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+              </div>
+              <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
                 <div class="item-link item-norway">
                   <a href="#"
                     ><img src="./img/spain.png" alt="Spain" /><button
@@ -714,8 +720,8 @@
                   </div>
                 </div>
                 <a class="item__text" href="#">Spain</a>
-              </li>
-              <li class="dest__item col-lg-3 col-md-2">
+              </div>
+              <div class="dest__item col-lg-3 col-md-2">
                 <div class="item-link item-spain">
                   <a href="#"
                     ><img src="./img/norway.png" alt="Norway" /><button
@@ -730,8 +736,8 @@
                   </div>
                 </div>
                 <a class="item__text" href="#">Norway</a>
-              </li>
-              <li class="dest__item col-lg-3">
+              </div>
+              <div class="dest__item col-lg-3">
                 <div class="item-link">
                   <a href="#"
                     ><img src="./img/island.png" alt="Island" /><button
@@ -743,16 +749,16 @@
                   >
                 </div>
                 <a class="item__text" href="#">Island</a>
-              </li>
-            </ul>
+              </div>
+            </div>
             <div class="destinations-add">
               <div class="wrapper">
                 <div class="circle circle-dest">
                   <div class="arrows"></div>
                 </div>
                 <div class="block__regions-add">
-                  <ul class="list dest__list-add">
-                    <li class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+                  <div class="list dest__list-add">
+                    <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
                       <div class="item-link">
                         <a href="#"
                           ><img src="./img/japan.png" alt="Japan" /><button
@@ -764,8 +770,8 @@
                         >
                       </div>
                       <a class="item__text" href="#">Japan</a>
-                    </li>
-                    <li class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+                    </div>
+                    <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
                       <div class="item-link item-norway">
                         <a href="#"
                           ><img src="./img/france.png" alt="France" /><button
@@ -780,8 +786,8 @@
                         </div>
                       </div>
                       <a class="item__text" href="#">France</a>
-                    </li>
-                    <li class="dest__item col-lg-3 col-md-2">
+                    </div>
+                    <div class="dest__item col-lg-3 col-md-2">
                       <div class="item-link item-spain">
                         <a href="#"
                           ><img
@@ -796,8 +802,8 @@
                         </div>
                       </div>
                       <a class="item__text" href="#">Scotland</a>
-                    </li>
-                    <li class="dest__item col-lg-3">
+                    </div>
+                    <div class="dest__item col-lg-3">
                       <div class="item-link">
                         <a href="#"
                           ><img src="./img/russia.png" alt="Russia" /><button
@@ -809,19 +815,19 @@
                         >
                       </div>
                       <a class="item__text" href="#">Russia</a>
-                    </li>
+                    </div>
                     <div class="circle circle-dest-add">
                       <div class="arrows"></div>
                     </div>
-                  </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- block cities -->
           <div class="block__cities">
-            <ul class="list dest__list">
-              <li class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+            <div class="list dest__list">
+              <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
                 <div class="item-link">
                   <a href="#"
                     ><img src="./img/berlin.png" alt="Berlin" /><button
@@ -833,8 +839,8 @@
                   >
                 </div>
                 <a class="item__text" href="#">Berlin, Germany</a>
-              </li>
-              <li class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+              </div>
+              <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
                 <div class="item-link item-norway">
                   <a href="#"
                     ><img src="./img/paris.png" alt="Paris" /><button
@@ -849,8 +855,8 @@
                   </div>
                 </div>
                 <a class="item__text" href="#">Paris, France</a>
-              </li>
-              <li class="dest__item col-lg-3 col-md-2">
+              </div>
+              <div class="dest__item col-lg-3 col-md-2">
                 <div class="item-link item-spain">
                   <a href="#"
                     ><img src="./img/budapest.png" alt="Budapest" /><button
@@ -865,8 +871,8 @@
                   </div>
                 </div>
                 <a class="item__text" href="#">Budapest, Hungary</a>
-              </li>
-              <li class="dest__item col-lg-3">
+              </div>
+              <div class="dest__item col-lg-3">
                 <div class="item-link">
                   <a href="#"
                     ><img src="./img/london.png" alt="London" /><button
@@ -878,19 +884,19 @@
                   >
                 </div>
                 <a class="item__text" href="#">London, United Kingdom</a>
-              </li>
+              </div>
               <div class="circle circle-dest-add">
                 <div class="arrows"></div>
               </div>
-            </ul>
+            </div>
             <div class="destinations-add">
               <div class="wrapper">
                 <div class="circle circle-dest">
                   <div class="arrows"></div>
                 </div>
                 <div class="block__cities-add">
-                  <ul class="list dest__list-add">
-                    <li class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+                  <div class="list dest__list-add">
+                    <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
                       <div class="item-link">
                         <a href="#"
                           ><img
@@ -902,8 +908,8 @@
                         >
                       </div>
                       <a class="item__text" href="#">Barcelona, Spain</a>
-                    </li>
-                    <li class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+                    </div>
+                    <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
                       <div class="item-link item-norway">
                         <a href="#"
                           ><img src="./img/tbilisi.png" alt="Tbilisi" /><button
@@ -918,8 +924,8 @@
                         </div>
                       </div>
                       <a class="item__text" href="#">Tbilisi, Georgia</a>
-                    </li>
-                    <li class="dest__item col-lg-3 col-md-2">
+                    </div>
+                    <div class="dest__item col-lg-3 col-md-2">
                       <div class="item-link item-spain">
                         <a href="#"
                           ><img src="./img/moscow.png" alt="Moscow" /><button
@@ -934,8 +940,8 @@
                         </div>
                       </div>
                       <a class="item__text" href="#">Moscow, Russia </a>
-                    </li>
-                    <li class="dest__item col-lg-3">
+                    </div>
+                    <div class="dest__item col-lg-3">
                       <div class="item-link">
                         <a href="#"
                           ><img
@@ -947,19 +953,19 @@
                         >
                       </div>
                       <a class="item__text" href="#">Amsterdam, Netherlands</a>
-                    </li>
+                    </div>
                     <div class="circle circle-dest-add">
                       <div class="arrows"></div>
                     </div>
-                  </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- block places-->
           <div class="block__places">
-            <ul class="list dest__list">
-              <li class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+            <div class="list dest__list">
+              <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
                 <div class="item-link">
                   <a href="#"
                     ><img
@@ -973,8 +979,8 @@
                 <a class="item__text" href="#"
                   >Edinburgh Castle, Edinburgh, United Kingdom</a
                 >
-              </li>
-              <li class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+              </div>
+              <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
                 <div class="item-link item-norway">
                   <a href="#"
                     ><img
@@ -991,8 +997,8 @@
                 <a class="item__text" href="#"
                   >Neuschwanstein, Fussen, Germany</a
                 >
-              </li>
-              <li class="dest__item col-lg-3 col-md-2">
+              </div>
+              <div class="dest__item col-lg-3 col-md-2">
                 <div class="item-link item-spain">
                   <a href="#"
                     ><img src="./img/big_ban.png" alt="Big Ban" /><button
@@ -1009,8 +1015,8 @@
                 <a class="item__text" href="#"
                   >Big Ben, London, United Kingdom</a
                 >
-              </li>
-              <li class="dest__item col-lg-3">
+              </div>
+              <div class="dest__item col-lg-3">
                 <div class="item-link">
                   <a href="#"
                     ><img src="./img/colosseum.png" alt="Colosseum" /><button
@@ -1022,19 +1028,19 @@
                   >
                 </div>
                 <a class="item__text" href="#">Colosseum, Roma, Italy</a>
-              </li>
+              </div>
               <div class="circle circle-dest-add">
                 <div class="arrows"></div>
               </div>
-            </ul>
+            </div>
             <div class="destinations-add">
               <div class="wrapper">
                 <div class="circle circle-dest">
                   <div class="arrows"></div>
                 </div>
                 <div class="block__places-add">
-                  <ul class="list dest__list-add">
-                    <li class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+                  <div class="list dest__list-add">
+                    <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
                       <div class="item-link">
                         <a href="#"
                           ><img
@@ -1048,8 +1054,8 @@
                       <a class="item__text" href="#"
                         >Matterhorn, Zermatt, Switzerland</a
                       >
-                    </li>
-                    <li class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+                    </div>
+                    <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
                       <div class="item-link item-norway">
                         <a href="#"
                           ><img
@@ -1064,8 +1070,8 @@
                         </div>
                       </div>
                       <a class="item__text" href="#">Morskie Oko, Poland</a>
-                    </li>
-                    <li class="dest__item col-lg-3 col-md-2">
+                    </div>
+                    <div class="dest__item col-lg-3 col-md-2">
                       <div class="item-link item-spain">
                         <a href="#"
                           ><img src="./img/krka.png" alt="Krka" /><button
@@ -1080,8 +1086,8 @@
                         </div>
                       </div>
                       <a class="item__text" href="#">Krka, Croatia</a>
-                    </li>
-                    <li class="dest__item col-lg-3">
+                    </div>
+                    <div class="dest__item col-lg-3">
                       <div class="item-link">
                         <a href="#"
                           ><img
@@ -1095,11 +1101,11 @@
                       <a class="item__text" href="#"
                         >Cabo da roca, Sintra, Portugal</a
                       >
-                    </li>
+                    </div>
                     <div class="circle circle-dest-add">
                       <div class="arrows"></div>
                     </div>
-                  </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1138,8 +1144,8 @@
         <svg class="footer__icon icon-trip_house_mobile">
           <use href="#trip_house_mobile" />
         </svg>
-        <ul class="footer__list">
-          <li class="col-lg-3 col-md-3 col-sm-1 col-xs-1">
+        <div class="footer__list">
+          <div class="col-lg-3 col-md-3 col-sm-1 col-xs-1">
             <div class="footer__links">
               <a class="footer__text-title footer__text" href="#">About</a>
               <a class="footer__text" href="#">How Triphouse works</a>
@@ -1147,8 +1153,8 @@
               <a class="footer__text" href="#">Privacy</a>
               <a class="footer__text" href="#">Terms</a>
             </div>
-          </li>
-          <li class="col-lg-3 col-md-3 col-sm-2 col-xs-2">
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2">
             <div class="footer__links">
               <a class="footer__text footer__text-title" href="#"
                 >Property types</a
@@ -1160,15 +1166,15 @@
               <a class="footer__text" href="#">Holiday homes</a>
               <a class="footer__text" href="#">Hostels</a>
             </div>
-          </li>
-          <li class="col-lg-3 col-md-3 col-sm-1 col-xs-1">
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-1 col-xs-1">
             <div class="footer__links">
               <a class="footer__text footer__text-title" href="#">Support</a>
               <a class="footer__text" href="#">Contact Customer Service</a>
               <a class="footer__text" href="#">FAQ</a>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
           <div class="footer__item-bot">
             <p class="footer__text footer__text-bottom">
