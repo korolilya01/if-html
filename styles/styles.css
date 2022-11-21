@@ -320,6 +320,7 @@ input[type="text"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 0;
 }
 .page__search-button:active {
   background: #f5bd41;
