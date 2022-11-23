@@ -78,6 +78,15 @@
   .account__button {
     font-size: 18px;
   }
+
+  .reviews__mark-text,
+  .reviews__text {
+    font-size: 16px;
+  }
+  .reviews__score {
+    font-size: 12px;
+  }
+
   .footer__text {
     font-size: 18px;
   }
@@ -254,11 +263,9 @@
   .homes__item:nth-child(4) {
     display: none;
   }
-  img {
-    margin-bottom: 10px;
-  }
   .item__text {
     font-size: 18px;
+    margin-top: 0;
     margin-bottom: 8px;
   }
   .circle {
@@ -284,6 +291,17 @@
   }
   .destinations-add {
     display: none;
+  }
+  .reviews__item:last-child {
+    display: none;
+  }
+  .reviews__mark-text,
+  .reviews__text {
+    font-size: 14px;
+  }
+  .icon-reviews__commit {
+    width: 48px;
+    height: 48px;
   }
   .sign-up__block {
     padding: 0;
@@ -467,7 +485,6 @@
   .item__text {
     font-size: 16px;
     line-height: 14px;
-    margin-bottom: 8px;
   }
   .circle {
     width: 32px;
@@ -480,6 +497,32 @@
   }
   .dest__item:nth-child(3) {
     display: none;
+  }
+  .reviews-wrap {
+    background: #eaf0f9;
+  }
+  .reviews__decor {
+    visibility: hidden;
+  }
+  .reviews__commit {
+    margin: 24px 5px;
+  }
+  .reviews__block-info {
+    margin: 0;
+  }
+  .reviews__item:nth-child(2) {
+    display: none;
+  }
+  .reviews__mark {
+    width: 39px;
+    height: 26px;
+  }
+  .reviews__score {
+    font-size: 10px;
+  }
+  .reviews__text {
+    bottom: 12px;
+    margin: 0;
   }
   .icon-sign-up,
   .sign-up__button {
@@ -691,11 +734,35 @@
   }
   .item__text {
     font-size: 12px;
-    margin-bottom: 4px;
   }
   .dest__item {
     height: 178px;
     width: 156px;
+  }
+  .reviews__item {
+    height: 627px;
+  }
+  .reviews__block-info {
+    margin: 0 0 12px;
+  }
+  .reviews__commit {
+    margin: 0 0 24px;
+  }
+  .reviews__text-indent {
+    margin: 0;
+    padding-bottom: 80px;
+  }
+  .reviews__mark-text,
+  .reviews__text {
+    font-size: 15px;
+    padding: 0;
+  }
+  .reviews__score {
+    font-size: 12px;
+  }
+  .icon-reviews__commit {
+    width: 43px;
+    height: 43px;
   }
   .sign-up__text {
     font-weight: 400;

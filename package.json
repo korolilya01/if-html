@@ -1,13 +1,13 @@
 {
   "name": "dev",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "hotels booking website",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ilya Korol",
   "license": "ISC",
   "devDependencies": {
     "prettier": "2.7.1"
