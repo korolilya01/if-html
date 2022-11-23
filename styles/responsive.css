@@ -68,8 +68,21 @@
   .page-text {
     font-size: 14px;
   }
+  .account {
+    font-size: 20px;
+  }
+  .account__email-text,
+  .account__password-text {
+    font-size: 14px;
+  }
+  .account__button {
+    font-size: 18px;
+  }
   .footer__text {
     font-size: 18px;
+  }
+  .footer__text-bottom {
+    font-size: 14px;
   }
 }
 
@@ -138,17 +151,19 @@
     padding-left: 36px;
     border-radius: 4px;
     border: 0;
+    width: auto;
   }
   .page__search-date {
     grid-column: 7 / span 4;
     grid-row: 1;
     display: flex;
     justify-content: space-between;
-    color: #383838;
+    color: var(--black);
     border: none;
     border-radius: 8px;
     position: relative;
     z-index: 0.5;
+    width: auto;
   }
   .date-in,
   .date-out {
@@ -170,7 +185,7 @@
   .date-out-mob {
     width: 49%;
     display: flex;
-    color: #383838;
+    color: var(--black);
     padding-left: 8px;
     padding-top: 6px;
     position: absolute;
@@ -184,11 +199,13 @@
     grid-row: 2;
     border-radius: 4px;
     border: 0;
+    width: auto;
   }
   .page__search-button {
     grid-column: 7 / span 4;
     grid-row: 2;
     border-radius: 4px;
+    width: auto;
   }
   .header__items {
     display: flex;
@@ -207,6 +224,11 @@
     font-size: 36px;
     margin-bottom: 70px;
   }
+  .list {
+    margin: 0;
+    flex-wrap: wrap;
+    font-size: 20px;
+  }
   .offers__list {
     gap: 10px;
   }
@@ -216,21 +238,18 @@
   .offers__description {
     font-size: 18px;
   }
-  .list {
-    margin: 0;
-  }
-  .offers__list {
-    margin-bottom: 0;
-    font-size: 20px;
-  }
-  .offers__list {
-    margin-bottom: 0;
-  }
   .offers__item {
     height: 150px;
   }
-  .homes__item {
+  .homes__list,
+  .dest__list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .homes__item,
+  .dest__item {
     height: 280px;
+    width: 202px;
   }
   .homes__item:nth-child(4) {
     display: none;
@@ -238,23 +257,53 @@
   img {
     margin-bottom: 10px;
   }
-  .homes__text {
+  .item__text {
     font-size: 18px;
     margin-bottom: 8px;
-  }
-  .item-third {
-    position: relative;
   }
   .circle {
     width: 36px;
     height: 36px;
   }
-  .circle-villa {
+  .circle-villa,
+  .circle-norway {
     display: inline-block;
     position: absolute;
   }
-  .footer__text {
+  .dest__list {
+    padding-bottom: 0;
+  }
+  .dest__item:nth-child(4) {
+    display: none;
+  }
+  .but__dest {
+    display: none;
+  }
+  .dest__item:hover img {
+    filter: none;
+  }
+  .destinations-add {
+    display: none;
+  }
+  .sign-up__block {
+    padding: 0;
+    margin: 0 50px;
+  }
+  .sign-up__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .sign-up__button {
+    width: 120px;
+    height: 40px;
     font-size: 18px;
+  }
+  .sign-up-cross {
+    width: 20px;
+    height: 20px;
+  }
+  .footer__text-bottom {
+    font-size: 14px;
   }
 }
 
@@ -301,6 +350,23 @@
   .links {
     display: none;
   }
+  .account {
+    width: 320px;
+    margin: 50px auto;
+  }
+  .account__email-field,
+  .account__password-field {
+    width: 240px;
+  }
+  .account__button {
+    width: 240px;
+  }
+  .footer__text {
+    font-size: 18px;
+  }
+  .footer__text-bottom {
+    font-size: 14px;
+  }
   .icon-logo {
     width: 120px;
     height: 30px;
@@ -320,6 +386,10 @@
   }
   .icon-search {
     top: -207px;
+  }
+  input[type="text"],
+  input[type="date"] {
+    font-size: 15px;
   }
   .page__search-city {
     grid-column: 1 / span 8;
@@ -362,8 +432,9 @@
     font-size: 32px;
     margin-bottom: 32px;
   }
-  .offers__title {
-    margin-top: -8px;
+  .offers__list {
+    display: flex;
+    flex-wrap: wrap;
   }
   .offers__icon {
     width: 60px;
@@ -382,24 +453,80 @@
   img {
     margin-bottom: 8px;
   }
+  .homes__item,
+  .dest__item {
+    height: 217px;
+    width: 217px;
+  }
   .homes__item:nth-child(3) {
     display: none;
   }
-  .homes__text {
+  .list {
+    margin: 40px auto;
+  }
+  .item__text {
     font-size: 16px;
     line-height: 14px;
     margin-bottom: 8px;
-  }
-  .item-second {
-    position: relative;
   }
   .circle {
     width: 32px;
     height: 32px;
   }
-  .circle-appart {
+  .circle-appart,
+  .circle-spain {
     position: absolute;
     display: inline-block;
+  }
+  .dest__item:nth-child(3) {
+    display: none;
+  }
+  .icon-sign-up,
+  .sign-up__button {
+    display: none;
+  }
+  .sign-up__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    height: 106px;
+    padding: 0 10px;
+    margin: 0 auto;
+    background: var(--white);
+  }
+  .sign-up__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    display: flex;
+    position: static;
+  }
+  .sign-up-cross {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: static;
+  }
+  .sign-up__link {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--blue);
+  }
+  .sign-up__block-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background: var(--blue);
+    border-radius: 4px;
+  }
+  .sign-up-logo {
+    width: 53px;
+    height: 11px;
   }
   .footer__list {
     display: flex;
@@ -411,12 +538,16 @@
   }
   .footer__links {
     margin: 0 auto;
+    display: block;
   }
   .footer__text-title {
     display: flex;
     font-size: 15px;
     line-height: 18px;
     text-decoration-line: underline;
+  }
+  .footer__list {
+    margin-bottom: 0;
   }
   .footer__item-bot {
     display: flex;
@@ -426,6 +557,7 @@
     display: flex;
     font-size: 12px;
     margin-bottom: 0;
+    margin-top: 32px;
   }
 }
 
@@ -457,7 +589,7 @@
   }
   .container {
     width: 95%;
-    padding: 60px 0;
+    padding: 40px 0;
   }
   .header {
     width: 100%;
@@ -465,6 +597,23 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+  }
+  .account {
+    font-size: 16px;
+    width: 240px;
+  }
+  .account__email-text,
+  .account__password-text {
+    font-size: 12px;
+  }
+  .account__email-field,
+  .account__password-field {
+    width: 160px;
+  }
+  .account__button {
+    font-size: 16px;
+    width: 160px;
+    margin-bottom: 12px;
   }
   .icon-logo {
     width: 122px;
@@ -520,9 +669,12 @@
     grid-column: 1 / span 6;
     grid-row: 4;
   }
-  .offers__title {
+  .title {
     font-size: 28px;
     margin-bottom: 32px;
+  }
+  .list {
+    margin-bottom: 0;
   }
   .offers__icon {
     width: 55px;
@@ -536,11 +688,31 @@
   .homes__item {
     height: 209px;
     width: 156px;
-    margin-bottom: 40px;
   }
-  .homes__text {
+  .item__text {
     font-size: 12px;
     margin-bottom: 4px;
+  }
+  .dest__item {
+    height: 178px;
+    width: 156px;
+  }
+  .sign-up__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .sign-up-cross {
+    width: 16px;
+    height: 16px;
+  }
+  .sign-up__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .sign-up__block-logo {
+    width: 58px;
+    height: 58px;
   }
   .footer__list {
     gap: 8px;
