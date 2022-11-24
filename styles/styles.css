@@ -477,7 +477,7 @@ img {
 }
 .dest__list {
   position: relative;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   margin-top: 64px;
 }
 .but__dest {
@@ -519,8 +519,7 @@ img {
 .block__regions-add,
 .block__cities-add,
 .block__places-add {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 .dest__item:hover img {
   filter: brightness(80%);
@@ -536,7 +535,7 @@ img {
 .circle-dest-add {
   display: none;
   transform: rotate(-90deg);
-  top: 80%;
+  top: 90%;
   right: calc(50% - var(--circle-width) / 2);
   position: absolute;
   box-shadow: -4px 0 4px rgba(0, 0, 0, 0.25);
@@ -547,7 +546,7 @@ img {
 }
 .wrapper:hover .dest__list-add {
   display: flex;
-  margin-top: -120px;
+  margin-top: -60px;
   padding-bottom: 102px;
 }
 .wrapper:hover .circle-dest {
@@ -645,8 +644,7 @@ img {
 }
 .reviews__commit {
   position: relative;
-  margin-left: 24px;
-  margin-bottom: 24px;
+  margin: 0 24px 24px;
 }
 .icon-reviews__commit {
   width: 53px;
@@ -664,6 +662,8 @@ img {
   position: absolute;
   color: #bfbfbf;
   top: 36px;
+  display: flex;
+  gap: 4px;
 }
 .reviews__text-indent {
   margin: 0 24px;
@@ -671,6 +671,23 @@ img {
 .icon-flag {
   width: 16px;
   height: 20px;
+}
+.dots {
+  height: 8px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.item-dots {
+  display: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--black);
+}
+.item-dots:first-child {
+  background: #383838;
 }
 
 /*sign -up*/
@@ -755,7 +772,6 @@ img {
 .footer__list {
   display: flex;
   gap: 110px;
-  /*margin-bottom: 40px;*/
 }
 .footer__links {
   max-width: fit-content;
