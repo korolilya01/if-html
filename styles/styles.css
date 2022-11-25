@@ -366,7 +366,6 @@ input[type="text"] {
   justify-content: center;
   align-items: center;
   margin-top: 104px;
-  gap: 16px;
 }
 .offers__item {
   height: 176px;
@@ -409,6 +408,7 @@ input[type="text"] {
 .homes__list {
   display: flex;
   z-index: 0.5;
+  min-width: 0;
 }
 .homes__item,
 .dest__item {
@@ -445,10 +445,12 @@ img {
   height: 40px;
   border-radius: 50%;
   background: #f3f3f4;
-  right: -20px;
+  right: 0;
   z-index: 1;
   top: calc(50% - var(--circle-height) / 2);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.swiper-button-next {
 }
 .circle-hostel {
   position: absolute;
@@ -479,6 +481,7 @@ img {
   position: relative;
   padding-bottom: 30px;
   margin-top: 64px;
+  gap: 8px;
 }
 .but__dest {
   position: absolute;
@@ -570,9 +573,15 @@ img {
   display: flex;
   flex-direction: column;
   height: 760px;
+  /*width: 300px;*/
+  min-width: 0;
   background: #eaf0f9;
 }
-
+.reviews__list {
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: 0;
+}
 /*top*/
 .reviews__block-top {
   position: relative;
@@ -796,4 +805,16 @@ img {
 .footer__text-bottom {
   font-size: 14px;
   margin-top: 64px;
+}
+
+/*swiper-slider*/
+.swiper-container {
+  overflow: hidden;
+}
+.swiper-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.swiper-slide {
+  padding: 0 4px;
 }

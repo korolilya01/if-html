@@ -78,6 +78,11 @@
   .account__button {
     font-size: 18px;
   }
+  .item__text {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
   .wrapper {
     margin-top: 50px;
   }
@@ -239,11 +244,11 @@
   }
   .list {
     margin: 0;
-    flex-wrap: wrap;
     font-size: 20px;
   }
   .offers__list {
     gap: 10px;
+    flex-wrap: wrap;
   }
   .offers__icon {
     width: 65px;
@@ -258,19 +263,6 @@
   .dest__list {
     display: flex;
     flex-wrap: nowrap;
-  }
-  .homes__item,
-  .dest__item {
-    height: 280px;
-    width: 202px;
-  }
-  .homes__item:nth-child(4) {
-    display: none;
-  }
-  .item__text {
-    font-size: 18px;
-    margin-top: 0;
-    margin-bottom: 8px;
   }
   .circle {
     width: 36px;
@@ -294,9 +286,6 @@
     filter: none;
   }
   .destinations-add {
-    display: none;
-  }
-  .reviews__item:last-child {
     display: none;
   }
   .reviews__mark-text,
@@ -484,14 +473,6 @@
   img {
     margin-bottom: 8px;
   }
-  .homes__item,
-  .dest__item {
-    height: 217px;
-    width: 217px;
-  }
-  .homes__item:nth-child(3) {
-    display: none;
-  }
   .list {
     margin: 40px auto;
   }
@@ -514,9 +495,6 @@
   .reviews-wrap {
     background: #eaf0f9;
   }
-  .reviews__item {
-    height: 640px;
-  }
   .reviews__decor {
     visibility: hidden;
   }
@@ -525,9 +503,6 @@
   }
   .reviews__block-info {
     margin: 0;
-  }
-  .reviews__item:nth-child(2) {
-    display: none;
   }
   .reviews__mark {
     width: 39px;
@@ -753,9 +728,6 @@
   .dest__item {
     height: 178px;
     width: 156px;
-  }
-  .reviews__item {
-    height: 627px;
   }
   .reviews__text-name,
   .reviews__text-location {

@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
     <link rel="stylesheet" href="./styles/radio_button.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -675,49 +679,130 @@
     <section class="homes">
       <div class="container">
         <h2 class="title">Homes guests loves</h2>
-        <div class="list homes__list">
-          <div class="homes__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
-            <div>
-              <img src="./img/hotel_leopold.png" alt="Hotel Leopold" />
-            </div>
-            <a class="item__text" href="#">Hotel Leopold</a>
-            <p class="item__text hostel-location">Saint Petersburg, Russia</p>
-          </div>
-          <div class="homes__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
-            <div class="item-hostel">
-              <img
-                src="./img/apartment_sunshine.png"
-                alt="Apartment Sunshine"
-              />
-              <div class="circle circle-appart">
-                <div class="arrows"></div>
+        <div class="swiper-container" id="swiper-homes">
+          <div class="list homes__list swiper-wrapper">
+            <div class="swiper-slide col-lg-3 col-md-2 col-sm-2 col-xs-3">
+              <div class="homes__item">
+                <div>
+                  <img src="./img/hotel_leopold.png" alt="Hotel Leopold" />
+                </div>
+                <a class="item__text" href="#">Hotel Leopold</a>
+                <p class="item__text hostel-location">
+                  Saint Petersburg, Russia
+                </p>
               </div>
             </div>
-            <a class="item__text" href="#">Apartment Sunshine</a>
-            <p class="item__text hostel-location">
-              Santa Cruz de Tenerife, Spain
-            </p>
-          </div>
-          <div class="homes__item col-lg-3 col-md-2">
-            <div class="item-hostel">
-              <img src="./img/villa_kunerad.png" alt="Villa Kunerad" />
-              <div class="circle circle-villa">
-                <div class="arrows"></div>
+            <div class="swiper-slide col-lg-3 col-md-2 col-sm-2 col-xs-3">
+              <div class="homes__item">
+                <div class="item-hostel">
+                  <img
+                    src="./img/apartment_sunshine.png"
+                    alt="Apartment Sunshine"
+                  />
+                  <!--                  <div class="circle circle-appart swiper-button-next">-->
+                  <!--                    <div class="arrows"></div>-->
+                  <!--                  </div>-->
+                </div>
+                <a class="item__text" href="#">Apartment Sunshine</a>
+                <p class="item__text hostel-location">
+                  Santa Cruz de Tenerife, Spain
+                </p>
               </div>
             </div>
-            <a class="item__text" href="#">Villa Kunerad</a>
-            <p class="item__text hostel-location">Vysokie Tatry, Slowakia</p>
-          </div>
-          <div class="homes__item col-lg-3">
-            <div class="item-hostel">
-              <img src="./img/hostel_friendship.png" alt="Hostel Friendship" />
-              <div class="circle circle-hostel">
-                <div class="arrows"></div>
+            <div class="swiper-slide col-lg-3 col-md-2 col-sm-2">
+              <div class="homes__item">
+                <div class="item-hostel">
+                  <img src="./img/villa_kunerad.png" alt="Villa Kunerad" />
+                  <!--                  <div class="circle circle-villa swiper-button-next">-->
+                  <!--                    <div class="arrows"></div>-->
+                  <!--                  </div>-->
+                </div>
+                <a class="item__text" href="#">Villa Kunerad</a>
+                <p class="item__text hostel-location">
+                  Vysokie Tatry, Slowakia
+                </p>
               </div>
             </div>
-            <a class="item__text" href="#">Hostel Friendship</a>
-            <p class="item__text hostel-location">Berlin, Germany</p>
+            <div class="swiper-slide col-lg-3 col-md-2 col-sm-2">
+              <div class="homes__item">
+                <div class="item-hostel">
+                  <img
+                    src="./img/hostel_friendship.png"
+                    alt="Hostel Friendship"
+                  />
+                  <!--                  <div class="circle circle-hostel swiper-button-next">-->
+                  <!--                    <div class="arrows"></div>-->
+                  <!--                  </div>-->
+                </div>
+                <a class="item__text" href="#">Hostel Friendship</a>
+                <p class="item__text hostel-location">Berlin, Germany</p>
+              </div>
+            </div>
+            <div class="swiper-slide col-lg-3 col-md-2 col-sm-2 col-xs-3">
+              <div class="homes__item">
+                <div>
+                  <img src="./img/hotel_leopold.png" alt="Hotel Leopold" />
+                </div>
+                <a class="item__text" href="#">Hotel Leopold</a>
+                <p class="item__text hostel-location">
+                  Saint Petersburg, Russia
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide col-lg-3 col-md-2 col-sm-2 col-xs-3">
+              <div class="homes__item">
+                <div class="item-hostel">
+                  <img
+                    src="./img/apartment_sunshine.png"
+                    alt="Apartment Sunshine"
+                  />
+                  <!--                  <div class="circle circle-appart swiper-button-next">-->
+                  <!--                    <div class="arrows"></div>-->
+                  <!--                  </div>-->
+                </div>
+                <a class="item__text" href="#">Apartment Sunshine</a>
+                <p class="item__text hostel-location">
+                  Santa Cruz de Tenerife, Spain
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide col-lg-3 col-md-2 col-sm-2">
+              <div class="homes__item">
+                <div class="item-hostel">
+                  <img src="./img/villa_kunerad.png" alt="Villa Kunerad" />
+                  <!--                  <div class="circle circle-villa swiper-button-next">-->
+                  <!--                    <div class="arrows"></div>-->
+                  <!--                  </div>-->
+                </div>
+                <a class="item__text" href="#">Villa Kunerad</a>
+                <p class="item__text hostel-location">
+                  Vysokie Tatry, Slowakia
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide col-lg-3 col-md-2 col-sm-2">
+              <div class="homes__item">
+                <div class="item-hostel">
+                  <img
+                    src="./img/hostel_friendship.png"
+                    alt="Hostel Friendship"
+                  />
+                  <!--                  <div class="circle circle-hostel swiper-button-next">-->
+                  <!--                    <div class="arrows"></div>-->
+                  <!--                  </div>-->
+                </div>
+                <a class="item__text" href="#">Hostel Friendship</a>
+                <p class="item__text hostel-location">Berlin, Germany</p>
+              </div>
+            </div>
+            <!--            <div class="swiper-pagination"></div>-->
           </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!--                  <div class="circle circle-villa swiper-button-next">-->
+          <!--                    <div class="arrows"></div>-->
+          <!--                  </div>-->
         </div>
       </div>
     </section>
@@ -1201,141 +1286,159 @@
         <a href="#" class="sign-up__link">Install</a>
       </div>
     </section>
+
     <section class="reviews">
       <div class="container reviews-wrap">
         <h2 class="title reviews__title">Guests reviews</h2>
-        <div class="list reviews__list">
-          <div class="reviews__item col-lg-4 col-md-3 col-sm-3 col-xs-4">
-            <div class="reviews__block-top">
-              <img
-                src="./img/ubud_bali_resort&spa.png"
-                alt="Ubud Bali Resort&SPA"
-              />
-              <p class="reviews__text reviews__decor">From 250 USD</p>
-            </div>
-            <div class="reviews__block-info">
-              <a href="#" class="reviews__text reviews__text-name"
-                >Ubud Bali Resort&SPA</a
-              >
-              <a href="#" class="reviews__text reviews__text-location"
-                >Bali, Indonesia</a
-              >
-              <div class="reviews__mark">
-                <p class="reviews__mark-text">9,4</p>
-              </div>
-              <p class="reviews__score">1324 reviews</p>
-            </div>
-            <div class="reviews__commit">
-              <svg class="icon-reviews__commit">
-                <use href="#reviews__person" />
-              </svg>
-              <p class="reviews__text reviews__commit-name">Hanna Ivanova</p>
-              <p class="reviews__text reviews__commit-country">
-                <svg class="icon-flag">
-                  <use href="#flag-ua" />
-                </svg>
-                Ukraine
-              </p>
-            </div>
-            <p class="reviews__text reviews__text-indent">
-              Great location, really pleasant and clean rooms, but the thing
-              that makes this such a good place to stay are the staff. All of
-              the people are incredibly helpful and generous with their time and
-              advice.
-            </p>
-          </div>
-          <div class="reviews__item col-lg-4 col-md-3">
-            <div class="reviews__block-top">
-              <div class="item-review">
-                <img
-                  src="./img/king_kong_hotel.png"
-                  alt="Ubud Bali Resort&SPA"
-                />
-                <div class="circle circle-villa">
-                  <div class="arrows"></div>
+        <div class="swiper-container" id="swiper-reviews">
+          <div class="list reviews__list swiper-wrapper">
+            <div class="swiper-slide col-lg-4 col-md-2 col-sm-3 col-xs-4">
+              <div class="reviews__item">
+                <div class="reviews__block-top">
+                  <img
+                    src="./img/ubud_bali_resort&spa.png"
+                    alt="Ubud Bali Resort&SPA"
+                  />
+                  <p class="reviews__text reviews__decor">From 250 USD</p>
                 </div>
-              </div>
-              <p class="reviews__text reviews__decor">From 40 USD</p>
-            </div>
-            <div class="reviews__block-info">
-              <a href="#" class="reviews__text reviews__text-name"
-                >King Kong Hostel</a
-              >
-              <a href="#" class="reviews__text reviews__text-location"
-                >Rotterdam, Netherlands</a
-              >
-              <div class="reviews__mark">
-                <p class="reviews__mark-text">8,9</p>
-              </div>
-              <p class="reviews__score">2016 reviews</p>
-            </div>
-            <div class="reviews__commit">
-              <svg class="icon-reviews__commit">
-                <use href="#reviews__person" />
-              </svg>
-              <p class="reviews__text reviews__commit-name">Adam Smith</p>
-              <p class="reviews__text reviews__commit-country">
-                <svg class="icon-flag">
-                  <use href="#flag-us" />
-                </svg>
-                USA
-              </p>
-            </div>
-            <p class="reviews__text reviews__text-indent">
-              I've been in this hostel for a month and here is the best hostel
-              of all Excellent management of excellent and ethical staff and
-              bedrooms Bathrooms are always clean and excellent Most
-              importantly, those who work here are kind and good-natured.
-            </p>
-          </div>
-          <div class="reviews__item col-lg-4">
-            <div class="reviews__block-top">
-              <div class="item-review">
-                <img src="./img/rokoko_hotel.png" alt="Ubud Bali Resort&SPA" />
-                <div class="circle circle-hostel">
-                  <div class="arrows"></div>
+                <div class="reviews__block-info">
+                  <a href="#" class="reviews__text reviews__text-name"
+                    >Ubud Bali Resort&SPA</a
+                  >
+                  <a href="#" class="reviews__text reviews__text-location"
+                    >Bali, Indonesia</a
+                  >
+                  <div class="reviews__mark">
+                    <p class="reviews__mark-text">9,4</p>
+                  </div>
+                  <p class="reviews__score">1324 reviews</p>
                 </div>
+                <div class="reviews__commit">
+                  <svg class="icon-reviews__commit">
+                    <use href="#reviews__person" />
+                  </svg>
+                  <p class="reviews__text reviews__commit-name">
+                    Hanna Ivanova
+                  </p>
+                  <p class="reviews__text reviews__commit-country">
+                    <svg class="icon-flag">
+                      <use href="#flag-ua" />
+                    </svg>
+                    Ukraine
+                  </p>
+                </div>
+                <p class="reviews__text reviews__text-indent">
+                  Great location, really pleasant and clean rooms, but the thing
+                  that makes this such a good place to stay are the staff. All
+                  of the people are incredibly helpful and generous with their
+                  time and advice.
+                </p>
               </div>
-              <p class="reviews__text reviews__decor">From 100 USD</p>
             </div>
-            <div class="reviews__block-info">
-              <a href="#" class="reviews__text reviews__text-name"
-                >Rokoko Hotel</a
-              >
-              <a href="#" class="reviews__text reviews__text-location"
-                >Ourika, Marocco</a
-              >
-              <div class="reviews__mark">
-                <p class="reviews__mark-text">9,1</p>
+            <div class="swiper-slide col-lg-4 col-md-2 col-sm-3 col-xs-4">
+              <div class="reviews__item">
+                <div class="reviews__block-top">
+                  <div class="item-review">
+                    <img
+                      src="./img/king_kong_hotel.png"
+                      alt="Ubud Bali Resort&SPA"
+                    />
+                    <!--                    <div class="circle circle-villa">-->
+                    <!--                      <div class="arrows"></div>-->
+                    <!--                    </div>-->
+                  </div>
+                  <p class="reviews__text reviews__decor">From 40 USD</p>
+                </div>
+                <div class="reviews__block-info">
+                  <a href="#" class="reviews__text reviews__text-name"
+                    >King Kong Hostel</a
+                  >
+                  <a href="#" class="reviews__text reviews__text-location"
+                    >Rotterdam, Netherlands</a
+                  >
+                  <div class="reviews__mark">
+                    <p class="reviews__mark-text">8,9</p>
+                  </div>
+                  <p class="reviews__score">2016 reviews</p>
+                </div>
+                <div class="reviews__commit">
+                  <svg class="icon-reviews__commit">
+                    <use href="#reviews__person" />
+                  </svg>
+                  <p class="reviews__text reviews__commit-name">Adam Smith</p>
+                  <p class="reviews__text reviews__commit-country">
+                    <svg class="icon-flag">
+                      <use href="#flag-us" />
+                    </svg>
+                    USA
+                  </p>
+                </div>
+                <p class="reviews__text reviews__text-indent">
+                  I've been in this hostel for a month and here is the best
+                  hostel of all Excellent management of excellent and ethical
+                  staff and bedrooms Bathrooms are always clean and excellent
+                  Most importantly, those who work here are kind and
+                  good-natured.
+                </p>
               </div>
-              <p class="reviews__score">815 reviews</p>
             </div>
-            <div class="reviews__commit">
-              <svg class="icon-reviews__commit">
-                <use href="#reviews__person" />
-              </svg>
-              <p class="reviews__text reviews__commit-name">Anika Messer</p>
-              <p class="reviews__text reviews__commit-country">
-                <svg class="icon-flag">
-                  <use href="#flag-de" />
-                </svg>
-                Germany
-              </p>
+            <div class="swiper-slide col-lg-4 col-md-2 col-sm-3 col-xs-4">
+              <div class="reviews__item">
+                <div class="reviews__block-top">
+                  <div class="item-review">
+                    <img
+                      src="./img/rokoko_hotel.png"
+                      alt="Ubud Bali Resort&SPA"
+                    />
+                    <!--                    <div class="circle circle-hostel">-->
+                    <!--                      <div class="arrows"></div>-->
+                    <!--                    </div>-->
+                  </div>
+                  <p class="reviews__text reviews__decor">From 100 USD</p>
+                </div>
+                <div class="reviews__block-info">
+                  <a href="#" class="reviews__text reviews__text-name"
+                    >Rokoko Hotel</a
+                  >
+                  <a href="#" class="reviews__text reviews__text-location"
+                    >Ourika, Marocco</a
+                  >
+                  <div class="reviews__mark">
+                    <p class="reviews__mark-text">9,1</p>
+                  </div>
+                  <p class="reviews__score">815 reviews</p>
+                </div>
+                <div class="reviews__commit">
+                  <svg class="icon-reviews__commit">
+                    <use href="#reviews__person" />
+                  </svg>
+                  <p class="reviews__text reviews__commit-name">Anika Messer</p>
+                  <p class="reviews__text reviews__commit-country">
+                    <svg class="icon-flag">
+                      <use href="#flag-de" />
+                    </svg>
+                    Germany
+                  </p>
+                </div>
+                <p class="reviews__text reviews__text-indent">
+                  Efficient, friendly, professional, and appropriately
+                  attentive. Great hotel in a great location. Easy access to all
+                  the surrounding historical sites. Staff is fantastic. Will
+                  definitely stay at this location during my next stay in
+                  Marocco.
+                </p>
+              </div>
             </div>
-            <p class="reviews__text reviews__text-indent">
-              Efficient, friendly, professional, and appropriately attentive.
-              Great hotel in a great location. Easy access to all the
-              surrounding historical sites. Staff is fantastic. Will definitely
-              stay at this location during my next stay in Marocco.
-            </p>
           </div>
+          <!--          <ul class="dots">-->
+          <!--            <li class="item-dots"></li>-->
+          <!--            <li class="item-dots"></li>-->
+          <!--            <li class="item-dots"></li>-->
+          <!--            <li class="item-dots"></li>-->
+          <!--          </ul>-->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <ul class="dots">
-          <li class="item-dots"></li>
-          <li class="item-dots"></li>
-          <li class="item-dots"></li>
-          <li class="item-dots"></li>
-        </ul>
       </div>
     </section>
     <footer class="footer">
@@ -1392,5 +1495,43 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const slider = document.querySelector("#swiper-homes");
+      const slider1 = document.querySelector("#swiper-reviews");
+      let swiper = new Swiper(slider, {
+        slidesPerView: 4,
+        loop: true,
+        // refresh: true,
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: { slidesPerView: 1 },
+          480: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
+          1024: { slidesPerView: 4 },
+        },
+      });
+
+      let swiper1 = new Swiper(slider1, {
+        slidesPerView: 3,
+        loop: true,
+        // refresh: true,
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: { slidesPerView: 1 },
+          480: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+      });
+    </script>
   </body>
 </html>
