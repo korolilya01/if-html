@@ -480,6 +480,10 @@
     font-size: 16px;
     line-height: 14px;
   }
+  .homes__item {
+    height: 300px;
+    max-width: 250px;
+  }
   .circle {
     width: 32px;
     height: 32px;
@@ -494,6 +498,11 @@
   }
   .reviews-wrap {
     background: #eaf0f9;
+  }
+  .reviews__item {
+    margin: 0 auto;
+    width: 350px;
+    height: 732px;
   }
   .reviews__decor {
     visibility: hidden;
@@ -592,6 +601,13 @@
     font-size: 12px;
     margin-bottom: 0;
     margin-top: 32px;
+  }
+  .swiper-pagination {
+    visibility: visible;
+  }
+  .swiper-button-next {
+    width: 30px !important;
+    height: 30px !important;
   }
 }
 
@@ -719,8 +735,9 @@
     height: 104px;
   }
   .homes__item {
-    height: 209px;
+    height: 215px;
     width: 156px;
+    margin: 0 auto;
   }
   .item__text {
     font-size: 12px;
@@ -728,6 +745,10 @@
   .dest__item {
     height: 178px;
     width: 156px;
+  }
+  .reviews__item {
+    width: 327px;
+    max-width: 100%;
   }
   .reviews__text-name,
   .reviews__text-location {
@@ -774,5 +795,8 @@
   }
   .footer__list {
     gap: 8px;
+  }
+  .swiper-button-next {
+    top: 50% !important;
   }
 }
