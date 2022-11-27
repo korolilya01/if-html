@@ -251,13 +251,13 @@
     flex-wrap: wrap;
   }
   .offers__icon {
-    width: 65px;
+    width: 64px;
   }
   .offers__description {
     font-size: 18px;
   }
   .offers__item {
-    height: 150px;
+    height: 152px;
   }
   .homes__list,
   .dest__list {
@@ -366,7 +366,7 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 48px);
-    height: 225px;
+    height: 224px;
   }
   .page__title {
     font-size: 32px;
@@ -405,7 +405,7 @@
     height: 20px;
   }
   .icon-search {
-    top: -207px;
+    top: -208px;
   }
   input[type="text"],
   input[type="date"] {
@@ -501,20 +501,20 @@
   }
   .reviews__item {
     margin: 0 auto;
-    width: 350px;
+    width: 352px;
     height: 732px;
   }
   .reviews__decor {
     visibility: hidden;
   }
   .reviews__commit {
-    margin: 24px 5px;
+    margin: 24px 4px;
   }
   .reviews__block-info {
     margin: 0;
   }
   .reviews__mark {
-    width: 39px;
+    width: 40px;
     height: 26px;
   }
   .reviews__score {
@@ -570,8 +570,8 @@
     border-radius: 4px;
   }
   .sign-up-logo {
-    width: 53px;
-    height: 11px;
+    width: 52px;
+    height: 12px;
   }
   .footer__list {
     display: flex;
@@ -682,7 +682,7 @@
   }
   .page__title {
     font-size: 30px;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
     line-height: 35px;
   }
   .page__search {
@@ -726,7 +726,7 @@
     margin-bottom: 0;
   }
   .offers__icon {
-    width: 55px;
+    width: 56px;
   }
   .offers__description {
     font-size: 15px;
@@ -735,7 +735,7 @@
     height: 104px;
   }
   .homes__item {
-    height: 215px;
+    height: 216px;
     width: 156px;
     margin: 0 auto;
   }
@@ -747,7 +747,7 @@
     width: 156px;
   }
   .reviews__item {
-    width: 327px;
+    width: 328px;
     max-width: 100%;
   }
   .reviews__text-name,
@@ -773,8 +773,8 @@
     font-size: 12px;
   }
   .icon-reviews__commit {
-    width: 43px;
-    height: 43px;
+    width: 44px;
+    height: 44px;
   }
   .sign-up__text {
     font-weight: 400;

@@ -65,7 +65,7 @@ ul {
   justify-content: space-between;
 }
 .icon-logo {
-  width: 205px;
+  width: 208px;
   height: 40px;
 }
 .header__offers {
@@ -132,7 +132,7 @@ ul {
   background-color: var(--white);
   display: flex;
   flex-direction: column;
-  margin: 177px auto;
+  margin: 176px auto;
   border: 1px solid #cecece;
 }
 .account-block {
@@ -142,7 +142,7 @@ ul {
   font-weight: 500;
   line-height: 28px;
   text-align: center;
-  color: #000;
+  color: var(--black);
   margin-top: 36px;
 }
 .account__email-text,
@@ -152,7 +152,7 @@ ul {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  color: #333;
+  color: var(--black);
   margin-bottom: 8px;
   margin-left: 40px;
 }
@@ -165,7 +165,7 @@ ul {
 .account__email-field,
 .account__password-field {
   width: 320px;
-  height: 41px;
+  height: 40px;
   background: var(--white);
   border: 2px solid #cecece;
   border-radius: 8px;
@@ -216,7 +216,7 @@ ul {
   font-weight: 500;
   font-size: 50px;
   line-height: 59px;
-  margin-bottom: 145px;
+  margin-bottom: 144px;
   margin-top: 200px;
 }
 
@@ -238,13 +238,13 @@ input[type="text"] {
   font-size: 18px;
 }
 .page__search-city {
-  width: 510px;
+  width: 512px;
   color: var(--black);
   border: 3px solid #f3f3f4;
   border-radius: 8px;
 }
 .page__search-date {
-  width: 260px;
+  width: 264px;
   display: flex;
   justify-content: space-evenly;
   color: var(--black);
@@ -311,7 +311,7 @@ input[type="text"] {
   border: 0;
 }
 .page__search-button {
-  width: 210px;
+  width: 216px;
   font-weight: 500;
   font-size: 24px;
   color: var(--white);
@@ -334,7 +334,7 @@ input[type="text"] {
   gap: 16px;
 }
 .icon-google_play {
-  width: 135px;
+  width: 136px;
   height: 40px;
 }
 .icon-app_store {
@@ -348,6 +348,7 @@ input[type="text"] {
   font-weight: bold;
   margin: 0 auto 104px;
   width: fit-content;
+  line-height: 47px;
 }
 .offers__title {
   position: relative;
@@ -359,7 +360,7 @@ input[type="text"] {
   height: 4px;
   background-color: #f5bd41;
   position: absolute;
-  top: 67px;
+  top: 72px;
   right: calc(50% - var(--line-width) / 2);
 }
 .list {
@@ -413,7 +414,7 @@ input[type="text"] {
 }
 .homes__item,
 .dest__item {
-  height: 435px;
+  height: 432px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -541,12 +542,12 @@ img {
 }
 .wrapper {
   position: relative;
-  margin-top: 150px;
+  margin-top: 152px;
 }
 .wrapper:hover .dest__list-add {
   display: flex;
   margin-top: -60px;
-  padding-bottom: 102px;
+  padding-bottom: 104px;
 }
 .wrapper:hover .circle-dest {
   display: none;
@@ -597,7 +598,7 @@ img {
 
 /*bot*/
 .reviews__block-info {
-  height: 58px;
+  height: 56px;
   position: relative;
   margin: 24px;
 }
@@ -647,23 +648,22 @@ img {
   color: #bfbfbf;
 }
 .reviews__commit {
-  position: relative;
   margin: 0 24px 24px;
+  display: flex;
 }
 .icon-reviews__commit {
-  width: 53px;
-  height: 53px;
-  margin-top: 5px;
-  margin-left: 5px;
+  width: 52px;
+  height: 52px;
+  margin-top: 4px;
+  margin-left: 4px;
 }
-.reviews__commit-name,
-.reviews__commit-country {
-  position: absolute;
-  top: 0;
-  left: 80px;
+.reviews__commit-person-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 24px;
 }
 .reviews__commit-country {
-  position: absolute;
   color: #bfbfbf;
   top: 36px;
   display: flex;
@@ -691,7 +691,7 @@ img {
   border: 1px solid var(--black);
 }
 .item-dots:first-child {
-  background: #383838;
+  background: var(--black);
 }
 
 /*sign -up*/
@@ -702,16 +702,16 @@ img {
   position: relative;
 }
 .icon-sign-up {
-  width: 86px;
-  height: 86px;
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
   background: var(--white);
   display: inline-block;
-  margin: 57px 24px;
+  margin: 56px 24px;
   position: relative;
 }
 .sign-up__text {
-  top: 51px;
+  top: 52px;
   left: 134px;
   position: absolute;
   font-weight: 500;
@@ -730,7 +730,7 @@ img {
   text-align: center;
   color: var(--blue);
   position: absolute;
-  bottom: 51px;
+  bottom: 52px;
   left: 134px;
 }
 .sign-up__button:hover {
@@ -739,8 +739,8 @@ img {
   transition: 0.5s ease 0.1s;
 }
 .sign-up-person {
-  width: 33px;
-  height: 45px;
+  width: 32px;
+  height: 44px;
   position: absolute;
   left: 18px;
   top: 21px;
@@ -753,8 +753,8 @@ img {
   top: 46px;
 }
 .sign-up-cross {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   position: absolute;
   top: 24px;
   right: 24px;
@@ -769,8 +769,8 @@ img {
   background-color: #10367c;
 }
 .icon-trip_house_mobile {
-  width: 98px;
-  height: 19px;
+  width: 96px;
+  height: 20px;
   display: none;
 }
 .footer__list {
