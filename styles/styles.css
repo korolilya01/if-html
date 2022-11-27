@@ -807,7 +807,6 @@ img {
   overflow: hidden;
   padding: 0 10px;
   position: relative;
-  border: 1px solid red;
 }
 .swiper-wrapper {
   display: flex;
