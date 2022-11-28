@@ -4,8 +4,11 @@
 }
 @font-face {
   font-family: Roboto;
-  src: url(../fonts/Roboto-Regular.woff) format("woff"), local("Roboto"),
-    url(../fonts/AnyConv.com__Roboto-Medium.woff2) format("woff2");
+  src: url(../../webpack-pug-scss-boilerplate-master/src/assets/fonts/Roboto-Regular.woff)
+      format("woff"),
+    local("Roboto"),
+    url(../../webpack-pug-scss-boilerplate-master/src/assets/fonts/AnyConv.com__Roboto-Medium.woff2)
+      format("woff2");
 }
 
 :root {
@@ -61,7 +64,7 @@ ul {
   background-image: url("../img/castelmezzano.png");
   background-size: cover;
   background-position: 0 25%;
-  height: 100%;
+  height: 100vh;
   position: relative;
 }
 
