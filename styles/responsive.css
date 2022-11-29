@@ -486,7 +486,6 @@
   }
   .homes__item {
     height: 300px;
-    max-width: 250px;
   }
   .hostel-location {
     margin-top: 8px;
@@ -508,7 +507,7 @@
   }
   .reviews__item {
     margin: 0 auto;
-    width: 352px;
+    max-width: 352px;
     height: 732px;
   }
   .reviews__decor {
@@ -611,6 +610,9 @@
   }
   .swiper-pagination {
     visibility: visible;
+  }
+  .swiper-button-next-dest {
+    display: none !important;
   }
   .swiper-button-next {
     width: 30px !important;
@@ -740,11 +742,6 @@
   }
   .offers__item {
     height: 104px;
-  }
-  .homes__item {
-    height: 216px;
-    width: 156px;
-    margin: 0 auto;
   }
   .item__text {
     font-size: 12px;

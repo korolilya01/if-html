@@ -64,7 +64,7 @@ ul {
   background-image: url("../img/castelmezzano.png");
   background-size: cover;
   background-position: 0 25%;
-  height: 100vh;
+  height: 100%;
   position: relative;
 }
 
@@ -514,6 +514,7 @@ img {
 
 .hostel-location {
   color: #bfbfbf;
+  margin: 0;
 }
 
 .circle {
@@ -946,6 +947,7 @@ img {
   background: #f3f3f4;
   color: var(--black) !important;
   filter: drop-shadow(0 4px 4px rgb(0 0 0 / 25%));
+  position: fixed;
 }
 
 .swiper-button-next::after {
