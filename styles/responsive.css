@@ -41,7 +41,7 @@
 
 @media (max-width: 1200px) {
   .header {
-    margin-bottom: 120px;
+    /*margin-bottom: 120px;*/
   }
   .text-city,
   .text-date {
@@ -66,7 +66,7 @@
     font-size: 20px;
   }
   .page-text {
-    font-size: 14px;
+    font-size: 15px;
   }
   .account {
     font-size: 20px;
@@ -195,9 +195,7 @@
     padding-top: 20px;
     z-index: 0;
   }
-  .page-text {
-    font-size: 12px;
-  }
+
   .text-city,
   .text-date {
     display: none;
@@ -261,6 +259,7 @@
   }
   .offers__item {
     height: 152px;
+    justify-content: space-around;
   }
   .homes__list,
   .dest__list {
@@ -277,7 +276,7 @@
     position: absolute;
   }
   .dest__list {
-    padding-bottom: 0;
+    margin-top: 24px;
   }
   .dest__item:nth-child(4) {
     display: none;
@@ -343,7 +342,7 @@
     width: var(--col-width);
   }
   .col-sm-2 {
-    width: calc(var(--col-width) * 2);
+    width: calc(var(--col-width) * 2) !important;
   }
   .col-sm-3 {
     width: calc(var(--col-width) * 3);
@@ -362,8 +361,8 @@
     width: 95%;
     margin: 0 auto;
   }
-  .header {
-    margin-bottom: 80px;
+  .header__items {
+    gap: 16px;
   }
   .page__search {
     display: grid;
@@ -375,6 +374,7 @@
     font-size: 32px;
     margin-bottom: 60px;
     line-height: 42px;
+    margin-top: 52px;
   }
   .links {
     display: none;
@@ -409,10 +409,6 @@
   }
   .icon-search {
     top: -208px;
-  }
-  input[type="text"],
-  input[type="date"] {
-    font-size: 15px;
   }
   .page__search-city {
     grid-column: 1 / span 8;
@@ -453,6 +449,7 @@
   }
   .title {
     font-size: 32px;
+    line-height: 32px;
     margin-bottom: 32px;
   }
   .offers__list {
@@ -476,16 +473,12 @@
   img {
     margin-bottom: 8px;
   }
-  .list {
-    margin: 40px auto;
-  }
   .item__text {
     font-size: 16px;
     line-height: 14px;
-    margin-top: 0;
   }
   .homes__item {
-    height: 300px;
+    height: 368px;
   }
   .hostel-location {
     margin-top: 8px;
@@ -608,6 +601,11 @@
     margin-bottom: 0;
     margin-top: 32px;
   }
+  .swiper-container {
+    width: 528px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
   .swiper-pagination {
     visibility: visible;
   }
@@ -644,7 +642,7 @@
     width: calc(var(--col-width) * 6);
   }
   .main-wrap {
-    padding: 0;
+    padding-top: 0;
   }
   .container {
     padding: 40px 0;
@@ -654,7 +652,6 @@
     height: 48px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
   }
   .account {
     font-size: 16px;
@@ -692,6 +689,7 @@
   .page__title {
     font-size: 30px;
     margin-bottom: 32px;
+    margin-top: 40px;
     line-height: 35px;
   }
   .page__search {
@@ -734,6 +732,10 @@
   .list {
     margin-bottom: 0;
   }
+  .offers__list {
+    gap: 36px;
+    margin-top: 0;
+  }
   .offers__icon {
     width: 56px;
   }
@@ -742,13 +744,17 @@
   }
   .offers__item {
     height: 104px;
+    justify-content: space-between;
+  }
+  .homes__item {
+    height: 296px;
   }
   .item__text {
+    margin-top: 8px;
     font-size: 12px;
   }
   .dest__item {
-    height: 178px;
-    width: 156px;
+    height: 240px;
   }
   .reviews__item {
     width: 328px;
@@ -801,6 +807,6 @@
     gap: 8px;
   }
   .swiper-button-next {
-    top: 50% !important;
+    top: 4em !important;
   }
 }

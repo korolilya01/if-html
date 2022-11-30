@@ -497,34 +497,32 @@
     <section class="main">
       <div class="container main-wrap">
         <input id="radio-but__acc" type="radio" class="radio-but__acc" />
-        <form>
-          <header class="header">
-            <a href="./">
-              <svg class="icon-logo">
-                <use href="#trip_house" />
+        <header class="header">
+          <a href="./">
+            <svg class="icon-logo">
+              <use href="#trip_house" />
+            </svg>
+          </a>
+          <nav class="header__offers">
+            <div class="header__links">
+              <a class="links" href="#">Stays</a>
+              <a class="links" href="#">Attractions</a>
+            </div>
+            <div class="header__items">
+              <svg class="icon-night">
+                <use href="#night" />
               </svg>
-            </a>
-            <nav class="header__offers">
-              <div class="header__links">
-                <a class="links" href="#">Stays</a>
-                <a class="links" href="#">Attractions</a>
-              </div>
-              <div class="header__items">
-                <svg class="icon-night">
-                  <use href="#night" />
+              <label for="radio-but__acc">
+                <svg class="icon-account">
+                  <use href="#account" />
                 </svg>
-                <label for="radio-but__acc">
-                  <svg class="icon-account">
-                    <use href="#account" />
-                  </svg>
-                </label>
-                <svg class="icon-menu">
-                  <use href="#menu" />
-                </svg>
-              </div>
-            </nav>
-          </header>
-        </form>
+              </label>
+              <svg class="icon-menu">
+                <use href="#menu" />
+              </svg>
+            </div>
+          </nav>
+        </header>
         <main class="page">
           <h1 class="page__title">
             Discover stays <br />
@@ -573,7 +571,7 @@
                   <p>Adults</p>
                   <input
                     id="adults"
-                    class="info-num"
+                    class="info-num page-text"
                     type="text"
                     name="choose-adult"
                     required
@@ -583,7 +581,7 @@
                   <p>Children</p>
                   <input
                     id="children"
-                    class="info-num"
+                    class="info-num page-text"
                     type="text"
                     name="choose-children"
                     required
@@ -593,7 +591,7 @@
                   <p>Room</p>
                   <input
                     id="room"
-                    class="info-num"
+                    class="info-num page-text"
                     type="text"
                     name="choose-room"
                     required
@@ -769,7 +767,6 @@
           <label for="places" class="radio-but radio__places"
             >Places <span class="places-text">of interest</span></label
           >
-
           <!-- block regions -->
           <div class="block__regions">
             <div class="list dest__list">
@@ -905,7 +902,6 @@
               </div>
             </div>
           </div>
-
           <!-- block cities -->
           <div class="block__cities">
             <div class="list dest__list">
