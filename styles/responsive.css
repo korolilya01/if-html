@@ -156,8 +156,8 @@
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(2, 48px);
     height: 115px;
-    background: #f5bd41;
-    border: 5px solid #f5bd41;
+    background: var(--dark-yellow);
+    border: 5px solid var(--dark-yellow);
     margin-bottom: 80px;
   }
   .icon-search {
@@ -428,11 +428,11 @@
   }
   .column-adults {
     grid-column: 1 / span 3;
-    border-right: 1px solid #bfbfbf;
+    border-right: 1px solid var(--grey);
   }
   .column-children {
     grid-column: 4 / span 3;
-    border-right: 1px solid #bfbfbf;
+    border-right: 1px solid var(--grey);
   }
   .column-room {
     grid-column: 7 / span 3;
@@ -496,7 +496,7 @@
     display: none;
   }
   .reviews-wrap {
-    background: #eaf0f9;
+    background: var(--light-white);
   }
   .reviews__item {
     margin: 0 auto;
@@ -712,11 +712,11 @@
   }
   .column-adults {
     grid-column: 1 / span 2;
-    border-right: 1px solid #bfbfbf;
+    border-right: 1px solid var(--grey);
   }
   .column-children {
     grid-column: 3 / span 2;
-    border-right: 1px solid #bfbfbf;
+    border-right: 1px solid var(--grey);
   }
   .column-room {
     grid-column: 5 / span 2;
