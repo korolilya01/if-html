@@ -6,10 +6,15 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
     <link rel="stylesheet" href="./styles/radio_button.css" />
+    <link rel="stylesheet" href="./styles/swiper-style.css" />
     <link rel="icon" href="./img/logo.ico" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@8.4.5/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8.4.5/modules/pagination/pagination.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -735,7 +740,10 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
+
+          <div class="swiper-button-next circle">
+            <div class="arrows"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -829,79 +837,80 @@
                 <a class="item__text" href="#">Island</a>
               </div>
             </div>
-            <div class="destinations-add">
-              <div class="wrapper">
-                <div class="circle circle-dest">
-                  <div class="arrows"></div>
-                </div>
-                <div class="block__regions-add">
-                  <div class="list dest__list-add">
-                    <div class="dest__item col-lg-3">
-                      <div class="item-link">
-                        <a href="#"
-                          ><img src="./img/japan.png" alt="Japan" /><button
-                            type="submit"
-                            class="but__dest"
-                          >
-                            Book now
-                          </button></a
+          </div>
+          <div class="destinations-add">
+            <div class="wrapper">
+              <div class="circle circle-dest">
+                <div class="arrows"></div>
+              </div>
+              <div class="block__regions-add">
+                <div class="list dest__list-add">
+                  <div class="dest__item col-lg-3">
+                    <div class="item-link">
+                      <a href="#"
+                        ><img src="./img/japan.png" alt="Japan" /><button
+                          type="submit"
+                          class="but__dest"
                         >
-                      </div>
-                      <a class="item__text" href="#">Japan</a>
+                          Book now
+                        </button></a
+                      >
                     </div>
-                    <div class="dest__item col-lg-3">
-                      <div class="item-link item-norway">
-                        <a href="#"
-                          ><img src="./img/france.png" alt="France" /><button
-                            type="submit"
-                            class="but__dest"
-                          >
-                            Book now
-                          </button></a
+                    <a class="item__text" href="#">Japan</a>
+                  </div>
+                  <div class="dest__item col-lg-3">
+                    <div class="item-link item-norway">
+                      <a href="#"
+                        ><img src="./img/france.png" alt="France" /><button
+                          type="submit"
+                          class="but__dest"
                         >
-                        <div class="circle circle-spain">
-                          <div class="arrows"></div>
-                        </div>
+                          Book now
+                        </button></a
+                      >
+                      <div class="circle circle-spain">
+                        <div class="arrows"></div>
                       </div>
-                      <a class="item__text" href="#">France</a>
                     </div>
-                    <div class="dest__item col-lg-3">
-                      <div class="item-link item-spain">
-                        <a href="#"
-                          ><img
-                            src="./img/scotland.png"
-                            alt="Scotland"
-                          /><button type="submit" class="but__dest">
-                            Book now
-                          </button></a
+                    <a class="item__text" href="#">France</a>
+                  </div>
+                  <div class="dest__item col-lg-3">
+                    <div class="item-link item-spain">
+                      <a href="#"
+                        ><img src="./img/scotland.png" alt="Scotland" /><button
+                          type="submit"
+                          class="but__dest"
                         >
-                        <div class="circle circle-norway">
-                          <div class="arrows"></div>
-                        </div>
+                          Book now
+                        </button></a
+                      >
+                      <div class="circle circle-norway">
+                        <div class="arrows"></div>
                       </div>
-                      <a class="item__text" href="#">Scotland</a>
                     </div>
-                    <div class="dest__item col-lg-3">
-                      <div class="item-link">
-                        <a href="#"
-                          ><img src="./img/russia.png" alt="Russia" /><button
-                            type="submit"
-                            class="but__dest"
-                          >
-                            Book now
-                          </button></a
+                    <a class="item__text" href="#">Scotland</a>
+                  </div>
+                  <div class="dest__item col-lg-3">
+                    <div class="item-link">
+                      <a href="#"
+                        ><img src="./img/russia.png" alt="Russia" /><button
+                          type="submit"
+                          class="but__dest"
                         >
-                      </div>
-                      <a class="item__text" href="#">Russia</a>
+                          Book now
+                        </button></a
+                      >
                     </div>
-                    <div class="circle circle-dest-add">
-                      <div class="arrows"></div>
-                    </div>
+                    <a class="item__text" href="#">Russia</a>
+                  </div>
+                  <div class="circle circle-dest-add">
+                    <div class="arrows"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <!-- block cities -->
           <div class="block__cities">
             <div class="list dest__list">
@@ -1360,7 +1369,9 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-next swiper-button-next-dest"></div>
+          <div class="swiper-button-next circle swiper-button-next-dest">
+            <div class="arrows"></div>
+          </div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
@@ -1420,6 +1431,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="slider.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

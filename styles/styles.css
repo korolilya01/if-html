@@ -4,11 +4,8 @@
 }
 @font-face {
   font-family: Roboto;
-  src: url(../../webpack-pug-scss-boilerplate-master/src/assets/fonts/Roboto-Regular.woff)
-      format("woff"),
-    local("Roboto"),
-    url(../../webpack-pug-scss-boilerplate-master/src/assets/fonts/AnyConv.com__Roboto-Medium.woff2)
-      format("woff2");
+  src: url(../fonts/Roboto-Regular.woff) format("woff"), local("Roboto"),
+    url(../fonts/AnyConv.com__Roboto-Medium.woff2) format("woff2");
 }
 :root {
   --line-width: 100px;
@@ -426,6 +423,7 @@ img {
 .dest__item {
   height: 432px;
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: start;
   align-items: center;
@@ -807,37 +805,4 @@ img {
 .footer__text-bottom {
   font-size: 14px;
   margin-top: 64px;
-}
-
-/* swiper-slider */
-.swiper-container {
-  overflow: hidden;
-  padding: 0 10px;
-  position: relative;
-}
-.swiper-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-.swiper-pagination {
-  visibility: hidden;
-}
-.swiper-button-next {
-  width: 40px !important;
-  height: 40px !important;
-  border-radius: 50%;
-  top: 5em !important;
-  right: 4px !important;
-  background: var(--dark-white);
-  color: var(--black) !important;
-  filter: drop-shadow(0 4px 4px rgb(0 0 0 / 25%));
-  position: fixed;
-}
-.swiper-button-next::after {
-  font-size: 18px !important;
-  font-weight: bold;
-}
-.swiper-button-next:active {
-  background: #e5e5e5;
 }

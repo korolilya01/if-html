@@ -5,11 +5,8 @@ let swiper = new Swiper(slider, {
   slidesPerView: 4,
   spaceBetween: 16,
   loop: true,
-  // refresh: true,
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     0: { slidesPerView: 2 },
@@ -23,11 +20,8 @@ let swiper1 = new Swiper(slider1, {
   slidesPerView: 3,
   loop: true,
   spaceBetween: 16,
-  // refresh: true,
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
   pagination: {
     el: ".swiper-pagination",
