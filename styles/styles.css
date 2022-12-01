@@ -428,8 +428,8 @@ img {
   justify-content: start;
   align-items: center;
 }
-.circle-norway,
-.circle-spain {
+.circle-slide-dop,
+.circle-slide {
   display: none;
 }
 .item-hostel,
@@ -550,6 +550,7 @@ img {
 }
 .wrapper:hover .dest__list-add {
   display: flex;
+  gap: 16px;
   margin-top: -60px;
   padding-bottom: 104px;
 }
