@@ -41,7 +41,7 @@
 
 @media (max-width: 1200px) {
   .header {
-    margin-bottom: 120px;
+    /*margin-bottom: 120px;*/
   }
   .text-city,
   .text-date {
@@ -66,7 +66,7 @@
     font-size: 20px;
   }
   .page-text {
-    font-size: 14px;
+    font-size: 15px;
   }
   .account {
     font-size: 20px;
@@ -77,6 +77,27 @@
   }
   .account__button {
     font-size: 18px;
+  }
+  .offers__description {
+    font-size: 22px;
+  }
+  .item__text {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+  .wrapper {
+    margin-top: 50px;
+  }
+  .wrapper:hover .dest__list-add {
+    padding-bottom: 0;
+  }
+  .reviews__mark-text,
+  .reviews__text {
+    font-size: 16px;
+  }
+  .reviews__score {
+    font-size: 12px;
   }
   .footer__text {
     font-size: 18px;
@@ -135,8 +156,8 @@
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(2, 48px);
     height: 115px;
-    background: #f5bd41;
-    border: 5px solid #f5bd41;
+    background: var(--dark-yellow);
+    border: 5px solid var(--dark-yellow);
     margin-bottom: 80px;
   }
   .icon-search {
@@ -174,9 +195,7 @@
     padding-top: 20px;
     z-index: 0;
   }
-  .page-text {
-    font-size: 12px;
-  }
+
   .text-city,
   .text-date {
     display: none;
@@ -226,52 +245,37 @@
   }
   .list {
     margin: 0;
-    flex-wrap: wrap;
     font-size: 20px;
   }
   .offers__list {
     gap: 10px;
+    flex-wrap: wrap;
   }
   .offers__icon {
-    width: 65px;
+    width: 64px;
   }
   .offers__description {
     font-size: 18px;
   }
   .offers__item {
-    height: 150px;
+    height: 152px;
+    justify-content: space-around;
   }
   .homes__list,
   .dest__list {
     display: flex;
     flex-wrap: nowrap;
   }
-  .homes__item,
-  .dest__item {
-    height: 280px;
-    width: 202px;
-  }
-  .homes__item:nth-child(4) {
-    display: none;
-  }
-  img {
-    margin-bottom: 10px;
-  }
-  .item__text {
-    font-size: 18px;
-    margin-bottom: 8px;
-  }
   .circle {
     width: 36px;
     height: 36px;
   }
-  .circle-villa,
-  .circle-norway {
+  .circle-slide-dop {
     display: inline-block;
     position: absolute;
   }
   .dest__list {
-    padding-bottom: 0;
+    margin-top: 24px;
   }
   .dest__item:nth-child(4) {
     display: none;
@@ -284,6 +288,14 @@
   }
   .destinations-add {
     display: none;
+  }
+  .reviews__mark-text,
+  .reviews__text {
+    font-size: 14px;
+  }
+  .icon-reviews__commit {
+    width: 48px;
+    height: 48px;
   }
   .sign-up__block {
     padding: 0;
@@ -309,6 +321,19 @@
 
 /*for mobile*/
 @media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews {
+    order: 1;
+  }
+  .sign-up {
+    order: 2;
+  }
+  .footer {
+    order: 3;
+  }
   :root {
     --col-width: calc(100% / 6);
   }
@@ -316,7 +341,7 @@
     width: var(--col-width);
   }
   .col-sm-2 {
-    width: calc(var(--col-width) * 2);
+    width: calc(var(--col-width) * 2) !important;
   }
   .col-sm-3 {
     width: calc(var(--col-width) * 3);
@@ -332,20 +357,23 @@
   }
   .container {
     padding: 60px 50px;
+    width: 95%;
+    margin: 0 auto;
   }
-  .header {
-    margin-bottom: 80px;
+  .header__items {
+    gap: 16px;
   }
   .page__search {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 48px);
-    height: 225px;
+    height: 224px;
   }
   .page__title {
     font-size: 32px;
     margin-bottom: 60px;
     line-height: 42px;
+    margin-top: 52px;
   }
   .links {
     display: none;
@@ -360,12 +388,6 @@
   }
   .account__button {
     width: 240px;
-  }
-  .footer__text {
-    font-size: 18px;
-  }
-  .footer__text-bottom {
-    font-size: 14px;
   }
   .icon-logo {
     width: 120px;
@@ -385,11 +407,7 @@
     height: 20px;
   }
   .icon-search {
-    top: -207px;
-  }
-  input[type="text"],
-  input[type="date"] {
-    font-size: 15px;
+    top: -208px;
   }
   .page__search-city {
     grid-column: 1 / span 8;
@@ -409,11 +427,11 @@
   }
   .column-adults {
     grid-column: 1 / span 3;
-    border-right: 1px solid #bfbfbf;
+    border-right: 1px solid var(--grey);
   }
   .column-children {
     grid-column: 4 / span 3;
-    border-right: 1px solid #bfbfbf;
+    border-right: 1px solid var(--grey);
   }
   .column-room {
     grid-column: 7 / span 3;
@@ -430,6 +448,7 @@
   }
   .title {
     font-size: 32px;
+    line-height: 32px;
     margin-bottom: 32px;
   }
   .offers__list {
@@ -453,33 +472,53 @@
   img {
     margin-bottom: 8px;
   }
-  .homes__item,
-  .dest__item {
-    height: 217px;
-    width: 217px;
-  }
-  .homes__item:nth-child(3) {
-    display: none;
-  }
-  .list {
-    margin: 40px auto;
-  }
   .item__text {
     font-size: 16px;
     line-height: 14px;
-    margin-bottom: 8px;
+  }
+  .hostel-location {
+    margin-top: 8px;
   }
   .circle {
     width: 32px;
     height: 32px;
   }
-  .circle-appart,
-  .circle-spain {
+  .circle-slide {
     position: absolute;
     display: inline-block;
   }
   .dest__item:nth-child(3) {
     display: none;
+  }
+  .reviews-wrap {
+    background: var(--light-white);
+  }
+  .reviews__item {
+    margin: 0 auto;
+    max-width: 352px;
+    height: 732px;
+  }
+  .reviews__decor {
+    visibility: hidden;
+  }
+  .reviews__commit {
+    margin: 24px 4px;
+  }
+  .reviews__block-info {
+    margin: 0;
+  }
+  .reviews__mark {
+    width: 40px;
+    height: 26px;
+  }
+  .reviews__score {
+    font-size: 10px;
+  }
+  .reviews__text {
+    margin: 0;
+  }
+  .item-dots {
+    display: flex;
   }
   .icon-sign-up,
   .sign-up__button {
@@ -525,13 +564,14 @@
     border-radius: 4px;
   }
   .sign-up-logo {
-    width: 53px;
-    height: 11px;
+    width: 52px;
+    height: 12px;
   }
   .footer__list {
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-bottom: 0;
   }
   .footer__text {
     display: none;
@@ -545,9 +585,6 @@
     font-size: 15px;
     line-height: 18px;
     text-decoration-line: underline;
-  }
-  .footer__list {
-    margin-bottom: 0;
   }
   .footer__item-bot {
     display: flex;
@@ -585,10 +622,9 @@
     width: calc(var(--col-width) * 6);
   }
   .main-wrap {
-    padding: 0;
+    padding-top: 0;
   }
   .container {
-    width: 95%;
     padding: 40px 0;
   }
   .header {
@@ -596,7 +632,6 @@
     height: 48px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
   }
   .account {
     font-size: 16px;
@@ -633,7 +668,8 @@
   }
   .page__title {
     font-size: 30px;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
+    margin-top: 40px;
     line-height: 35px;
   }
   .page__search {
@@ -656,11 +692,11 @@
   }
   .column-adults {
     grid-column: 1 / span 2;
-    border-right: 1px solid #bfbfbf;
+    border-right: 1px solid var(--grey);
   }
   .column-children {
     grid-column: 3 / span 2;
-    border-right: 1px solid #bfbfbf;
+    border-right: 1px solid var(--grey);
   }
   .column-room {
     grid-column: 5 / span 2;
@@ -676,26 +712,59 @@
   .list {
     margin-bottom: 0;
   }
+  .offers__list {
+    gap: 36px;
+    margin-top: 0;
+  }
   .offers__icon {
-    width: 55px;
+    width: 56px;
   }
   .offers__description {
     font-size: 15px;
   }
   .offers__item {
     height: 104px;
+    justify-content: space-between;
   }
   .homes__item {
-    height: 209px;
-    width: 156px;
+    height: 296px;
   }
   .item__text {
+    margin-top: 8px;
     font-size: 12px;
-    margin-bottom: 4px;
   }
   .dest__item {
-    height: 178px;
-    width: 156px;
+    height: 240px;
+  }
+  .reviews__item {
+    width: 328px;
+    max-width: 100%;
+  }
+  .reviews__text-name,
+  .reviews__text-location {
+    position: absolute;
+    bottom: 12px;
+  }
+  .reviews__block-info {
+    margin: 0 0 12px;
+  }
+  .reviews__commit {
+    margin: 0 0 24px;
+  }
+  .reviews__text-indent {
+    margin: 0;
+    padding-bottom: 32px;
+  }
+  .reviews__mark-text,
+  .reviews__text {
+    font-size: 15px;
+  }
+  .reviews__score {
+    font-size: 12px;
+  }
+  .icon-reviews__commit {
+    width: 44px;
+    height: 44px;
   }
   .sign-up__text {
     font-weight: 400;

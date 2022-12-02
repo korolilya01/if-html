@@ -1,23 +1,54 @@
 {
-  "name": "dev",
+  "name": "webpack-pug-scss-boilerplate",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Webpack boilerplate for pug+scss/sass development",
+  "main": "webpack-pug-scss-boilerplate/src/js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "prettier": "2.7.1"
+    "start": "webpack-pug-scss-boilerplate/node_modules/.bin/webpack-dev-server --config config/webpack.dev.js",
+    "build": "webpack-pug-scss-boilerplate/node_modules/.bin/webpack --config config/webpack.prod.js",
+    "prettier": "webpack-pug-scss-boilerplate/node_modules/.bin/prettier --write .",
+    "stylelint": "webpack-pug-scss-boilerplate/node_modules/.bin/stylelint 'src/**/*.{css,sass,scss}'",
+    "eslint": "webpack-pug-scss-boilerplate/node_modules/.bin/eslint src",
+    "lint": "webpack-pug-scss-boilerplate/node_modules/.bin/npm-run-all --parallel prettier stylelint eslint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/korolilya01/if-html.git"
+    "url": "https://github.com/korolilya01/if-html.git"
   },
+  "keywords": [
+    "webpack",
+    "pug",
+    "sass",
+    "scss",
+    "es6+"
+  ],
+  "author": "Korol Ilya",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/korolilya01/if-html/issues"
   },
-  "homepage": "https://github.com/korolilya01/if-html#readme"
+  "homepage": "https://github.com/korolilya01/if-html#readme",
+  "devDependencies": {
+    "@prettier/plugin-pug": "^2.2.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.8.0",
+    "pug": "^3.0.2",
+    "pug-plugin": "^4.1.1",
+    "sass": "^1.54.4",
+    "sass-loader": "^13.0.2",
+    "stylelint": "^14.10.0",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-scss": "^4.3.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0",
+    "webpack-merge": "^5.8.0"
+  }
 }

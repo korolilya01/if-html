@@ -6,13 +6,23 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
     <link rel="stylesheet" href="./styles/radio_button.css" />
+    <link rel="stylesheet" href="./styles/swiper-style.css" />
+    <link rel="icon" href="./img/logo.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8.4.5/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8.4.5/modules/pagination/pagination.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <title>title</title>
+    <title>TripHouse</title>
   </head>
   <body>
     <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg">
@@ -358,6 +368,12 @@
           fill="#3077C6"
         />
       </symbol>
+      <symbol id="reviews__person" viewBox="0 0 54 54">
+        <path
+          d="M27 0.333374C12.28 0.333374 0.333313 12.28 0.333313 27C0.333313 41.72 12.28 53.6667 27 53.6667C41.72 53.6667 53.6666 41.72 53.6666 27C53.6666 12.28 41.72 0.333374 27 0.333374ZM27 8.33337C31.4266 8.33337 35 11.9067 35 16.3334C35 20.76 31.4266 24.3334 27 24.3334C22.5733 24.3334 19 20.76 19 16.3334C19 11.9067 22.5733 8.33337 27 8.33337ZM27 46.2C20.3333 46.2 14.44 42.7867 11 37.6134C11.08 32.3067 21.6666 29.4 27 29.4C32.3066 29.4 42.92 32.3067 43 37.6134C39.56 42.7867 33.6666 46.2 27 46.2Z"
+          fill="#BFBFBF"
+        />
+      </symbol>
       <symbol id="trip_house_mobile" viewBox="0 0 98 19">
         <path
           d="M0.401998 5.23622C0.303262 5.07949 0.211578 4.86577 0.126947 4.59505C0.0423156 4.32433 0 4.03937 0 3.74016C0 3.18448 0.119894 2.78553 0.359683 2.54331C0.613576 2.30109 0.937996 2.17998 1.33294 2.17998H10.5577C10.6565 2.33671 10.7482 2.55043 10.8328 2.82115C10.9174 3.09186 10.9597 3.37683 10.9597 3.67604C10.9597 4.23172 10.8328 4.63067 10.5789 4.87289C10.3391 5.11511 10.0217 5.23622 9.6268 5.23622H7.27829V15.1102C7.12313 15.153 6.87629 15.1957 6.53776 15.2385C6.21334 15.2812 5.88892 15.3026 5.5645 15.3026C5.24008 15.3026 4.95093 15.2741 4.69703 15.2171C4.45724 15.1744 4.25272 15.0889 4.08346 14.9606C3.91419 14.8324 3.78725 14.6543 3.70262 14.4263C3.61799 14.1983 3.57567 13.8991 3.57567 13.5287V5.23622H0.401998Z"
@@ -452,38 +468,66 @@
           fill="white"
         />
       </symbol>
+      <symbol id="flag-ua" viewBox="0 0 640 480">
+        <g fill-rule="evenodd" stroke-width="1pt">
+          <path fill="gold" d="M0 0h640v480H0z" />
+          <path fill="#0057b8" d="M0 0h640v240H0z" />
+        </g>
+      </symbol>
+      <symbol id="flag-us" viewBox="0 0 640 480">
+        <g fill-rule="evenodd">
+          <g stroke-width="1pt">
+            <path
+              fill="#bd3d44"
+              d="M0 0h912v37H0zm0 73.9h912v37H0zm0 73.8h912v37H0zm0 73.8h912v37H0zm0 74h912v36.8H0zm0 73.7h912v37H0zM0 443h912V480H0z"
+            />
+            <path
+              fill="#fff"
+              d="M0 37h912v36.9H0zm0 73.8h912v36.9H0zm0 73.8h912v37H0zm0 73.9h912v37H0zm0 73.8h912v37H0zm0 73.8h912v37H0z"
+            />
+          </g>
+          <path fill="#192f5d" d="M0 0h364.8v258.5H0z" />
+          <path
+            fill="#fff"
+            d="m30.4 11 3.4 10.3h10.6l-8.6 6.3 3.3 10.3-8.7-6.4-8.6 6.3L25 27.6l-8.7-6.3h10.9zm60.8 0 3.3 10.3h10.8l-8.7 6.3 3.2 10.3-8.6-6.4-8.7 6.3 3.3-10.2-8.6-6.3h10.6zm60.8 0 3.3 10.3H166l-8.6 6.3 3.3 10.3-8.7-6.4-8.7 6.3 3.3-10.2-8.7-6.3h10.8zm60.8 0 3.3 10.3h10.8l-8.7 6.3 3.3 10.3-8.7-6.4-8.7 6.3 3.4-10.2-8.8-6.3h10.7zm60.8 0 3.3 10.3h10.7l-8.6 6.3 3.3 10.3-8.7-6.4-8.7 6.3 3.3-10.2-8.6-6.3h10.7zm60.8 0 3.3 10.3h10.8l-8.8 6.3 3.4 10.3-8.7-6.4-8.7 6.3 3.4-10.2-8.8-6.3h10.8zM60.8 37l3.3 10.2H75l-8.7 6.2 3.2 10.3-8.5-6.3-8.7 6.3 3.1-10.3-8.4-6.2h10.7zm60.8 0 3.4 10.2h10.7l-8.8 6.2 3.4 10.3-8.7-6.3-8.7 6.3 3.3-10.3-8.7-6.2h10.8zm60.8 0 3.3 10.2h10.8l-8.7 6.2 3.3 10.3-8.7-6.3-8.7 6.3 3.3-10.3-8.6-6.2H179zm60.8 0 3.4 10.2h10.7l-8.8 6.2 3.4 10.3-8.7-6.3-8.6 6.3 3.2-10.3-8.7-6.2H240zm60.8 0 3.3 10.2h10.8l-8.7 6.2 3.3 10.3-8.7-6.3-8.7 6.3 3.3-10.3-8.6-6.2h10.7zM30.4 62.6l3.4 10.4h10.6l-8.6 6.3 3.3 10.2-8.7-6.3-8.6 6.3L25 79.3 16.3 73h10.9zm60.8 0L94.5 73h10.8l-8.7 6.3 3.2 10.2-8.6-6.3-8.7 6.3 3.3-10.3-8.6-6.3h10.6zm60.8 0 3.3 10.3H166l-8.6 6.3 3.3 10.2-8.7-6.3-8.7 6.3 3.3-10.3-8.7-6.3h10.8zm60.8 0 3.3 10.3h10.8l-8.7 6.3 3.3 10.2-8.7-6.3-8.7 6.3 3.4-10.3-8.8-6.3h10.7zm60.8 0 3.3 10.3h10.7l-8.6 6.3 3.3 10.2-8.7-6.3-8.7 6.3 3.3-10.3-8.6-6.3h10.7zm60.8 0 3.3 10.3h10.8l-8.8 6.3 3.4 10.2-8.7-6.3-8.7 6.3 3.4-10.3-8.8-6.3h10.8zM60.8 88.6l3.3 10.2H75l-8.7 6.3 3.3 10.3-8.7-6.4-8.7 6.3 3.3-10.2-8.6-6.3h10.7zm60.8 0 3.4 10.2h10.7l-8.8 6.3 3.4 10.3-8.7-6.4-8.7 6.3 3.3-10.2-8.7-6.3h10.8zm60.8 0 3.3 10.2h10.8l-8.7 6.3 3.3 10.3-8.7-6.4-8.7 6.3 3.3-10.2-8.6-6.3H179zm60.8 0 3.4 10.2h10.7l-8.7 6.3 3.3 10.3-8.7-6.4-8.6 6.3 3.2-10.2-8.7-6.3H240zm60.8 0 3.3 10.2h10.8l-8.7 6.3 3.3 10.3-8.7-6.4-8.7 6.3 3.3-10.2-8.6-6.3h10.7zM30.4 114.5l3.4 10.2h10.6l-8.6 6.3 3.3 10.3-8.7-6.4-8.6 6.3L25 131l-8.7-6.3h10.9zm60.8 0 3.3 10.2h10.8l-8.7 6.3 3.2 10.2-8.6-6.3-8.7 6.3 3.3-10.2-8.6-6.3h10.6zm60.8 0 3.3 10.2H166l-8.6 6.3 3.3 10.3-8.7-6.4-8.7 6.3 3.3-10.2-8.7-6.3h10.8zm60.8 0 3.3 10.2h10.8l-8.7 6.3 3.3 10.3-8.7-6.4-8.7 6.3 3.4-10.2-8.8-6.3h10.7zm60.8 0 3.3 10.2h10.7L279 131l3.3 10.3-8.7-6.4-8.7 6.3 3.3-10.2-8.6-6.3h10.7zm60.8 0 3.3 10.2h10.8l-8.8 6.3 3.4 10.3-8.7-6.4-8.7 6.3L329 131l-8.8-6.3h10.8zM60.8 140.3l3.3 10.3H75l-8.7 6.2 3.3 10.3-8.7-6.4-8.7 6.4 3.3-10.3-8.6-6.3h10.7zm60.8 0 3.4 10.3h10.7l-8.8 6.2 3.4 10.3-8.7-6.4-8.7 6.4 3.3-10.3-8.7-6.3h10.8zm60.8 0 3.3 10.3h10.8l-8.7 6.2 3.3 10.3-8.7-6.4-8.7 6.4 3.3-10.3-8.6-6.3H179zm60.8 0 3.4 10.3h10.7l-8.7 6.2 3.3 10.3-8.7-6.4-8.6 6.4 3.2-10.3-8.7-6.3H240zm60.8 0 3.3 10.3h10.8l-8.7 6.2 3.3 10.3-8.7-6.4-8.7 6.4 3.3-10.3-8.6-6.3h10.7zM30.4 166.1l3.4 10.3h10.6l-8.6 6.3 3.3 10.1-8.7-6.2-8.6 6.2 3.2-10.2-8.7-6.3h10.9zm60.8 0 3.3 10.3h10.8l-8.7 6.3 3.3 10.1-8.7-6.2-8.7 6.2 3.4-10.2-8.7-6.3h10.6zm60.8 0 3.3 10.3H166l-8.6 6.3 3.3 10.1-8.7-6.2-8.7 6.2 3.3-10.2-8.7-6.3h10.8zm60.8 0 3.3 10.3h10.8l-8.7 6.3 3.3 10.1-8.7-6.2-8.7 6.2 3.4-10.2-8.8-6.3h10.7zm60.8 0 3.3 10.3h10.7l-8.6 6.3 3.3 10.1-8.7-6.2-8.7 6.2 3.3-10.2-8.6-6.3h10.7zm60.8 0 3.3 10.3h10.8l-8.8 6.3 3.4 10.1-8.7-6.2-8.7 6.2 3.4-10.2-8.8-6.3h10.8zM60.8 192l3.3 10.2H75l-8.7 6.3 3.3 10.3-8.7-6.4-8.7 6.3 3.3-10.2-8.6-6.3h10.7zm60.8 0 3.4 10.2h10.7l-8.8 6.3 3.4 10.3-8.7-6.4-8.7 6.3 3.3-10.2-8.7-6.3h10.8zm60.8 0 3.3 10.2h10.8l-8.7 6.3 3.3 10.3-8.7-6.4-8.7 6.3 3.3-10.2-8.6-6.3H179zm60.8 0 3.4 10.2h10.7l-8.7 6.3 3.3 10.3-8.7-6.4-8.6 6.3 3.2-10.2-8.7-6.3H240zm60.8 0 3.3 10.2h10.8l-8.7 6.3 3.3 10.3-8.7-6.4-8.7 6.3 3.3-10.2-8.6-6.3h10.7zM30.4 217.9l3.4 10.2h10.6l-8.6 6.3 3.3 10.2-8.7-6.3-8.6 6.3 3.2-10.3-8.7-6.3h10.9zm60.8 0 3.3 10.2h10.8l-8.7 6.3 3.3 10.2-8.7-6.3-8.7 6.3 3.4-10.3-8.7-6.3h10.6zm60.8 0 3.3 10.2H166l-8.4 6.3 3.3 10.2-8.7-6.3-8.7 6.3 3.3-10.3-8.7-6.3h10.8zm60.8 0 3.3 10.2h10.8l-8.7 6.3 3.3 10.2-8.7-6.3-8.7 6.3 3.4-10.3-8.8-6.3h10.7zm60.8 0 3.3 10.2h10.7l-8.6 6.3 3.3 10.2-8.7-6.3-8.7 6.3 3.3-10.3-8.6-6.3h10.7zm60.8 0 3.3 10.2h10.8l-8.8 6.3 3.4 10.2-8.7-6.3-8.7 6.3 3.4-10.3-8.8-6.3h10.8z"
+          />
+        </g>
+      </symbol>
+      <symbol id="flag-de" viewBox="0 0 640 480">
+        <path fill="#ffce00" d="M0 320h640v160H0z" />
+        <path d="M0 0h640v160H0z" />
+        <path fill="#d00" d="M0 160h640v160H0z" />
+      </symbol>
     </svg>
     <section class="main">
       <div class="container main-wrap">
         <input id="radio-but__acc" type="radio" class="radio-but__acc" />
-        <form>
-          <header class="header">
-            <a href="./">
-              <svg class="icon-logo">
-                <use href="#trip_house" />
+        <header class="header">
+          <a href="./">
+            <svg class="icon-logo">
+              <use href="#trip_house" />
+            </svg>
+          </a>
+          <nav class="header__offers">
+            <div class="header__links">
+              <a class="links" href="#">Stays</a>
+              <a class="links" href="#">Attractions</a>
+            </div>
+            <div class="header__items">
+              <svg class="icon-night">
+                <use href="#night" />
               </svg>
-            </a>
-            <nav class="header__offers">
-              <div class="header__links">
-                <a class="links" href="#">Stays</a>
-                <a class="links" href="#">Attractions</a>
-              </div>
-              <div class="header__items">
-                <svg class="icon-night">
-                  <use href="#night" />
+              <label for="radio-but__acc">
+                <svg class="icon-account">
+                  <use href="#account" />
                 </svg>
-                <label for="radio-but__acc">
-                  <svg class="icon-account">
-                    <use href="#account" />
-                  </svg>
-                </label>
-                <svg class="icon-menu">
-                  <use href="#menu" />
-                </svg>
-              </div>
-            </nav>
-          </header>
-        </form>
+              </label>
+              <svg class="icon-menu">
+                <use href="#menu" />
+              </svg>
+            </div>
+          </nav>
+        </header>
         <main class="page">
           <h1 class="page__title">
             Discover stays <br />
@@ -532,7 +576,7 @@
                   <p>Adults</p>
                   <input
                     id="adults"
-                    class="info-num"
+                    class="info-num page-text"
                     type="text"
                     name="choose-adult"
                     required
@@ -542,7 +586,7 @@
                   <p>Children</p>
                   <input
                     id="children"
-                    class="info-num"
+                    class="info-num page-text"
                     type="text"
                     name="choose-children"
                     required
@@ -552,7 +596,7 @@
                   <p>Room</p>
                   <input
                     id="room"
-                    class="info-num"
+                    class="info-num page-text"
                     type="text"
                     name="choose-room"
                     required
@@ -584,10 +628,16 @@
         <form action="#" class="account account-block">
           <p class="account__title">Sign in</p>
           <label for="email" class="account__email-text">Email address</label>
-          <input id="email" type="email" class="account__email-field" />
+          <input
+            id="email"
+            name="email"
+            type="email"
+            class="account__email-field"
+          />
           <label for="password" class="account__password-text">Password</label>
           <input
             id="password"
+            name="password"
             type="password"
             class="account__password-field"
           />
@@ -639,48 +689,60 @@
     <section class="homes">
       <div class="container">
         <h2 class="title">Homes guests loves</h2>
-        <div class="list homes__list">
-          <div class="homes__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
-            <div>
-              <img src="./img/hotel_leopold.png" alt="Hotel Leopold" />
-            </div>
-            <a class="item__text" href="#">Hotel Leopold</a>
-            <p class="item__text hostel-location">Saint Petersburg, Russia</p>
-          </div>
-          <div class="homes__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
-            <div class="item-hostel">
-              <img
-                src="./img/apartment_sunshine.png"
-                alt="Apartment Sunshine"
-              />
-              <div class="circle circle-appart">
-                <div class="arrows"></div>
+        <div class="swiper-container swiper-homes">
+          <div class="list homes__list swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="homes__item">
+                <div>
+                  <img src="./img/hotel_leopold.png" alt="Hotel Leopold" />
+                </div>
+                <a class="item__text" href="#">Hotel Leopold</a>
+                <p class="item__text hostel-location">
+                  Saint Petersburg, Russia
+                </p>
               </div>
             </div>
-            <a class="item__text" href="#">Apartment Sunshine</a>
-            <p class="item__text hostel-location">
-              Santa Cruz de Tenerife, Spain
-            </p>
-          </div>
-          <div class="homes__item col-lg-3 col-md-2">
-            <div class="item-hostel">
-              <img src="./img/villa_kunerad.png" alt="Villa Kunerad" />
-              <div class="circle circle-villa">
-                <div class="arrows"></div>
+            <div class="swiper-slide">
+              <div class="homes__item">
+                <div class="item-hostel">
+                  <img
+                    src="./img/apartment_sunshine.png"
+                    alt="Apartment Sunshine"
+                  />
+                </div>
+                <a class="item__text" href="#">Apartment Sunshine</a>
+                <p class="item__text hostel-location">
+                  Santa Cruz de Tenerife, Spain
+                </p>
               </div>
             </div>
-            <a class="item__text" href="#">Villa Kunerad</a>
-            <p class="item__text hostel-location">Vysokie Tatry, Slowakia</p>
-          </div>
-          <div class="homes__item col-lg-3">
-            <div class="item-hostel">
-              <img src="./img/hostel_friendship.png" alt="Hostel Friendship" />
-              <div class="circle circle-hostel">
-                <div class="arrows"></div>
+            <div class="swiper-slide">
+              <div class="homes__item">
+                <div class="item-hostel">
+                  <img src="./img/villa_kunerad.png" alt="Villa Kunerad" />
+                </div>
+                <a class="item__text" href="#">Villa Kunerad</a>
+                <p class="item__text hostel-location">
+                  Vysokie Tatry, Slowakia
+                </p>
               </div>
             </div>
-            <a class="item__text" href="#">Hostel Friendship</a>
-            <p class="item__text hostel-location">Berlin, Germany</p>
+            <div class="swiper-slide">
+              <div class="homes__item">
+                <div class="item-hostel">
+                  <img
+                    src="./img/hostel_friendship.png"
+                    alt="Hostel Friendship"
+                  />
+                </div>
+                <a class="item__text" href="#">Hostel Friendship</a>
+                <p class="item__text hostel-location">Berlin, Germany</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next circle">
+            <div class="arrows"></div>
           </div>
         </div>
       </div>
@@ -717,7 +779,7 @@
           <!-- block regions -->
           <div class="block__regions">
             <div class="list dest__list">
-              <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+              <div class="dest__item col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <div class="item-link">
                   <a href="#"
                     ><img src="./img/maldives.png" alt="Maldives" /><button
@@ -730,8 +792,8 @@
                 </div>
                 <a class="item__text" href="#">Maldives</a>
               </div>
-              <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
-                <div class="item-link item-norway">
+              <div class="dest__item col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="item-link">
                   <a href="#"
                     ><img src="./img/spain.png" alt="Spain" /><button
                       type="submit"
@@ -740,14 +802,14 @@
                       Book now
                     </button></a
                   >
-                  <div class="circle circle-spain">
+                  <div class="circle circle-slide">
                     <div class="arrows"></div>
                   </div>
                 </div>
                 <a class="item__text" href="#">Spain</a>
               </div>
-              <div class="dest__item col-lg-3 col-md-2">
-                <div class="item-link item-spain">
+              <div class="dest__item col-lg-3 col-md-3">
+                <div class="item-link">
                   <a href="#"
                     ><img src="./img/norway.png" alt="Norway" /><button
                       type="submit"
@@ -756,7 +818,7 @@
                       Book now
                     </button></a
                   >
-                  <div class="circle circle-norway">
+                  <div class="circle circle-slide-dop">
                     <div class="arrows"></div>
                   </div>
                 </div>
@@ -783,7 +845,7 @@
                 </div>
                 <div class="block__regions-add">
                   <div class="list dest__list-add">
-                    <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+                    <div class="dest__item col-lg-3 col-md-3 col-sm-3 col-xs-3">
                       <div class="item-link">
                         <a href="#"
                           ><img src="./img/japan.png" alt="Japan" /><button
@@ -796,8 +858,8 @@
                       </div>
                       <a class="item__text" href="#">Japan</a>
                     </div>
-                    <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
-                      <div class="item-link item-norway">
+                    <div class="dest__item col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                      <div class="item-link">
                         <a href="#"
                           ><img src="./img/france.png" alt="France" /><button
                             type="submit"
@@ -806,14 +868,14 @@
                             Book now
                           </button></a
                         >
-                        <div class="circle circle-spain">
+                        <div class="circle circle-slide">
                           <div class="arrows"></div>
                         </div>
                       </div>
                       <a class="item__text" href="#">France</a>
                     </div>
-                    <div class="dest__item col-lg-3 col-md-2">
-                      <div class="item-link item-spain">
+                    <div class="dest__item col-lg-3 col-md-3">
+                      <div class="item-link">
                         <a href="#"
                           ><img
                             src="./img/scotland.png"
@@ -822,7 +884,7 @@
                             Book now
                           </button></a
                         >
-                        <div class="circle circle-norway">
+                        <div class="circle circle-slide-dop">
                           <div class="arrows"></div>
                         </div>
                       </div>
@@ -852,7 +914,7 @@
           <!-- block cities -->
           <div class="block__cities">
             <div class="list dest__list">
-              <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+              <div class="dest__item col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <div class="item-link">
                   <a href="#"
                     ><img src="./img/berlin.png" alt="Berlin" /><button
@@ -865,8 +927,8 @@
                 </div>
                 <a class="item__text" href="#">Berlin, Germany</a>
               </div>
-              <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
-                <div class="item-link item-norway">
+              <div class="dest__item col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="item-link">
                   <a href="#"
                     ><img src="./img/paris.png" alt="Paris" /><button
                       type="submit"
@@ -875,14 +937,14 @@
                       Book now
                     </button></a
                   >
-                  <div class="circle circle-spain">
+                  <div class="circle circle-slide">
                     <div class="arrows"></div>
                   </div>
                 </div>
                 <a class="item__text" href="#">Paris, France</a>
               </div>
-              <div class="dest__item col-lg-3 col-md-2">
-                <div class="item-link item-spain">
+              <div class="dest__item col-lg-3 col-md-3">
+                <div class="item-link">
                   <a href="#"
                     ><img src="./img/budapest.png" alt="Budapest" /><button
                       type="submit"
@@ -891,7 +953,7 @@
                       Book now
                     </button></a
                   >
-                  <div class="circle circle-norway">
+                  <div class="circle circle-slide-dop">
                     <div class="arrows"></div>
                   </div>
                 </div>
@@ -921,7 +983,7 @@
                 </div>
                 <div class="block__cities-add">
                   <div class="list dest__list-add">
-                    <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+                    <div class="dest__item col-lg-3 col-md-3 col-sm-3 col-xs-3">
                       <div class="item-link">
                         <a href="#"
                           ><img
@@ -934,8 +996,8 @@
                       </div>
                       <a class="item__text" href="#">Barcelona, Spain</a>
                     </div>
-                    <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
-                      <div class="item-link item-norway">
+                    <div class="dest__item col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                      <div class="item-link">
                         <a href="#"
                           ><img src="./img/tbilisi.png" alt="Tbilisi" /><button
                             type="submit"
@@ -944,14 +1006,14 @@
                             Book now
                           </button></a
                         >
-                        <div class="circle circle-spain">
+                        <div class="circle circle-slide">
                           <div class="arrows"></div>
                         </div>
                       </div>
                       <a class="item__text" href="#">Tbilisi, Georgia</a>
                     </div>
-                    <div class="dest__item col-lg-3 col-md-2">
-                      <div class="item-link item-spain">
+                    <div class="dest__item col-lg-3 col-md-3">
+                      <div class="item-link">
                         <a href="#"
                           ><img src="./img/moscow.png" alt="Moscow" /><button
                             type="submit"
@@ -960,7 +1022,7 @@
                             Book now
                           </button></a
                         >
-                        <div class="circle circle-norway">
+                        <div class="circle circle-slide-dop">
                           <div class="arrows"></div>
                         </div>
                       </div>
@@ -990,7 +1052,7 @@
           <!-- block places-->
           <div class="block__places">
             <div class="list dest__list">
-              <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+              <div class="dest__item col-lg-3 col-md-3 col-sm-3 col-xs-3">
                 <div class="item-link">
                   <a href="#"
                     ><img
@@ -1005,8 +1067,8 @@
                   >Edinburgh Castle, Edinburgh, United Kingdom</a
                 >
               </div>
-              <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
-                <div class="item-link item-norway">
+              <div class="dest__item col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <div class="item-link">
                   <a href="#"
                     ><img
                       src="./img/neuschwanstein.png"
@@ -1015,7 +1077,7 @@
                       Book now
                     </button></a
                   >
-                  <div class="circle circle-spain">
+                  <div class="circle circle-slide">
                     <div class="arrows"></div>
                   </div>
                 </div>
@@ -1023,8 +1085,8 @@
                   >Neuschwanstein, Fussen, Germany</a
                 >
               </div>
-              <div class="dest__item col-lg-3 col-md-2">
-                <div class="item-link item-spain">
+              <div class="dest__item col-lg-3 col-md-3">
+                <div class="item-link">
                   <a href="#"
                     ><img src="./img/big_ban.png" alt="Big Ban" /><button
                       type="submit"
@@ -1033,7 +1095,7 @@
                       Book now
                     </button></a
                   >
-                  <div class="circle circle-norway">
+                  <div class="circle circle-slide-dop">
                     <div class="arrows"></div>
                   </div>
                 </div>
@@ -1065,7 +1127,7 @@
                 </div>
                 <div class="block__places-add">
                   <div class="list dest__list-add">
-                    <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
+                    <div class="dest__item col-lg-3 col-md-3 col-sm-3 col-xs-3">
                       <div class="item-link">
                         <a href="#"
                           ><img
@@ -1080,8 +1142,8 @@
                         >Matterhorn, Zermatt, Switzerland</a
                       >
                     </div>
-                    <div class="dest__item col-lg-3 col-md-2 col-sm-2 col-xs-3">
-                      <div class="item-link item-norway">
+                    <div class="dest__item col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                      <div class="item-link">
                         <a href="#"
                           ><img
                             src="./img/morskie_oko.png"
@@ -1090,14 +1152,14 @@
                             Book now
                           </button></a
                         >
-                        <div class="circle circle-spain">
+                        <div class="circle circle-slide">
                           <div class="arrows"></div>
                         </div>
                       </div>
                       <a class="item__text" href="#">Morskie Oko, Poland</a>
                     </div>
-                    <div class="dest__item col-lg-3 col-md-2">
-                      <div class="item-link item-spain">
+                    <div class="dest__item col-lg-3 col-md-3">
+                      <div class="item-link">
                         <a href="#"
                           ><img src="./img/krka.png" alt="Krka" /><button
                             type="submit"
@@ -1106,7 +1168,7 @@
                             Book now
                           </button></a
                         >
-                        <div class="circle circle-norway">
+                        <div class="circle circle-slide-dop">
                           <div class="arrows"></div>
                         </div>
                       </div>
@@ -1138,7 +1200,7 @@
         </form>
       </div>
     </section>
-    <section class=sign-up">
+    <section class="sign-up">
       <div class="container sign-up__block">
         <div class="icon-sign-up">
           <svg class="sign-up-person">
@@ -1163,6 +1225,155 @@
           Sign up
         </button>
         <a href="#" class="sign-up__link">Install</a>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container reviews-wrap">
+        <h2 class="title reviews__title">Guests reviews</h2>
+        <div class="swiper-container swiper-reviews">
+          <div class="list reviews__list swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="reviews__item">
+                <div class="reviews__block-top">
+                  <img
+                    src="./img/ubud_bali_resort&spa.png"
+                    alt="Ubud Bali Resort&SPA"
+                  />
+                  <p class="reviews__text reviews__decor">From 250 USD</p>
+                </div>
+                <div class="reviews__block-info">
+                  <a href="#" class="reviews__text reviews__text-name"
+                    >Ubud Bali Resort&SPA</a
+                  >
+                  <a href="#" class="reviews__text reviews__text-location"
+                    >Bali, Indonesia</a
+                  >
+                  <div class="reviews__mark">
+                    <p class="reviews__mark-text">9,4</p>
+                  </div>
+                  <p class="reviews__score">1324 reviews</p>
+                </div>
+                <div class="reviews__commit">
+                  <svg class="icon-reviews__commit">
+                    <use href="#reviews__person" />
+                  </svg>
+                  <div class="reviews__commit-person-info">
+                    <p class="reviews__text">Hanna Ivanova</p>
+
+                    <p class="reviews__text reviews__commit-country">
+                      <svg class="icon-flag">
+                        <use href="#flag-ua" />
+                      </svg>
+                      Ukraine
+                    </p>
+                  </div>
+                </div>
+                <p class="reviews__text reviews__text-indent">
+                  Great location, really pleasant and clean rooms, but the thing
+                  that makes this such a good place to stay are the staff. All
+                  of the people are incredibly helpful and generous with their
+                  time and advice.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews__item">
+                <div class="reviews__block-top">
+                  <div class="item-review">
+                    <img
+                      src="./img/king_kong_hotel.png"
+                      alt="Ubud Bali Resort&SPA"
+                    />
+                  </div>
+                  <p class="reviews__text reviews__decor">From 40 USD</p>
+                </div>
+                <div class="reviews__block-info">
+                  <a href="#" class="reviews__text reviews__text-name"
+                    >King Kong Hostel</a
+                  >
+                  <a href="#" class="reviews__text reviews__text-location"
+                    >Rotterdam, Netherlands</a
+                  >
+                  <div class="reviews__mark">
+                    <p class="reviews__mark-text">8,9</p>
+                  </div>
+                  <p class="reviews__score">2016 reviews</p>
+                </div>
+                <div class="reviews__commit">
+                  <svg class="icon-reviews__commit">
+                    <use href="#reviews__person" />
+                  </svg>
+                  <div class="reviews__commit-person-info">
+                    <p class="reviews__text">Adam Smith</p>
+                    <p class="reviews__text reviews__commit-country">
+                      <svg class="icon-flag">
+                        <use href="#flag-us" />
+                      </svg>
+                      USA
+                    </p>
+                  </div>
+                </div>
+                <p class="reviews__text reviews__text-indent">
+                  I've been in this hostel for a month and here is the best
+                  hostel of all Excellent management of excellent and ethical
+                  staff and bedrooms Bathrooms are always clean and excellent
+                  Most importantly, those who work here are kind and
+                  good-natured.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews__item">
+                <div class="reviews__block-top">
+                  <div class="item-review">
+                    <img
+                      src="./img/rokoko_hotel.png"
+                      alt="Ubud Bali Resort&SPA"
+                    />
+                  </div>
+                  <p class="reviews__text reviews__decor">From 100 USD</p>
+                </div>
+                <div class="reviews__block-info">
+                  <a href="#" class="reviews__text reviews__text-name"
+                    >Rokoko Hotel</a
+                  >
+                  <a href="#" class="reviews__text reviews__text-location"
+                    >Ourika, Marocco</a
+                  >
+                  <div class="reviews__mark">
+                    <p class="reviews__mark-text">9,1</p>
+                  </div>
+                  <p class="reviews__score">815 reviews</p>
+                </div>
+                <div class="reviews__commit">
+                  <svg class="icon-reviews__commit">
+                    <use href="#reviews__person" />
+                  </svg>
+                  <div class="reviews__commit-person-info">
+                    <p class="reviews__text">Anika Messer</p>
+                    <p class="reviews__text reviews__commit-country">
+                      <svg class="icon-flag">
+                        <use href="#flag-de" />
+                      </svg>
+                      Germany
+                    </p>
+                  </div>
+                </div>
+                <p class="reviews__text reviews__text-indent">
+                  Efficient, friendly, professional, and appropriately
+                  attentive. Great hotel in a great location. Easy access to all
+                  the surrounding historical sites. Staff is fantastic. Will
+                  definitely stay at this location during my next stay in
+                  Marocco.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next circle swiper-button-next-dest">
+            <div class="arrows"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </section>
     <footer class="footer">
@@ -1219,5 +1430,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
