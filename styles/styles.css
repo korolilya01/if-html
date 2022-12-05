@@ -678,13 +678,6 @@ img {
   width: 16px;
   height: 20px;
 }
-.dots {
-  height: 8px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-}
 .item-dots {
   display: none;
   width: 8px;
@@ -700,7 +693,6 @@ img {
 .sign-up__block {
   background: var(--light-white);
   padding: 0;
-  margin: 0 auto;
   position: relative;
 }
 .icon-sign-up {

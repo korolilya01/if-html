@@ -467,7 +467,6 @@
   }
   .icon-trip_house_mobile {
     display: flex;
-    margin: 0 auto 32px;
   }
   img {
     margin-bottom: 8px;
@@ -517,9 +516,6 @@
   .reviews__text {
     margin: 0;
   }
-  .item-dots {
-    display: flex;
-  }
   .icon-sign-up,
   .sign-up__button {
     display: none;
@@ -531,7 +527,6 @@
     gap: 16px;
     height: 106px;
     padding: 0 10px;
-    margin: 0 auto;
     background: var(--white);
   }
   .sign-up__text {
@@ -577,7 +572,6 @@
     display: none;
   }
   .footer__links {
-    margin: 0 auto;
     display: block;
   }
   .footer__text-title {
