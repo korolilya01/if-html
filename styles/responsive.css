@@ -341,7 +341,7 @@
     width: var(--col-width);
   }
   .col-sm-2 {
-    width: calc(var(--col-width) * 2) !important;
+    width: calc(var(--col-width) * 2);
   }
   .col-sm-3 {
     width: calc(var(--col-width) * 3);
@@ -359,6 +359,9 @@
     padding: 60px 50px;
     width: 95%;
     margin: 0 auto;
+  }
+  .main {
+    height: 100%;
   }
   .header__items {
     gap: 16px;
@@ -467,6 +470,7 @@
   }
   .icon-trip_house_mobile {
     display: flex;
+    margin: 0 auto 32px;
   }
   img {
     margin-bottom: 8px;
@@ -573,6 +577,7 @@
   }
   .footer__links {
     display: block;
+    margin: auto;
   }
   .footer__text-title {
     display: flex;
@@ -724,11 +729,14 @@
     height: 296px;
   }
   .item__text {
-    margin-top: 8px;
+    margin-top: 4px;
     font-size: 12px;
   }
   .dest__item {
     height: 240px;
+  }
+  img {
+    margin-bottom: 0;
   }
   .reviews__item {
     width: 328px;
