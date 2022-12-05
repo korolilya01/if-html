@@ -207,10 +207,6 @@ img {
   width: 40px;
   height: 40px;
 }
-.icon-account:hover + .abc {
-  fill: var(--dark-yellow);
-  display: flex;
-}
 .icon-menu {
   width: 24px;
   height: 16px;
@@ -371,7 +367,7 @@ img {
   background-color: var(--dark-yellow);
   position: absolute;
   top: 72px;
-  right: calc(50% - var(--line-width) / 2);
+  left: calc(50% - var(--line-width) / 2);
 }
 .list {
   display: flex;
@@ -755,7 +751,7 @@ img {
   width: 20px;
   height: 20px;
   position: absolute;
-  left: 50px;
+  left: 48px;
   top: 46px;
 }
 .sign-up-cross {
