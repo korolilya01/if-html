@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
+  margin: 0;
 }
 @font-face {
   font-family: Roboto;
@@ -9,8 +10,8 @@
 }
 :root {
   --line-width: 100px;
-  --arrow-width: 11px;
-  --arrow-height: 11px;
+  --arrow-width: 12px;
+  --arrow-height: 12px;
   --circle-width: 40px;
   --circle-height: 40px;
   --white: #fff;
@@ -595,7 +596,7 @@ img {
   background: rgb(56 56 56 / 70%);
   color: white;
   bottom: 4px;
-  padding: 16px 0 11px 24px;
+  padding: 16px 0 12px 24px;
 }
 
 /* bot */
